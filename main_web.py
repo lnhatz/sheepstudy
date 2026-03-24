@@ -36,11 +36,16 @@ if 'score' not in st.session_state: st.session_state.score = 0
 if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
 
 def load_data(grade, subject, mode):
-    # Đường dẫn file khớp với thư mục data trên GitHub của bạn
-    fname = f"data/{grade}_{mode}.json"
+    # subject ở đây là 'toan' hoặc 'khtn' (viết thường)
+    # Thêm lớp thư mục subject vào giữa để đúng cấu trúc của bạn
+    fname = f"data/{subject}/{grade}_{mode}.json"
+    
     if os.path.exists(fname):
         with open(fname, 'r', encoding='utf-8') as f:
             return json.load(f)
+    
+    # Dòng này để debug nếu vẫn lỗi, nó sẽ in ra đường dẫn mà code đang thử tìm
+    st.error(f"Không tìm thấy file tại: {fname}")
     return []
 
 # --- TRANG CHÀO MỪNG ---
