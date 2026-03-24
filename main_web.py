@@ -113,24 +113,49 @@ elif st.session_state.page == 'doing':
             st.session_state.page = 'welcome'
             st.rerun()
 
-# --- TRANG LÝ THUYẾT (SƠ ĐỒ BÀI HỌC) ---
-elif st.session_state.page == 'doing' and st.session_state.mode == 'theory':
+# --- TRANG HIỂN THỊ NỘI DUNG (CHUNG CHO CẢ 3 CHẾ ĐỘ) ---
+elif st.session_state.page == 'doing':
     data = st.session_state.data
-    st.markdown(f"<h2 style='text-align: center; color: {CORAL_PINK};'>📂 THƯ VIỆN LÝ THUYẾT</h2>", unsafe_allow_html=True)
     
-    if st.button("← QUAY LẠI CHỌN MÔN"):
-        st.session_state.page = 'select'
-        st.rerun()
+    # KIỂM TRA: NẾU LÀ CHẾ ĐỘ LÝ THUYẾT
+    if st.session_state.mode == 'theory':
+        st.markdown(f"<h2 style='text-align: center; color: {CORAL_PINK};'>📂 THƯ VIỆN LÝ THUYẾT</h2>", unsafe_allow_html=True)
+        if st.button("← QUAY LẠI CHỌN MÔN"):
+            st.session_state.page = 'select'
+            st.rerun()
 
-    for chapter in data:
-        with st.expander(f"📖 {chapter.get('title', 'Chương')}", expanded=True):
-            for lesson in chapter.get('lessons', []):
-                st.markdown(f"#### 🌿 {lesson['name']}")
-                
-                # Biến nội dung thành các hộp ghi chú (thay cho node sơ đồ)
-                points = [p.strip() for p in lesson['content'].split('\n') if p.strip()]
-                cols = st.columns(3) # Chia làm 3 cột cho đẹp
-                for idx, point in enumerate(points):
-                    with cols[idx % 3]:
-                        st.info(point)
-                st.write("---")
+        for chapter in data:
+            with st.expander(f"📖 {chapter.get('title', 'Chương')}", expanded=True):
+                for lesson in chapter.get('lessons', []):
+                    st.markdown(f"#### 🌿 {lesson['name']}")
+                    points = [p.strip() for p in lesson['content'].split('\n') if p.strip()]
+                    cols = st.columns(3)
+                    for idx, point in enumerate(points):
+                        with cols[idx % 3]:
+                            st.info(point)
+                    st.write("---")
+
+    # KIỂM TRA: NẾU LÀ CHẾ ĐỘ TRẮC NGHIỆM/TEST
+    else:
+        idx = st.session_state.current_idx
+        if idx < len(data) and idx < 20: # Giới hạn 20 câu
+            q = data[idx]
+            st.progress((idx + 1) / min(len(data), 20))
+            st.info(f"Câu hỏi {idx + 1}: {q.get('question', 'Lỗi định dạng câu hỏi')}")
+            
+            for i, opt in enumerate(q.get('options', [])):
+                if st.button(opt, key=f"opt_{idx}_{i}"):
+                    if i == q.get('answer'):
+                        st.success("Chính xác! ✨")
+                        st.session_state.score += 1
+                    else:
+                        st.error(f"Sai rồi! Đáp án đúng là: {q['options'][q['answer']]}")
+                    
+                    st.session_state.current_idx += 1
+                    st.rerun()
+        else:
+            st.balloons()
+            st.markdown(f"## HOÀN THÀNH! ĐIỂM: {st.session_state.score}/{idx}")
+            if st.button("LÀM LẠI"):
+                st.session_state.page = 'welcome'
+                st.rerun()
