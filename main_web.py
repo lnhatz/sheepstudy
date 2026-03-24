@@ -4,21 +4,21 @@ import random
 import os
 
 # --- 1. CẤU HÌNH ---
-st.set_page_config(page_title="SheepStudy", page_icon="✿", layout="wide")
+st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 
 CORAL_PINK = "#ff6b86"
 SOFT_BLUE = "#e1f5fe"
 
-# --- 2. CSS FIX GIAO DIỆN (NÚT CÂN, GIẤU MENU) ---
+# --- 2. CSS GIẤU MENU & FIX NÚT (BẢN PUBLIC) ---
 st.markdown(f"""
     <style>
-    /* Giấu sạch menu và logo Streamlit */
+    /* Giấu sạch Menu 3 gạch, Footer và Header để bạn bè không bấm xem code được */
     #MainMenu {{visibility: hidden;}}
     header {{visibility: hidden;}}
     footer {{visibility: hidden;}}
     [data-testid="stHeader"] {{display: none;}}
 
-    /* Ép các nút bấm phải CÂN NHAU và ĐẸP */
+    /* Ép các nút bấm cân đối 100% */
     .stButton>button {{
         width: 100% !important;
         min-height: 70px !important;
@@ -30,18 +30,8 @@ st.markdown(f"""
         font-weight: bold !important;
         font-size: 16px !important;
         border: none !important;
-        padding: 10px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
     }}
     
-    .stButton>button:hover {{
-        background-color: #ff8299 !important;
-        transform: scale(1.02);
-        transition: 0.2s;
-    }}
-
     .theory-node {{
         background-color: white;
         border: 2px solid {CORAL_PINK};
@@ -49,16 +39,15 @@ st.markdown(f"""
         padding: 15px;
         margin-bottom: 15px;
         text-align: center;
-        box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
     }}
 
     .main-title {{
-        text-align: center; color: {CORAL_PINK}; font-size: 45px; font-weight: bold; margin-bottom: 30px;
+        text-align: center; color: {CORAL_PINK}; font-size: 45px; font-weight: bold;
     }}
     </style>
     """, unsafe_allow_html=True)
 
-# --- 3. KHỞI TẠO ---
+# --- 3. LOGIC HỆ THỐNG ---
 if 'page' not in st.session_state: st.session_state.page = 'welcome'
 if 'score' not in st.session_state: st.session_state.score = 0
 if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
@@ -70,15 +59,14 @@ def load_data(grade, subject, mode):
             return json.load(f)
     return []
 
-# --- 4. TRANG CHÀO MỪNG ---
+# --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
-    st.write("<p style='text-align: center; font-size: 20px;'>Học tập không khó, có Sheep lo!</p>", unsafe_allow_html=True)
-    if st.button("BẮT ĐẦU NGAY"):
+    st.write("<p style='text-align: center; font-size: 20px;'>Chào mừng bạn đến với Sheep Study!</p>", unsafe_allow_html=True)
+    if st.button("BẮT ĐẦU HỌC"):
         st.session_state.page = 'select'
         st.rerun()
 
-# --- 5. TRANG CHỌN BÀI ---
 elif st.session_state.page == 'select':
     st.markdown(f"<h2 style='color: {CORAL_PINK}; text-align: center;'>LỰA CHỌN MÔN HỌC</h2>", unsafe_allow_html=True)
     c1, c2 = st.columns(2)
@@ -102,9 +90,8 @@ elif st.session_state.page == 'select':
             st.session_state.score = 0
             st.rerun()
         else:
-            st.error("Lỗi: Không tìm thấy file dữ liệu tương ứng!")
+            st.error("⚠️ Chưa có dữ liệu cho phần này!")
 
-# --- 6. TRANG LÀM BÀI ---
 elif st.session_state.page == 'doing':
     if st.button("← QUAY LẠI"):
         st.session_state.page = 'select'
@@ -140,7 +127,7 @@ elif st.session_state.page == 'doing':
                         st.rerun()
         else:
             st.balloons()
-            st.success(f"Xong! Điểm: {st.session_state.score}/{idx}")
-            if st.button("LÀM LẠI"):
+            st.success(f"Hoàn thành! Điểm: {st.session_state.score}/{idx}")
+            if st.button("HỌC TIẾP"):
                 st.session_state.page = 'select'
                 st.rerun()
