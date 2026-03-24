@@ -112,3 +112,25 @@ elif st.session_state.page == 'doing':
         if st.button("LÀM LẠI"):
             st.session_state.page = 'welcome'
             st.rerun()
+
+# --- TRANG LÝ THUYẾT (SƠ ĐỒ BÀI HỌC) ---
+elif st.session_state.page == 'doing' and st.session_state.mode == 'theory':
+    data = st.session_state.data
+    st.markdown(f"<h2 style='text-align: center; color: {CORAL_PINK};'>📂 THƯ VIỆN LÝ THUYẾT</h2>", unsafe_allow_html=True)
+    
+    if st.button("← QUAY LẠI CHỌN MÔN"):
+        st.session_state.page = 'select'
+        st.rerun()
+
+    for chapter in data:
+        with st.expander(f"📖 {chapter.get('title', 'Chương')}", expanded=True):
+            for lesson in chapter.get('lessons', []):
+                st.markdown(f"#### 🌿 {lesson['name']}")
+                
+                # Biến nội dung thành các hộp ghi chú (thay cho node sơ đồ)
+                points = [p.strip() for p in lesson['content'].split('\n') if p.strip()]
+                cols = st.columns(3) # Chia làm 3 cột cho đẹp
+                for idx, point in enumerate(points):
+                    with cols[idx % 3]:
+                        st.info(point)
+                st.write("---")
