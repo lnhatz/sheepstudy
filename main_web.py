@@ -85,54 +85,24 @@ elif st.session_state.page == 'doing':
 
     data = st.session_state.data
     
-    # --- TRANG HIỂN THỊ LÝ THUYẾT DẠNG SƠ ĐỒ ---
-elif st.session_state.page == 'doing' and st.session_state.mode == 'theory':
-    st.markdown(f"<h2 style='text-align: center; color: {CORAL_PINK};'>🌿 SƠ ĐỒ TƯ DUY KIẾN THỨC</h2>", unsafe_allow_html=True)
-    
-    if st.button("← QUAY LẠI CHỌN MÔN"):
-        st.session_state.page = 'select'
-        st.rerun()
-
-    for idx_ch, chapter in enumerate(st.session_state.data):
-        # 1. Tạo ID và Text an toàn cho Chương
-        ch_title = chapter.get('title', 'Chương').replace('"', "'")
-        root_id = f"root_{idx_ch}"
-        
-        mermaid_code = "graph LR\n"
-        mermaid_code += f'  {root_id}(("{ch_title}"))\n'
-        mermaid_code += f"  style {root_id} fill:{CORAL_PINK},color:#fff,stroke-width:4px\n"
-
-        for i, lesson in enumerate(chapter.get('lessons', [])):
-            l_id = f"ch{idx_ch}_l{i}"
-            l_name = lesson['name'].replace('"', "'")
-            mermaid_code += f'  {root_id} --> {l_id}["{l_name}"]\n'
+    # --- PHẦN LÝ THUYẾT (MINDMAP WEB STYLE) ---
+    if st.session_state.mode == 'theory':
+        for chapter in data:
+            st.markdown(f"<div class='chapter-title'>📂 {chapter.get('title')}</div>", unsafe_allow_html=True)
             
-            # 2. Xử lý nội dung bài học để không làm hỏng script
-            content = lesson.get('content', '')
-            # Tách ý theo dấu chấm hoặc gạch đầu dòng
-            raw_points = content.replace('\n', '.').split('.')
-            points = [p.strip() for p in raw_points if len(p.strip()) > 5]
-            
-            for j, pt in enumerate(points[:3]): 
-                p_id = f"ch{idx_ch}_l{i}_p{j}"
-                # Xóa sạch các ký tự có thể gây lỗi cú pháp Mermaid
-                clean_pt = pt.replace('"', "'").replace('(', '').replace(')', '')
-                short_text = (clean_pt[:40] + '...') if len(clean_pt) > 40 else clean_pt
-                mermaid_code += f'  {l_id} -.-> {p_id}("{short_text}")\n'
-        
-        st.markdown(f"### 📘 {ch_title}")
-        
-        # 3. Dùng iframe với cấu trúc chuẩn hơn để tránh trắng màn hình
-        html_code = f"""
-        <div id="mermaid-{idx_ch}" class="mermaid" style="display: flex; justify-content: center;">
-            {mermaid_code}
-        </div>
-        <script type="module">
-            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-            mermaid.initialize({{ startOnLoad: true, theme: 'base', themeVariables: {{ 'primaryColor': '#ff6b86', 'edgeLabelBackground':'#ffffff' }} }});
-        </script>
-        """
-        st.components.v1.html(html_code, height=500, scrolling=True)
+            for lesson in chapter.get('lessons', []):
+                with st.expander(f"🌿 {lesson['name']}", expanded=False):
+                    # Tách các ý chính
+                    points = [p.strip() for p in lesson['content'].split('.') if len(p.strip()) > 5]
+                    
+                    # Hiển thị trung tâm
+                    st.markdown(f"<div class='mindmap-node' style='background-color: {SOFT_BLUE}; font-weight: bold;'>{lesson['name']}</div>", unsafe_allow_html=True)
+                    
+                    # Tỏa ra các nhánh (chia cột)
+                    cols = st.columns(2)
+                    for i, point in enumerate(points):
+                        with cols[i % 2]:
+                            st.markdown(f"<div class='mindmap-node'>📍 {point}</div>", unsafe_allow_html=True)
 
     # --- PHẦN TRẮC NGHIỆM ---
     else:
