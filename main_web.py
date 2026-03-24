@@ -12,25 +12,20 @@ SOFT_BLUE = "#e1f5fe"
 # CSS ĐẶC BIỆT ĐỂ TẠO CẢM GIÁC SƠ ĐỒ
 st.markdown(f"""
     <style>
+    /* Giấu sạch dấu vết của Streamlit */
+    #MainMenu {{visibility: hidden;}}
+    header {{visibility: hidden;}}
+    footer {{visibility: hidden;}}
+    [data-testid="stHeader"] {{display: none;}}
+    
     .stButton>button {{
         width: 100%; border-radius: 15px; background-color: {CORAL_PINK}; color: white; font-weight: bold;
     }}
     .mindmap-node {{
-        background-color: white;
-        border: 2px solid {CORAL_PINK};
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 10px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
-        text-align: center;
+        background-color: white; border: 2px solid {CORAL_PINK}; border-radius: 10px; padding: 15px; margin-bottom: 10px;
     }}
-    .chapter-title {{
-        color: {CORAL_PINK};
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        border-bottom: 3px solid {CORAL_PINK};
-        padding-bottom: 10px;
+    .main-title {{
+        text-align: center; color: {CORAL_PINK}; font-size: 50px; font-weight: bold;
     }}
     </style>
     """, unsafe_allow_html=True)
