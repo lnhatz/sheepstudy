@@ -33,12 +33,21 @@ if st.session_state.page == 'home':
 elif st.session_state.page == 'select':
     col1, col2 = st.columns(2)
     with col1:
-        subject = st.selectbox("Chọn môn học", ["Toán", "KHTN"])
+        subject_name = st.selectbox("Chọn môn học", ["Toán", "KHTN"])
+        subject_code = "toan" if subject_name == "Toán" else "khtn"
     with col2:
         grade = st.selectbox("Chọn lớp", ["6", "7", "8", "9"])
     
-    mode = st.radio("Chế độ", ["Luyện tập (Quiz)", "Lý thuyết (Theory)"])
+    # 1. ĐÃ THÊM ĐỦ 3 CHẾ ĐỘ Ở ĐÂY
+    mode_name = st.radio("Chế độ", ["Luyện tập (Quiz)", "Kiểm tra (Test)", "Lý thuyết (Theory)"])
+    mode_code = "quiz" if "Quiz" in mode_name else "test" if "Test" in mode_name else "theory"
     
     if st.button("VÀO HỌC NGAY", use_container_width=True):
-        # Logic chuyển trang ở đây
-        st.success(f"Đang tải dữ liệu {subject} lớp {grade}...")
+        # Lưu thông tin vào session để dùng ở trang sau
+        st.session_state.subject = subject_code
+        st.session_state.grade = grade
+        st.session_state.mode = mode_code
+        
+        # 2. LỆNH CHUYỂN TRANG THỰC SỰ
+        st.session_state.page = 'doing_task' 
+        st.rerun()
