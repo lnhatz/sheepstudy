@@ -94,40 +94,45 @@ elif st.session_state.page == 'doing' and st.session_state.mode == 'theory':
         st.rerun()
 
     for idx_ch, chapter in enumerate(st.session_state.data):
-        # Tạo ID an toàn cho Mermaid (không dùng tiếng Việt làm ID)
+        # 1. Tạo ID và Text an toàn cho Chương
+        ch_title = chapter.get('title', 'Chương').replace('"', "'")
         root_id = f"root_{idx_ch}"
-        mermaid_code = f"graph LR\n"
-        mermaid_code += f"  {root_id}((\" {chapter.get('title')} \"))\n"
+        
+        mermaid_code = "graph LR\n"
+        mermaid_code += f'  {root_id}(("{ch_title}"))\n'
         mermaid_code += f"  style {root_id} fill:{CORAL_PINK},color:#fff,stroke-width:4px\n"
 
         for i, lesson in enumerate(chapter.get('lessons', [])):
             l_id = f"ch{idx_ch}_l{i}"
-            # Dùng ngoặc kép " " quanh tên bài để tránh lỗi ký tự đặc biệt
-            mermaid_code += f"  {root_id} --> {l_id}[\" {lesson['name']} \"]\n"
+            l_name = lesson['name'].replace('"', "'")
+            mermaid_code += f'  {root_id} --> {l_id}["{l_name}"]\n'
             
-            # Tách nội dung (lấy các ý ngắn)
-            points = [p.strip() for p in lesson['content'].split('.') if len(p.strip()) > 5]
+            # 2. Xử lý nội dung bài học để không làm hỏng script
+            content = lesson.get('content', '')
+            # Tách ý theo dấu chấm hoặc gạch đầu dòng
+            raw_points = content.replace('\n', '.').split('.')
+            points = [p.strip() for p in raw_points if len(p.strip()) > 5]
+            
             for j, pt in enumerate(points[:3]): 
                 p_id = f"ch{idx_ch}_l{i}_p{j}"
-                # Cắt bớt text nếu quá dài để sơ đồ không bị vỡ
-                short_text = (pt[:30] + '...') if len(pt) > 30 else pt
-                mermaid_code += f"  {l_id} -.-> {p_id}(\" {short_text} \")\n"
+                # Xóa sạch các ký tự có thể gây lỗi cú pháp Mermaid
+                clean_pt = pt.replace('"', "'").replace('(', '').replace(')', '')
+                short_text = (clean_pt[:40] + '...') if len(clean_pt) > 40 else clean_pt
+                mermaid_code += f'  {l_id} -.-> {p_id}("{short_text}")\n'
         
-        st.markdown(f"### 📘 {chapter.get('title')}")
-        # Tăng height lên một chút để không bị mất hình
-        st.components.v1.html(
-            f"""
-            <div class="mermaid" style="display: flex; justify-content: center;">
-                {mermaid_code}
-            </div>
-            <script type="module">
-                import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-                mermaid.initialize({{ startOnLoad: true, theme: 'base', themeVariables: {{ 'primaryColor': '#ff6b86' }} }});
-            </script>
-            """,
-            height=600,
-            scrolling=True
-        )
+        st.markdown(f"### 📘 {ch_title}")
+        
+        # 3. Dùng iframe với cấu trúc chuẩn hơn để tránh trắng màn hình
+        html_code = f"""
+        <div id="mermaid-{idx_ch}" class="mermaid" style="display: flex; justify-content: center;">
+            {mermaid_code}
+        </div>
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+            mermaid.initialize({{ startOnLoad: true, theme: 'base', themeVariables: {{ 'primaryColor': '#ff6b86', 'edgeLabelBackground':'#ffffff' }} }});
+        </script>
+        """
+        st.components.v1.html(html_code, height=500, scrolling=True)
 
     # --- PHẦN TRẮC NGHIỆM ---
     else:
