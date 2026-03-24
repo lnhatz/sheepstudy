@@ -60,12 +60,17 @@ def load_data(grade, subject, mode):
     return []
 
 # --- 4. CÁC TRANG ---
+# --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
     st.write("<p style='text-align: center; font-size: 20px;'>Chào mừng bạn đến với Sheep Study!</p>", unsafe_allow_html=True)
-    if st.button("BẮT ĐẦU HỌC"):
-        st.session_state.page = 'select'
-        st.rerun()
+    
+    # Tạo 3 cột để ép cái nút vào giữa
+    col1, col2, col3 = st.columns([1, 2, 1]) 
+    with col2:
+        if st.button("BẮT ĐẦU HỌC"):
+            st.session_state.page = 'select'
+            st.rerun()
 
 elif st.session_state.page == 'select':
     st.markdown(f"<h2 style='color: {CORAL_PINK}; text-align: center;'>LỰA CHỌN MÔN HỌC</h2>", unsafe_allow_html=True)
