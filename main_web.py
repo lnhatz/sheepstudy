@@ -3,34 +3,59 @@ import json
 import random
 import os
 
-# 1. Cấu hình giao diện Web tràn màn hình
-st.set_page_config(page_title="SHEEP STUDY", layout="wide")
+# --- CẤU HÌNH TRANG WEB ---
+st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 
-# 2. Định nghĩa màu sắc 
 CORAL_PINK = "#ff6b86"
 
-# 3. Hàm đọc file JSON từ thư mục data
-def load_quiz_data(grade, subject, mode):
-    # khớp với thư mục  để trên GitHub
-    path = f"data/{grade}_{mode}.json" 
-    if os.path.exists(path):
-        with open(path, 'r', encoding='utf-8') as f:
+# CSS làm nút bấm đẹp và tràn màn hình
+st.markdown(f"""
+    <style>
+    .stButton>button {{
+        width: 100%;
+        border-radius: 20px;
+        height: 3.5em;
+        background-color: {CORAL_PINK};
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }}
+    .main-title {{
+        text-align: center;
+        color: {CORAL_PINK};
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }}
+    </style>
+    """, unsafe_allow_html=True)
+
+# Khởi tạo các biến lưu trữ trạng thái
+if 'page' not in st.session_state: st.session_state.page = 'welcome'
+if 'score' not in st.session_state: st.session_state.score = 0
+if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
+
+def load_data(grade, subject, mode):
+    # Đường dẫn file khớp với thư mục data trên GitHub của bạn
+    fname = f"data/{grade}_{mode}.json"
+    if os.path.exists(fname):
+        with open(fname, 'r', encoding='utf-8') as f:
             return json.load(f)
     return []
 
-# 4. Giao diện chính
-st.markdown(f"<h1 style='text-align: center; color: {CORAL_PINK};'>✿ SHEEP STUDY ✿</h1>", unsafe_allow_html=True)
-
-# Khởi tạo trạng thái ứng dụng
-if 'page' not in st.session_state: st.session_state.page = 'home'
-
-if st.session_state.page == 'home':
-    st.write("### Chào mừng bạn đến với hệ thống ôn tập thông minh!")
-    if st.button("BẮT ĐẦU HỌC ♡", use_container_width=True):
+# --- TRANG CHÀO MỪNG ---
+if st.session_state.page == 'welcome':
+    st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
+    st.write("<p style='text-align: center;'>Hệ thống ôn tập thông minh cho học sinh</p>", unsafe_allow_html=True)
+    st.write("---")
+    if st.button("BẮT ĐẦU HỌC ♡"):
         st.session_state.page = 'select'
         st.rerun()
 
+# --- TRANG CHỌN CHẾ ĐỘ ---
 elif st.session_state.page == 'select':
+    st.markdown(f"<h2 style='color: {CORAL_PINK};'>THIẾT LẬP ÔN TẬP</h2>", unsafe_allow_html=True)
+    
     col1, col2 = st.columns(2)
     with col1:
         subject_name = st.selectbox("Chọn môn học", ["Toán", "KHTN"])
@@ -38,16 +63,47 @@ elif st.session_state.page == 'select':
     with col2:
         grade = st.selectbox("Chọn lớp", ["6", "7", "8", "9"])
     
-    # 1. ĐÃ THÊM ĐỦ 3 CHẾ ĐỘ Ở ĐÂY
-    mode_name = st.radio("Chế độ", ["Luyện tập (Quiz)", "Kiểm tra (Test)", "Lý thuyết (Theory)"])
+    # THÊM ĐỦ 3 CHẾ ĐỘ Ở ĐÂY
+    mode_name = st.radio("Chế độ", ["Luyện tập (Quiz)", "Kiểm tra (Test)", "Lý thuyết (Theory)"], horizontal=True)
     mode_code = "quiz" if "Quiz" in mode_name else "test" if "Test" in mode_name else "theory"
     
+    st.write("---")
     if st.button("VÀO HỌC NGAY", use_container_width=True):
-        # Lưu thông tin vào session để dùng ở trang sau
-        st.session_state.subject = subject_code
-        st.session_state.grade = grade
-        st.session_state.mode = mode_code
+        data = load_data(grade, subject_code, mode_code)
+        if data:
+            st.session_state.data = data
+            random.shuffle(st.session_state.data)
+            st.session_state.page = 'doing'
+            st.session_state.current_idx = 0
+            st.session_state.score = 0
+            st.rerun()
+        else:
+            st.error(f"Không tìm thấy dữ liệu cho Lớp {grade} môn {subject_name} chế độ {mode_name}. Bạn đã up file JSON vào thư mục data chưa?")
+
+# --- TRANG LÀM BÀI (HIỂN THỊ CÂU HỎI) ---
+elif st.session_state.page == 'doing':
+    data = st.session_state.data
+    idx = st.session_state.current_idx
+    
+    if idx < len(data) and idx < 10:
+        q = data[idx]
+        st.progress((idx + 1) / 10)
+        st.info(f"Câu hỏi {idx + 1}: {q['question']}")
         
-        # 2. LỆNH CHUYỂN TRANG THỰC SỰ
-        st.session_state.page = 'doing_task' 
-        st.rerun()
+        for i, opt in enumerate(q['options']):
+            if st.button(opt, key=f"opt_{idx}_{i}"):
+                if i == q['answer']:
+                    st.success("Chính xác! ✨")
+                    st.session_state.score += 1
+                else:
+                    st.error(f"Sai rồi! Đáp án đúng là: {q['options'][q['answer']]}")
+                
+                # Tự động chuyển câu sau 1 giây hoặc khi bấm nút
+                st.session_state.current_idx += 1
+                st.rerun()
+    else:
+        st.balloons()
+        st.markdown(f"## HOÀN THÀNH! ĐIỂM: {st.session_state.score}/{idx}")
+        if st.button("LÀM LẠI"):
+            st.session_state.page = 'welcome'
+            st.rerun()
