@@ -1,0 +1,56 @@
+[
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Cho đa thức P = 2x²y - 3xy² + 5 và Q = -2x²y + 5xy² - 1. Bậc của đa thức P + Q là?", "options": ["3", "2", "1", "0"], "answer": 1 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Tìm x biết: 2x(x - 5) - x(2x + 3) = 26?", "options": ["x = 2", "x = -2", "x = 13", "x = -13"], "answer": 1 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Kết quả của phép nhân (x - 2)(x² + 2x + 4) là?", "options": ["x³ - 8", "x³ + 8", "(x-2)³", "x³ - 4"], "answer": 0 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Đơn thức nào sau đây chia hết cho đơn thức -2x²y?", "options": ["4xy²", "x³y", "3x²", "xy"], "answer": 1 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Giá trị của biểu thức x² - 2xy + y² tại x = 12, y = 2 là?", "options": ["100", "144", "10", "196"], "answer": 0 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Bậc của đơn thức (2x²y)³ là?", "options": ["6", "5", "9", "8"], "answer": 2 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Đa thức 5x²y - 10xy² có nhân tử chung là?", "options": ["5xy", "5x²y", "xy", "5"], "answer": 0 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Kết quả thu gọn của (x+y)² - (x-y)² là?", "options": ["2x² + 2y²", "4xy", "2xy", "0"], "answer": 1 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Đa thức nào là đa thức thu gọn?", "options": ["x + y + x", "2xy - x²y", "x² + 1 + x²", "x.x.y"], "answer": 1 },
+  { "chapter": "CHƯƠNG I: ĐA THỨC", "question": "Phần dư của phép chia (x² - 4) cho (x + 2) là?", "options": ["0", "4", "-4", "2"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Khai triển (2x - 1)³ ta được?", "options": ["8x³ - 1", "8x³ - 12x² + 6x - 1", "4x³ - 6x² + 3x - 1", "8x³ - 4x² + 2x - 1"], "answer": 1 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Biểu thức x³ + 27 bằng?", "options": ["(x+3)(x²-3x+9)", "(x+3)³", "(x-3)(x²+3x+9)", "(x+3)(x²+3x+9)"], "answer": 0 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Phân tích x² - 4y² thành nhân tử?", "options": ["(x-2y)²", "(x-4y)(x+4y)", "(x-2y)(x+2y)", "(x+2y)²"], "answer": 2 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Giá trị nhỏ nhất của biểu thức A = x² - 6x + 10 là?", "options": ["10", "1", "0", "9"], "answer": 1 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Để x² + 8x + k là bình phương của một tổng, giá trị k là?", "options": ["4", "8", "16", "64"], "answer": 2 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Phân tích x² + 2x + 1 - y² thành nhân tử?", "options": ["(x+1-y)(x+1+y)", "(x+1-y)²", "(x+y+1)(x-y-1)", "x(x+2)+(1-y)(1+y)"], "answer": 0 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Tính nhanh 101² - 99²?", "options": ["200", "400", "2000", "4000"], "answer": 1 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Biểu thức (x-y)(x²+xy+y²) là khai triển của?", "options": ["x³+y³", "(x-y)³", "x³-y³", "x²-y²"], "answer": 2 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Biểu thức -x² + 2x - 1 bằng?", "options": ["(x-1)²", "-(x-1)²", "-(x+1)²", "(1-x)²"], "answer": 1 },
+  { "chapter": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ", "question": "Phân tích x³ - x thành nhân tử?", "options": ["x(x-1)(x+1)", "x(x²-1)", "x(x-1)²", "x²(x-1)"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG III: TỨ GIÁC", "question": "Hình thang cân có một góc bằng 60°, góc đối diện với nó bằng?", "options": ["60°", "120°", "180°", "90°"], "answer": 1 },
+  { "chapter": "CHƯƠNG III: TỨ GIÁC", "question": "Tứ giác có hai đường chéo vuông góc tại trung điểm mỗi đường là?", "options": ["Hình chữ nhật", "Hình thoi", "Hình bình hành", "Hình thang cân"], "answer": 1 },
+  { "chapter": "CHƯƠNG III: TỨ GIÁC", "question": "Hình chữ nhật có hai cạnh kề bằng nhau là hình gì?", "options": ["Hình thoi", "Hình vuông", "Hình bình hành", "Tam giác đều"], "answer": 1 },
+  { "chapter": "CHƯƠNG III: TỨ GIÁC", "question": "Tổng số đo các góc ngoài của một tứ giác (mỗi đỉnh 1 góc) là?", "options": ["180°", "360°", "540°", "720°"], "answer": 1 },
+  { "chapter": "CHƯƠNG III: TỨ GIÁC", "question": "Trong hình thoi, hai đường chéo là 10cm và 24cm. Cạnh hình thoi là?", "options": ["13cm", "17cm", "26cm", "15cm"], "answer": 0 },
+  { "chapter": "CHƯƠNG III: TỨ GIÁC", "question": "Hình bình hành có một góc vuông là?", "options": ["Hình thoi", "Hình vuông", "Hình chữ nhật", "Hình thang"], "answer": 2 },
+
+  { "chapter": "CHƯƠNG IV: ĐỊNH LÍ THALÈS", "question": "Cho ΔABC có MN // BC (M ∈ AB, N ∈ AC). Nếu AM=2, AB=6, AN=3 thì AC bằng?", "options": ["9", "4.5", "6", "12"], "answer": 0 },
+  { "chapter": "CHƯƠNG IV: ĐỊNH LÍ THALÈS", "question": "Đường trung bình của hình thang có hai đáy 6cm và 10cm là?", "options": ["16cm", "8cm", "4cm", "7cm"], "answer": 1 },
+  { "chapter": "CHƯƠNG IV: ĐỊNH LÍ THALÈS", "question": "Cho ΔABC, đường phân giác AD. Biết AB=4, AC=6, BD=2. Độ dài DC là?", "options": ["3", "4", "2", "1.5"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ", "question": "Điều kiện xác định của phân thức (x-1)/(x+2) là?", "options": ["x ≠ 1", "x ≠ -2", "x ≠ 2", "x ≠ 0"], "answer": 1 },
+  { "chapter": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ", "question": "Phân thức (-A)/(-B) bằng phân thức nào sau đây?", "options": ["-A/B", "A/(-B)", "A/B", "B/A"], "answer": 2 },
+  { "chapter": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ", "question": "Rút gọn phân thức (2x)/(2x(x+1)) ta được?", "options": ["x+1", "1/(x+1)", "2/(x+1)", "1/x"], "answer": 1 },
+  { "chapter": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ", "question": "Mẫu thức chung đơn giản nhất của 1/x và 1/y là?", "options": ["x+y", "x", "y", "xy"], "answer": 3 },
+  { "chapter": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ", "question": "Kết quả của x/y + z/y là?", "options": ["(x+z)/y", "(x+z)/2y", "xz/y", "(x+z)/y²"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG VII: PHƯƠNG TRÌNH VÀ HÀM SỐ BẬC NHẤT", "question": "Phương trình 2x - 4 = 0 có nghiệm là?", "options": ["x=2", "x=-2", "x=4", "x=0"], "answer": 0 },
+  { "chapter": "CHƯƠNG VII: PHƯƠNG TRÌNH VÀ HÀM SỐ BẬC NHẤT", "question": "Trong hàm số y = 3x - 1, hệ số góc a bằng?", "options": ["-1", "1", "3", "0"], "answer": 2 },
+  { "chapter": "CHƯƠNG VII: PHƯƠNG TRÌNH VÀ HÀM SỐ BẬC NHẤT", "question": "Hàm số y = ax + b đồng biến khi nào?", "options": ["a < 0", "a = 0", "a > 0", "b > 0"], "answer": 2 },
+
+  { "chapter": "CHƯƠNG VIII: BIẾN CỐ VÀ XÁC SUẤT", "question": "Xác suất của biến cố chắc chắn bằng?", "options": ["0", "0.5", "1", "100"], "answer": 2 },
+  { "chapter": "CHƯƠNG VIII: BIẾN CỐ VÀ XÁC SUẤT", "question": "Gieo 1 con xúc xắc, có bao nhiêu kết quả có thể xảy ra?", "options": ["1", "2", "6", "12"], "answer": 2 },
+  { "chapter": "CHƯƠNG VIII: BIẾN CỐ VÀ XÁC SUẤT", "question": "Tung một đồng xu, xác suất xuất hiện mặt ngửa là?", "options": ["1/2", "1", "0", "1/4"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG IX: TAM GIÁC ĐỒNG DẠNG", "question": "Nếu ΔABC ~ ΔA'B'C' với tỉ số đồng dạng k=2 thì A'B'/AB bằng?", "options": ["2", "1/2", "4", "1"], "answer": 1 },
+  { "chapter": "CHƯƠNG IX: TAM GIÁC ĐỒNG DẠNG", "question": "Tỉ số diện tích của hai tam giác đồng dạng bằng?", "options": ["Tỉ số đồng dạng k", "2k", "k²", "√k"], "answer": 2 },
+  { "chapter": "CHƯƠNG IX: TAM GIÁC ĐỒNG DẠNG", "question": "Trong tam giác vuông, cạnh huyền bằng 5, một cạnh góc vuông bằng 3, cạnh còn lại là?", "options": ["2", "4", "16", "8"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG X: HÌNH KHỐI TRONG THỰC TIỄN", "question": "Hình chóp tứ giác đều có mặt đáy là hình gì?", "options": ["Tam giác vuông", "Tam giác cân", "Tam giác đều", "Hình vuông"], "answer": 3 },
+  { "chapter": "CHƯƠNG X: HÌNH KHỐI TRONG THỰC TIỄN", "question": "Thể tích hình chóp được tính theo công thức?", "options": ["V = S.h", "V = 1/2 S.h", "V = 1/3 S.h", "V = p.d"], "answer": 2 },
+  { "chapter": "CHƯƠNG X: HÌNH KHỐI TRONG THỰC TIỄN", "question": "Diện tích xung quanh của hình chóp đều bằng?", "options": ["p.d (p nửa chu vi đáy, d trung đoạn)", "Sđáy . h", "p.h", "2p.d"], "answer": 0 }
+]

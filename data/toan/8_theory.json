@@ -1,0 +1,90 @@
+[
+  {
+    "title": "CHƯƠNG I: ĐA THỨC",
+    "lessons": [
+      {
+        "name": "Đơn thức và Đơn thức thu gọn",
+        "content": "Đơn thức: Gồm số, biến hoặc tích số và biến. \nBậc của đơn thức: Tổng số mũ của các biến.\nĐơn thức thu gọn: Gồm hệ số và phần biến đã được gom lại."
+      },
+      {
+        "name": "Đa thức và Phép toán",
+        "content": "Đa thức: Tổng của những đơn thức.\nCộng/Trừ: Nhóm hạng tử đồng dạng.\nNhân đơn thức với đa thức: A(B + C) = AB + AC.\nNhân đa thức: (A + B)(C + D) = AC + AD + BC + BD."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ",
+    "lessons": [
+      {
+        "name": "7 Hằng đẳng thức đáng nhớ",
+        "content": "1. (A+B)² = A²+2AB+B²\n2. (A-B)² = A²-2AB+B²\n3. A²-B² = (A-B)(A+B)\n4. (A+B)³ = A³+3A²B+3AB²+B³\n5. (A-B)³ = A³-3A²B+3AB²-B³\n6. A³+B³ = (A+B)(A²-AB+B²)\n7. A³-B³ = (A-B)(A²+AB+B²)"
+      },
+      {
+        "name": "Phân tích đa thức thành nhân tử",
+        "content": "Phương pháp chính:\n- Đặt nhân tử chung.\n- Dùng hằng đẳng thức.\n- Nhóm hạng tử.\n- Phối hợp nhiều phương pháp."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III: TỨ GIÁC",
+    "lessons": [
+      {
+        "name": "Các loại hình tứ giác đặc biệt",
+        "content": "Tứ giác: Tổng góc = 360°.\nHình thang cân: 2 góc kề 1 đáy bằng nhau hoặc 2 đường chéo bằng nhau.\nHình bình hành: Các cặp cạnh đối song song.\nHình chữ nhật: Tứ giác có 4 góc vuông.\nHình thoi: Tứ giác có 4 cạnh bằng nhau.\nHình vuông: Kết hợp tính chất hình chữ nhật và hình thoi."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV: ĐỊNH LÍ THALÈS",
+    "lessons": [
+      {
+        "name": "Định lí Thalès và Đường trung bình",
+        "content": "Thalès: AM/AB = AN/AC (nếu MN // BC).\nĐường trung bình: Nối trung điểm 2 cạnh, song song và bằng nửa cạnh thứ ba.\nĐường phân giác: DB/DC = AB/AC."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ",
+    "lessons": [
+      {
+        "name": "Khái niệm và Tính chất phân thức",
+        "content": "Dạng: A/B (B ≠ 0). \nTính chất: A/B = (A.M)/(B.M) hoặc (A:N)/(B:N).\nĐổi dấu: A/B = -A/-B."
+      },
+      {
+        "name": "Phép toán phân thức",
+        "content": "Cộng/Trừ: Quy đồng mẫu rồi cộng tử.\nNhân: (A/B) * (C/D) = (A.C)/(B.D).\nChia: (A/B) : (C/D) = (A/B) * (D/C)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII: PHƯƠNG TRÌNH VÀ HÀM SỐ BẬC NHẤT",
+    "lessons": [
+      {
+        "name": "Phương trình bậc nhất một ẩn",
+        "content": "Dạng: ax + b = 0 (a ≠ 0).\nNghiệm: x = -b/a.\nGiải bài toán lập phương trình: Chọn ẩn -> Lập PT -> Giải -> Kết luận."
+      },
+      {
+        "name": "Hàm số bậc nhất y = ax + b",
+        "content": "Hệ số góc a: a > 0 (góc nhọn), a < 0 (góc tù).\nĐồ thị: Là đường thẳng cắt Oy tại (0;b), cắt Ox tại (-b/a; 0)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX: TAM GIÁC ĐỒNG DẠNG",
+    "lessons": [
+      {
+        "name": "Các trường hợp đồng dạng",
+        "content": "Định nghĩa: Các góc bằng nhau, các cạnh tỉ lệ.\nTrường hợp: (ccc), (cgc), (gg).\nĐịnh lí Pythagore: c² = a² + b² (trong tam giác vuông)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG X: HÌNH KHỐI TRONG THỰC TIỄN",
+    "lessons": [
+      {
+        "name": "Hình chóp tam giác đều và tứ giác đều",
+        "content": "Sxq = p.d (p: nửa chu vi đáy, d: trung đoạn).\nV = 1/3 * S_đáy * h (h: chiều cao)."
+      }
+    ]
+  }
+]

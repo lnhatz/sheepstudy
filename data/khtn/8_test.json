@@ -1,0 +1,12 @@
+[
+  { "chapter": "HÓA HỌC", "question": "Tính số mol của 11,2 gam sắt (Fe), biết Fe = 56?", "options": ["0,1 mol", "0,2 mol", "0,5 mol", "1 mol"], "answer": 1 },
+  { "chapter": "HÓA HỌC", "question": "Nồng độ mol (CM) của dung dịch cho biết điều gì?", "options": ["Số gam chất tan trong 100g dung dịch", "Số mol chất tan trong 1 lít dung dịch", "Khối lượng dung dịch", "Độ tan của chất"], "answer": 1 },
+  { "chapter": "VẬT LÝ", "question": "Một người nặng 50kg đứng trên sàn nhà. Áp lực người đó tác dụng lên sàn là bao nhiêu (g=10)?", "options": ["50 N", "5 N", "500 N", "0,5 N"], "answer": 2 },
+  { "chapter": "VẬT LÝ", "question": "Tại sao các thợ lặn khi lặn sâu phải mặc bộ đồ chịu áp suất cao?", "options": ["Để bơi nhanh hơn", "Vì càng xuống sâu áp suất chất lỏng càng tăng", "Để giữ ấm", "Để tránh cá mập"], "answer": 1 },
+  { "chapter": "VẬT LÝ", "question": "Tác dụng nhiệt của dòng điện được ứng dụng trong thiết bị nào?", "options": ["Quạt điện", "Chuông điện", "Bàn là điện", "Máy bơm nước"], "answer": 2 },
+  { "chapter": "SINH HỌC", "question": "Nhóm máu nào là 'nhóm máu chuyên cho' trong hệ nhóm máu ABO?", "options": ["Nhóm máu A", "Nhóm máu B", "Nhóm máu AB", "Nhóm máu O"], "answer": 3 },
+  { "chapter": "SINH HỌC", "question": "Chức năng của tiểu cầu trong máu là gì?", "options": ["Vận chuyển khí Oxygen", "Bảo vệ cơ thể khỏi vi khuẩn", "Tham gia vào quá trình đông máu", "Vận chuyển chất dinh dưỡng"], "answer": 2 },
+  { "chapter": "SINH HỌC", "question": "Cơ quan nào là nơi diễn ra quá trình trao đổi khí chủ yếu ở người?", "options": ["Thực quản", "Phế quản", "Phổi (Phế nang)", "Mũi"], "answer": 2 },
+  { "chapter": "MÔI TRƯỜNG", "question": "Hiện tượng 'thủy triều đỏ' là do nguyên nhân nào?", "options": ["Ô nhiễm rác thải nhựa", "Sự bùng nổ của tảo độc", "Nước biển bị nhiễm mặn", "Sóng thần"], "answer": 1 },
+  { "chapter": "VẬT LÝ", "question": "Đòn bẩy loại 1 có đặc điểm gì?", "options": ["Điểm tựa nằm giữa lực và trọng tải", "Lực nằm giữa", "Trọng tải nằm giữa", "Không có điểm tựa"], "answer": 0 }
+]

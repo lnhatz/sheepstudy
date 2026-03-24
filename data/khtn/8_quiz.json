@@ -1,0 +1,12 @@
+[
+  { "chapter": "CHƯƠNG I: PHẢN ỨNG HÓA HỌC", "question": "Dấu hiệu nào sau đây chứng tỏ có phản ứng hóa học xảy ra?", "options": ["Thay đổi màu sắc", "Xuất hiện chất kết tủa", "Tỏa nhiệt hoặc phát sáng", "Tất cả các ý trên"], "answer": 3 },
+  { "chapter": "CHƯƠNG I: PHẢN ỨNG HÓA HỌC", "question": "Định luật bảo toàn khối lượng phát biểu rằng: Trong một phản ứng hóa học, tổng khối lượng của các sản phẩm ... tổng khối lượng của các chất tham gia.", "options": ["Nhỏ hơn", "Lớn hơn", "Bằng", "Không xác định"], "answer": 2 },
+  { "chapter": "CHƯƠNG II: ACID - BASE - pH", "question": "Dung dịch nào sau đây làm quỳ tím chuyển sang màu đỏ?", "options": ["HCl (Acid)", "NaOH (Base)", "NaCl (Muối)", "Nước cất"], "answer": 0 },
+  { "chapter": "CHƯƠNG III: KHỐI LƯỢNG RIÊNG VÀ ÁP SUẤT", "question": "Công thức tính khối lượng riêng (D) là?", "options": ["D = m.V", "D = m/V", "D = V/m", "D = P/S"], "answer": 1 },
+  { "chapter": "CHƯƠNG III: KHỐI LƯỢNG RIÊNG VÀ ÁP SUẤT", "question": "Đơn vị của áp suất là?", "options": ["Newton (N)", "Kg/m³", "Pascal (Pa)", "Joule (J)"], "answer": 2 },
+  { "chapter": "CHƯƠNG IV: TÁC DỤNG CỦA LỰC", "question": "Lực đẩy Archimedes tác dụng lên vật nhúng trong chất lỏng có chiều như thế nào?", "options": ["Từ trên xuống dưới", "Từ dưới lên trên", "Nằm ngang", "Mọi hướng"], "answer": 1 },
+  { "chapter": "CHƯƠNG V: ĐIỆN", "question": "Vật liệu nào sau đây là chất cách điện?", "options": ["Đồng", "Nhôm", "Nhựa", "Sắt"], "answer": 2 },
+  { "chapter": "CHƯƠNG VII: CƠ THỂ NGƯỜI", "question": "Hệ cơ quan nào thực hiện nhiệm vụ vận chuyển chất dinh dưỡng và oxygen đến các tế bào?", "options": ["Hệ hô hấp", "Hệ tuần hoàn", "Hệ tiêu hóa", "Hệ bài tiết"], "answer": 1 },
+  { "chapter": "CHƯƠNG VII: CƠ THỂ NGƯỜI", "question": "Xương người lớn có bao nhiêu chiếc?", "options": ["Khoảng 100", "Khoảng 206", "Khoảng 300", "Khoảng 500"], "answer": 1 },
+  { "chapter": "CHƯƠNG VIII: SINH THÁI HỌC", "question": "Thành phần hữu sinh của hệ sinh thái bao gồm?", "options": ["Ánh sáng, nhiệt độ", "Đất, nước", "Vi sinh vật, thực vật, động vật", "Không khí"], "answer": 2 }
+]

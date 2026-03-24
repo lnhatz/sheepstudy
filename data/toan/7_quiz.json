@@ -1,0 +1,42 @@
+[
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Số nào sau đây là số hữu tỉ?", "options": ["-3", "√2", "π", "1,234..."], "answer": 0 },
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Số đối của -0,5 là:", "options": ["0,5", "-0,5", "5", "-5"], "answer": 0 },
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Phép tính x^m . x^n bằng:", "options": ["x^(m.n)", "x^(m+n)", "x^(m-n)", "x^m"], "answer": 1 },
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Kết quả của (1/2)^0 là:", "options": ["0", "1", "1/2", "2"], "answer": 1 },
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Khi chuyển vế số hạng -x sang vế kia, ta được:", "options": ["-x", "+x", "x^2", "1/x"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG II. SỐ THỰC", "question": "Căn bậc hai số học của 9 là:", "options": ["3", "-3", "81", "±3"], "answer": 0 },
+  { "chapter": "CHƯƠNG II. SỐ THỰC", "question": "Số vô tỉ là số viết được dưới dạng:", "options": ["Số thập phân hữu hạn", "Phân số", "Số thập phân vô hạn không tuần hoàn", "Số nguyên"], "answer": 2 },
+  { "chapter": "CHƯƠNG II. SỐ THỰC", "question": "Giá trị tuyệt đối của -5,5 là:", "options": ["-5,5", "5,5", "0", "1"], "answer": 1 },
+  { "chapter": "CHƯƠNG II. SỐ THỰC", "question": "Làm tròn số 12,345 đến chữ số thập phân thứ hai:", "options": ["12,34", "12,35", "12,3", "12"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG III. GÓC VÀ ĐƯỜNG THẲNG SONG SONG", "question": "Hai góc kề bù có tổng số đo là:", "options": ["90°", "180°", "360°", "45°"], "answer": 1 },
+  { "chapter": "CHƯƠNG III. GÓC VÀ ĐƯỜNG THẲNG SONG SONG", "question": "Hai đường thẳng song song là hai đường thẳng:", "options": ["Có 1 điểm chung", "Có 2 điểm chung", "Không có điểm chung", "Trùng nhau"], "answer": 2 },
+  { "chapter": "CHƯƠNG III. GÓC VÀ ĐƯỜNG THẲNG SONG SONG", "question": "Qua 1 điểm nằm ngoài đường thẳng, có bao nhiêu đường thẳng song song với nó?", "options": ["0", "1", "2", "Vô số"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG IV. TAM GIÁC BẰNG NHAU", "question": "Trường hợp bằng nhau thứ nhất của tam giác là:", "options": ["c.g.c", "g.c.g", "c.c.c", "Cạnh huyền - góc nhọn"], "answer": 2 },
+  { "chapter": "CHƯƠNG IV. TAM GIÁC BẰNG NHAU", "question": "Tam giác có hai cạnh bằng nhau gọi là:", "options": ["Tam giác đều", "Tam giác cân", "Tam giác vuông", "Tam giác vuông cân"], "answer": 1 },
+  { "chapter": "CHƯƠNG IV. TAM GIÁC BẰNG NHAU", "question": "Mỗi góc của tam giác đều bằng:", "options": ["45°", "60°", "90°", "180°"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG V. THU THẬP VÀ BIỂU DIỄN DỮ LIỆU", "question": "Dữ liệu không là số gọi là dữ liệu:", "options": ["Định lượng", "Định tính", "Số liệu", "Tần số"], "answer": 1 },
+  { "chapter": "CHƯƠNG V. THU THẬP VÀ BIỂU DIỄN DỮ LIỆU", "question": "Tổng các thành phần trong biểu đồ hình quạt tròn là:", "options": ["100%", "50%", "360%", "10%"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG VI. TỈ LỆ THỨC VÀ ĐẠI LƯỢNG TỈ LỆ", "question": "Tìm x trong tỉ lệ thức x/10 = 2/5:", "options": ["4", "2", "5", "10"], "answer": 0 },
+  { "chapter": "CHƯƠNG VI. TỈ LỆ THỨC VÀ ĐẠI LƯỢNG TỈ LỆ", "question": "Đại lượng y tỉ lệ thuận với x theo y = 2x. Hệ số tỉ lệ là:", "options": ["1/2", "2", "x", "y"], "answer": 1 },
+  { "chapter": "CHƯƠNG VI. TỈ LỆ THỨC VÀ ĐẠI LƯỢNG TỈ LỆ", "question": "Nếu x.y = 12 thì x và y tỉ lệ:", "options": ["Thuận", "Nghịch", "Bằng nhau", "Không tỉ lệ"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG VII. BIỂU THỨC ĐẠI SỐ VÀ ĐA THỨC MỘT BIẾN", "question": "Giá trị của 2x + 1 tại x = 2 là:", "options": ["3", "4", "5", "1"], "answer": 2 },
+  { "chapter": "CHƯƠNG VII. BIỂU THỨC ĐẠI SỐ VÀ ĐA THỨC MỘT BIẾN", "question": "Bậc của đa thức x^3 - 2x + 1 là:", "options": ["1", "2", "3", "0"], "answer": 2 },
+  { "chapter": "CHƯƠNG VII. BIỂU THỨC ĐẠI SỐ VÀ ĐA THỨC MỘT BIẾN", "question": "Nghiệm của đa thức x - 5 là:", "options": ["-5", "5", "0", "1"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG VIII. BIẾN CỐ VÀ XÁC SUẤT", "question": "Biến cố 'Mặt trời mọc ở hướng Tây' là biến cố:", "options": ["Chắc chắn", "Ngẫu nhiên", "Không thể", "Đồng khả năng"], "answer": 2 },
+  { "chapter": "CHƯƠNG VIII. BIẾN CỐ VÀ XÁC SUẤT", "question": "Xác suất lấy được mặt Sấp khi tung đồng xu là:", "options": ["1", "0", "0,5", "1/4"], "answer": 2 },
+
+  { "chapter": "CHƯƠNG IX. QUAN HỆ CÁC YẾU TỐ TRONG TAM GIÁC", "question": "Cạnh lớn nhất trong tam giác vuông là:", "options": ["Cạnh góc vuông", "Cạnh huyền", "Cạnh đáy", "Không có"], "answer": 1 },
+  { "chapter": "CHƯƠNG IX. QUAN HỆ CÁC YẾU TỐ TRONG TAM GIÁC", "question": "Trọng tâm là giao điểm của ba đường:", "options": ["Cao", "Phân giác", "Trung trực", "Trung tuyến"], "answer": 3 },
+  { "chapter": "CHƯƠNG IX. QUAN HỆ CÁC YẾU TỐ TRONG TAM GIÁC", "question": "Tổng hai cạnh của một tam giác luôn ... cạnh còn lại:", "options": ["Nhỏ hơn", "Bằng", "Lớn hơn", "Bằng một nửa"], "answer": 2 },
+
+  { "chapter": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI THỰC TIỄN", "question": "Hình lập phương có bao nhiêu mặt?", "options": ["4", "6", "8", "12"], "answer": 1 },
+  { "chapter": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI THỰC TIỄN", "question": "Thể tích hình hộp chữ nhật có kích thước 2, 3, 4 là:", "options": ["9", "12", "24", "48"], "answer": 2 },
+  { "chapter": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI THỰC TIỄN", "question": "Diện tích xung quanh hình lăng trụ đứng là:", "options": ["V.h", "S.h", "C.h", "a.b.c"], "answer": 2 }
+]

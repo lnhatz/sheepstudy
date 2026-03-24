@@ -1,0 +1,108 @@
+[
+  {
+    "title": "CHƯƠNG I. NĂNG LƯỢNG CƠ HỌC",
+    "lessons": [
+      {
+        "name": "Bài 2. Động năng. Thế năng",
+        "content": "Động năng (Wd): Năng lượng do chuyển động. Wd = 1/2mv² (J).\nThế năng trọng trường (Wt): Năng lượng do vị trí. Wt = mgh (J)."
+      },
+      {
+        "name": "Bài 3. Cơ năng",
+        "content": "Định nghĩa: W = Wd + Wt.\nBảo toàn cơ năng: Nếu chỉ chịu tác dụng của trọng lực, cơ năng được bảo toàn."
+      },
+      {
+        "name": "Bài 4. Công và công suất",
+        "content": "Công (A): A = F.s (J).\nCông suất (P): Đặc trưng tốc độ thực hiện công. P = A/t (W)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II. ÁNH SÁNG",
+    "lessons": [
+      {
+        "name": "Bài 5. Khúc xạ ánh sáng",
+        "content": "Hiện tượng tia sáng bị gãy khúc tại mặt phân cách.\nCông thức: n1.sin i = n2.sin r."
+      },
+      {
+        "name": "Bài 6. Phản xạ toàn phần",
+        "content": "Điều kiện: n1 > n2 và i ≥ igh.\nsin igh = n2/n1."
+      },
+      {
+        "name": "Bài 8. Thấu kính",
+        "content": "TK hội tụ: Cho ảnh thật hoặc ảo lớn hơn vật.\nTK phân kì: Luôn cho ảnh ảo, nhỏ hơn vật.\nCông thức: 1/f = 1/d + 1/d'."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III & IV. ĐIỆN VÀ ĐIỆN TỪ",
+    "lessons": [
+      {
+        "name": "Bài 11. Định luật Ohm",
+        "content": "Công thức: I = U/R.\nĐiện trở dây dẫn: R = ρ.l/S."
+      },
+      {
+        "name": "Bài 12. Đoạn mạch nối tiếp, song song",
+        "content": "Nối tiếp: I=I1=I2; U=U1+U2; Rtd=R1+R2.\nSong song: U=U1=U2; I=I1+I2; 1/Rtd = 1/R1 + 1/R2."
+      },
+      {
+        "name": "Bài 13. Công suất và Điện năng",
+        "content": "P = U.I = I².R = U²/R.\nĐiện năng: A = P.t = U.I.t.\nĐịnh luật Joule-Lenz: Q = I².R.t."
+      },
+      {
+        "name": "Bài 14. Cảm ứng điện từ",
+        "content": "Điều kiện: Số đường sức từ xuyên qua tiết diện cuộn dây kín biến thiên."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI. KIM LOẠI",
+    "lessons": [
+      {
+        "name": "Bài 18. Tính chất của kim loại",
+        "content": "Vật lý: Dẻo, dẫn điện, dẫn nhiệt, ánh kim.\nHóa học: Tác dụng phi kim, axit, muối."
+      },
+      {
+        "name": "Bài 19. Dãy hoạt động hóa học",
+        "content": "Dãy: K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au.\nÝ nghĩa: Kim loại đứng trước đẩy kim loại đứng sau ra khỏi muối."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII & VIII. HYDROCARBON - ALCOHOL - ACID",
+    "lessons": [
+      {
+        "name": "Bài 23. Alkane",
+        "content": "CTTQ: CnH2n+2 (n≥1). Chỉ có liên kết đơn.\nPhản ứng đặc trưng: Thế."
+      },
+      {
+        "name": "Bài 24. Alkene",
+        "content": "CTTQ: CnH2n (n≥2). Có 1 liên kết đôi C=C.\nPhản ứng đặc trưng: Cộng."
+      },
+      {
+        "name": "Bài 26. Ethylic alcohol",
+        "content": "CTCT: C2H5OH. Có nhóm -OH.\nĐộ rượu = (Vr / Vhh) * 100."
+      },
+      {
+        "name": "Bài 27. Acetic acid",
+        "content": "CTCT: CH3COOH. Có nhóm -COOH (tính axit).\nTham gia phản ứng este hóa với rượu etylic."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG XI & XII. DI TRUYỀN HỌC",
+    "lessons": [
+      {
+        "name": "Bài 38. DNA và Gene",
+        "content": "DNA: Cấu trúc xoắn kép. Gene là đoạn DNA mang thông tin di truyền.\nNguyên tắc bổ sung: A-T, G-C."
+      },
+      {
+        "name": "Bài 40. Từ Gene đến Tính trạng",
+        "content": "Sơ đồ: Gene → mRNA → Protein → Tính trạng."
+      },
+      {
+        "name": "Bài 43. Nguyên phân và Giảm phân",
+        "content": "Nguyên phân: Tạo 2 TB con (2n) giống mẹ.\nGiảm phân: Tạo 4 giao tử (n) giảm nửa NST."
+      }
+    ]
+  }
+]

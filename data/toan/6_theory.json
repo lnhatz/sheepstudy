@@ -1,0 +1,211 @@
+[
+  {
+    "title": "CHƯƠNG I: TẬP HỢP CÁC SỐ TỰ NHIÊN",
+    "lessons": [
+      {
+        "name": "Bài 1. Tập hợp",
+        "content": "Cách viết: A = {x1, x2, ...} hoặc A = {x ∈ N | tính chất}. Kí hiệu: ∈ (thuộc), ∉ (không thuộc)."
+      },
+      {
+        "name": "Bài 2. Cách ghi số tự nhiên",
+        "content": "Số tự nhiên: N = {0, 1, 2, ...}; N* = {1, 2, 3, ...}. Giá trị chữ số: Thay đổi tùy vào vị trí (hàng đơn vị, hàng chục, hàng trăm...)."
+      },
+      {
+        "name": "Bài 3. Thứ tự trong tập hợp các số tự nhiên",
+        "content": "So sánh: Nếu a < b và b < c thì a < c (tính chất bắc cầu)."
+      },
+      {
+        "name": "Bài 4. Phép cộng và phép trừ số tự nhiên",
+        "content": "Cộng: a + b = b + a; (a + b) + c = a + (b + c). Trừ: a - b = c (điều kiện a ≥ b)."
+      },
+      {
+        "name": "Bài 5. Phép nhân và phép chia số tự nhiên",
+        "content": "Nhân: a(b + c) = ab + ac. Chia: a = b.q + r (0 ≤ r < b). Chia hết khi r = 0."
+      },
+      {
+        "name": "Bài 6. Lũy thừa với số mũ tự nhiên",
+        "content": "Công thức: a^m . a^n = a^(m+n) và a^m : a^n = a^(m-n) (a ≠ 0). Quy ước: a^1 = a và a^0 = 1 (a ≠ 0)."
+      },
+      {
+        "name": "Bài 7. Thứ tự thực hiện các phép tính",
+        "content": "Quy tắc ngoặc: () → [] → {}. Phép tính: Lũy thừa → Nhân, chia → Cộng, trừ."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II: TÍNH CHIA HẾT TRONG TẬP HỢP CÁC SỐ TỰ NHIÊN",
+    "lessons": [
+      {
+        "name": "Bài 8. Quan hệ chia hết và tính chất",
+        "content": "Tính chất: Nếu a ⋮ m và b ⋮ m thì (a + b) ⋮ m."
+      },
+      {
+        "name": "Bài 9. Dấu hiệu chia hết",
+        "content": "Cho 2: Tận cùng 0, 2, 4, 6, 8. Cho 5: Tận cùng 0, 5. Cho 3 hoặc 9: Tổng các chữ số chia hết cho 3 hoặc 9."
+      },
+      {
+        "name": "Bài 10. Số nguyên tố",
+        "content": "Định nghĩa: Số tự nhiên lớn hơn 1, chỉ có hai ước là 1 và chính nó."
+      },
+      {
+        "name": "Bài 11. Ước chung lớn nhất (ƯCLN)",
+        "content": "ƯCLN là số lớn nhất trong các ước chung. Cách tìm: Phân tích ra thừa số nguyên tố → Chọn thừa số chung → Lấy số mũ nhỏ nhất."
+      },
+      {
+        "name": "Bài 12. Bội chung nhỏ nhất (BCNN)",
+        "content": "BCNN là số nhỏ nhất khác 0 trong các bội chung. Cách tìm: Phân tích ra thừa số nguyên tố → Chọn thừa số chung và riêng → Lấy số mũ lớn nhất."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III: SỐ NGUYÊN",
+    "lessons": [
+      {
+        "name": "Bài 13. Tập hợp các số nguyên",
+        "content": "Tập hợp Z = {..., -2, -1, 0, 1, 2, ...}. Số đối của a là -a."
+      },
+      {
+        "name": "Bài 14. Phép cộng và phép trừ số nguyên",
+        "content": "Cùng dấu: Cộng giá trị tuyệt đối, giữ dấu chung. Khác dấu: Lấy số lớn trừ số bé (trị tuyệt đối), dấu theo số có trị tuyệt đối lớn hơn."
+      },
+      {
+        "name": "Bài 15. Quy tắc dấu ngoặc",
+        "content": "Trước dấu '-': Đổi dấu toàn bộ bên trong. Trước dấu '+': Giữ nguyên dấu các hạng tử."
+      },
+      {
+        "name": "Bài 16. Phép nhân số nguyên",
+        "content": "Quy tắc dấu: (+).(+) = +; (-).(-) = +; (+).(-) = -."
+      },
+      {
+        "name": "Bài 17. Phép chia hết. Ước và bội của số nguyên",
+        "content": "Nếu a = b.q thì a là bội của b và b là ước của a."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV: MỘT SỐ HÌNH PHẲNG TRONG THỰC TIỄN",
+    "lessons": [
+      {
+        "name": "Bài 18. Tam giác đều - Hình vuông - Lục giác đều",
+        "content": "Nhận biết các đặc điểm cạnh bằng nhau, góc bằng nhau của các hình phẳng đều."
+      },
+      {
+        "name": "Bài 19. Hình chữ nhật - Thoi - Bình hành - Thang cân",
+        "content": "Tính chất về các cặp cạnh đối song song và bằng nhau, các góc tương ứng của từng loại hình."
+      },
+      {
+        "name": "Bài 20. Chu vi và diện tích các tứ giác",
+        "content": "H.Thoi: S = 1/2.d1.d2. H.Bình hành: S = a.h. H.Thang: S = 1/2.(a+b).h."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG V: TÍNH ĐỐI XỨNG CỦA HÌNH PHẲNG",
+    "lessons": [
+      {
+        "name": "Bài 21. Hình có trục đối xứng",
+        "content": "Một đường thẳng gọi là trục đối xứng nếu gấp hình theo đường đó thì hai phần trùng khít nhau."
+      },
+      {
+        "name": "Bài 22. Hình có tâm đối xứng",
+        "content": "Một điểm gọi là tâm đối xứng nếu quay hình 180 độ quanh điểm đó thì hình trùng với chính nó."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI: PHÂN SỐ",
+    "lessons": [
+      {
+        "name": "Bài 23. Mở rộng phân số. Phân số bằng nhau",
+        "content": "Dạng a/b (a, b ∈ Z, b ≠ 0). Hai phân số bằng nhau nếu a.d = b.c."
+      },
+      {
+        "name": "Bài 24. So sánh phân số. Hỗn số dương",
+        "content": "Quy đồng mẫu dương để so sánh tử. Hỗn số dương gồm phần nguyên và phần phân số nhỏ hơn 1."
+      },
+      {
+        "name": "Bài 25. Cộng và trừ phân số",
+        "content": "Cùng mẫu: (a ± b)/m. Khác mẫu: Quy đồng mẫu chung trước khi tính."
+      },
+      {
+        "name": "Bài 26. Nhân và chia phân số",
+        "content": "Nhân: Tử nhân tử, mẫu nhân mẫu. Chia: Nhân với phân số nghịch đảo."
+      },
+      {
+        "name": "Bài 27. Hai bài toán về phân số",
+        "content": "1. Tìm giá trị phân số m/n của a: Tính a * (m/n). 2. Tìm một số khi biết giá trị m/n của nó là b: Tính b : (m/n)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII: SỐ THẬP PHÂN",
+    "lessons": [
+      {
+        "name": "Bài 28. Số thập phân",
+        "content": "Gồm số thập phân dương và âm. Cấu tạo bởi phần nguyên và phần thập phân qua dấu phẩy."
+      },
+      {
+        "name": "Bài 29. Tính toán số thập phân",
+        "content": "Quy tắc cộng, trừ, nhân, chia tương tự số tự nhiên nhưng chú ý dấu (như số nguyên) và vị trí dấu phẩy."
+      },
+      {
+        "name": "Bài 30. Làm tròn và ước lượng",
+        "content": "Bỏ đi ≥ 5: tăng 1 đơn vị vào chữ số cuối giữ lại. Bỏ đi < 5: giữ nguyên."
+      },
+      {
+        "name": "Bài 31. Tỉ số và tỉ số phần trăm",
+        "content": "Tỉ số phần trăm của a và b: (a/b)*100%. Tìm giá trị phần trăm: a * p%."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII: NHỮNG HÌNH HÌNH HỌC CƠ BẢN",
+    "lessons": [
+      {
+        "name": "Bài 32. Điểm và đường thẳng",
+        "content": "Điểm thuộc đường thẳng (∈) và không thuộc đường thẳng (∉)."
+      },
+      {
+        "name": "Bài 33. Điểm nằm giữa - Tia",
+        "content": "Nếu M nằm giữa A và B thì AM + MB = AB. Tia gốc O gồm điểm O và một phần đường thẳng bị chia bởi O."
+      },
+      {
+        "name": "Bài 34. Đoạn thẳng",
+        "content": "Đoạn thẳng AB gồm hai điểm A, B và tất cả các điểm nằm giữa chúng."
+      },
+      {
+        "name": "Bài 35. Trung điểm của đoạn thẳng",
+        "content": "M là trung điểm AB nếu M nằm giữa A, B và MA = MB = AB/2."
+      },
+      {
+        "name": "Bài 36. Góc",
+        "content": "Góc là hình gồm hai tia chung gốc (đỉnh). Hai tia là hai cạnh của góc."
+      },
+      {
+        "name": "Bài 37. Số đo góc",
+        "content": "Góc nhọn (<90°), Vuông (=90°), Tù (90°<Góc<180°), Bẹt (=180°)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX: DỮ LIỆU VÀ XÁC SUẤT THỰC NGHIỆM",
+    "lessons": [
+      {
+        "name": "Bài 38. Thu thập dữ liệu",
+        "content": "Phân loại dữ liệu thành số, chữ, hình ảnh..."
+      },
+      {
+        "name": "Bài 39. Bảng thống kê và biểu đồ tranh",
+        "content": "Sử dụng biểu tượng/hình ảnh để biểu diễn số lượng dữ liệu."
+      },
+      {
+        "name": "Bài 40 & 41. Biểu đồ cột và cột kép",
+        "content": "Biểu đồ cột: So sánh các đối tượng. Biểu đồ cột kép: So sánh hai bộ dữ liệu cùng loại của các đối tượng."
+      },
+      {
+        "name": "Bài 42. Kết quả và sự kiện",
+        "content": "Xác định các khả năng có thể xảy ra trong các trò chơi xác suất (đồng xu, xúc xắc)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Giá trị của x thỏa mãn x + 1/2 = -3/4 là:", "options": ["-5/4", "1/4", "-1/4", "5/4"], "answer": 0 },
+  { "chapter": "CHƯƠNG I. SỐ HỮU TỈ", "question": "Kết quả của (0,25)^3 . 4^3 là:", "options": ["1", "4", "16", "64"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG II. SỐ THỰC", "question": "Tìm x biết x^2 = 16:", "options": ["4", "-4", "±4", "256"], "answer": 2 },
+  { "chapter": "CHƯƠNG II. SỐ THỰC", "question": "Số √2 thuộc tập hợp số nào?", "options": ["Q", "I", "Z", "N"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG III. GÓC VÀ ĐƯỜNG THẲNG SONG SONG", "question": "Nếu một đường thẳng cắt hai đường thẳng song song thì hai góc trong cùng phía:", "options": ["Bằng nhau", "Phụ nhau", "Bù nhau", "Kề nhau"], "answer": 2 },
+
+  { "chapter": "CHƯƠNG IV. TAM GIÁC BẰNG NHAU", "question": "Cho ΔABC = ΔDEF. Nếu AB=5cm thì cạnh nào của ΔDEF bằng 5cm?", "options": ["DE", "EF", "DF", "Không có"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG VI. TỈ LỆ THỨC VÀ ĐẠI LƯỢNG TỈ LỆ", "question": "Tìm x, y biết x/3 = y/5 và x + y = 16:", "options": ["x=6, y=10", "x=10, y=6", "x=3, y=13", "x=8, y=8"], "answer": 0 },
+  { "chapter": "CHƯƠNG VI. TỈ LỆ THỨC VÀ ĐẠI LƯỢNG TỈ LỆ", "question": "Chia số 21 thành hai phần tỉ lệ thuận với 2 và 5. Hai số đó là:", "options": ["6 và 15", "10 và 11", "7 và 14", "8 và 13"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG VII. BIỂU THỨC ĐẠI SỐ VÀ ĐA THỨC MỘT BIẾN", "question": "Đa thức P(x) = x^2 - 4 có nghiệm là:", "options": ["2", "-2", "±2", "0"], "answer": 2 },
+  { "chapter": "CHƯƠNG VII. BIỂU THỨC ĐẠI SỐ VÀ ĐA THỨC MỘT BIẾN", "question": "Kết quả của (x - 1)(x + 2) là:", "options": ["x^2 + x - 2", "x^2 - x - 2", "x^2 + 2", "x^2 - 2"], "answer": 0 },
+
+  { "chapter": "CHƯƠNG VIII. BIẾN CỐ VÀ XÁC SUẤT", "question": "Gieo xúc xắc, xác suất xuất hiện mặt có số chấm chia hết cho 3 là:", "options": ["1/6", "1/3", "1/2", "2/3"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG IX. QUAN HỆ CÁC YẾU TỐ TRONG TAM GIÁC", "question": "Cho ΔABC có AB=3, AC=4. Cạnh BC có thể nhận giá trị nào?", "options": ["1", "7", "5", "8"], "answer": 2 },
+  { "chapter": "CHƯƠNG IX. QUAN HỆ CÁC YẾU TỐ TRONG TAM GIÁC", "question": "Giao điểm của ba đường phân giác cách đều:", "options": ["Ba đỉnh", "Ba cạnh", "Trọng tâm", "Trực tâm"], "answer": 1 },
+
+  { "chapter": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI THỰC TIỄN", "question": "Hình lập phương có cạnh tăng 2 lần thì thể tích tăng mấy lần?", "options": ["2", "4", "6", "8"], "answer": 3 },
+  { "chapter": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI THỰC TIỄN", "question": "Diện tích toàn phần hình lập phương cạnh 3cm là:", "options": ["36", "54", "27", "81"], "answer": 1 }
+]

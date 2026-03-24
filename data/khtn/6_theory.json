@@ -1,0 +1,84 @@
+[
+  {
+    "title": "CHƯƠNG I: MỞ ĐẦU VỀ KHTN VÀ CÁC PHÉP ĐO",
+    "lessons": [
+      {
+        "name": "Bài 1 & 2. Giới thiệu KHTN và An toàn phòng thí nghiệm",
+        "content": "• KHTN nghiên cứu các sự vật, hiện tượng tự nhiên và ảnh hưởng của chúng đến cuộc sống.\n• Các biển báo an toàn: Biển báo cấm, biển báo độc hại, biển báo nguy hiểm và biển chỉ dẫn."
+      },
+      {
+        "name": "Bài 4, 5 & 6. Đo chiều dài, Khối lượng và Thời gian",
+        "content": "• Chiều dài: Đơn vị là mét (m), dùng thước đo.\n• Khối lượng: Đơn vị là kilôgam (kg), dùng cân.\n• Thời gian: Đơn vị là giây (s), dùng đồng hồ."
+      },
+      {
+        "name": "Bài 7. Đo nhiệt độ",
+        "content": "• Nhiệt độ là số đo độ 'nóng', 'lạnh' của vật.\n• Đơn vị: Celsius (°C). Dụng cụ: Nhiệt kế (thủy ngân, rượu, điện tử)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II & III: CÁC THỂ CỦA CHẤT VÀ OXYGEN",
+    "lessons": [
+      {
+        "name": "Sự đa dạng và Ba thể của chất",
+        "content": "• Chất tồn tại ở 3 thể: Rắn (hình dạng cố định), Lỏng (dễ chảy, hình dạng theo bình chứa), Khí (lan tỏa, dễ nén).\n• Sự chuyển thể: Nóng chảy, đông đặc, bay hơi, ngưng tụ, sôi."
+      },
+      {
+        "name": "Oxygen và Không khí",
+        "content": "• Oxygen: Khí không màu, không mùi, duy trì sự cháy và sự sống.\n• Thành phần không khí: 78% Nitrogen, 21% Oxygen, 1% khí khác và hơi nước."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV & V: VẬT LIỆU, NHIÊN LIỆU VÀ HỖN HỢP",
+    "lessons": [
+      {
+        "name": "Vật liệu và Nhiên liệu",
+        "content": "• Vật liệu: Kim loại, nhựa, gỗ, thủy tinh, cao su.\n• Nhiên liệu: Củi, than, dầu hỏa, khí gas... khi cháy tỏa nhiệt và phát sáng."
+      },
+      {
+        "name": "Hỗn hợp và Tách chất",
+        "content": "• Hỗn hợp đồng nhất (nước muối) và không đồng nhất (nước phù sa).\n• Cách tách chất: Lọc (tách chất rắn không tan), cô cạn (tách chất rắn tan), chiết (tách chất lỏng không hòa tan)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI: TẾ BÀO - ĐƠN VỊ CƠ SỞ CỦA SỰ SỐNG",
+    "lessons": [
+      {
+        "name": "Cấu tạo tế bào",
+        "content": "• Thành phần chính: Màng tế bào, Chất tế bào và Nhân (hoặc vùng nhân).\n• Tế bào thực vật có thêm thành tế bào và lục lạp (để quang hợp)."
+      },
+      {
+        "name": "Sự lớn lên và phân chia tế bào",
+        "content": "• Tế bào thực hiện trao đổi chất để lớn lên. Khi đạt kích thước nhất định sẽ phân chia (từ 1 thành 2).\n• Ý nghĩa: Giúp cơ thể lớn lên và thay thế các tế bào già, bị tổn thương."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII & VIII: ĐA DẠNG THẾ GIỚI SỐNG",
+    "lessons": [
+      {
+        "name": "Phân loại thế giới sống",
+        "content": "• 5 Giới: Khởi sinh, Nguyên sinh, Nấm, Thực vật, Động vật.\n• Tên khoa học = Tên chi/giống + Tên loài."
+      },
+      {
+        "name": "Động vật và Thực vật",
+        "content": "• Thực vật: Rêu, Dương xỉ, Hạt trần, Hạt kín.\n• Động vật: Không xương sống (Ruột khoang, Giun, Thân mềm, Chân khớp) và Có xương sống (Cá, Lưỡng cư, Bò sát, Chim, Thú)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX: LỰC VÀ NĂNG LƯỢNG",
+    "lessons": [
+      {
+        "name": "Lực và Tác dụng của lực",
+        "content": "• Lực là sự đẩy hoặc kéo. Đơn vị: Newton (N). Dụng cụ: Lực kế.\n• Tác dụng: Làm vật biến dạng hoặc thay đổi chuyển động (nhanh dần, chậm dần, đổi hướng)."
+      },
+      {
+        "name": "Năng lượng và Bảo toàn",
+        "content": "• Các dạng năng lượng: Động năng, thế năng, hóa năng, nhiệt năng, điện năng, quang năng.\n• Định luật: Năng lượng không tự nhiên sinh ra hay mất đi, chỉ chuyển từ dạng này sang dạng khác."
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "title": "CHƯƠNG I. PHẢN ỨNG HÓA HỌC",
+    "lessons": [
+      {
+        "name": "Bài 2. Phản ứng hóa học",
+        "content": "• Định nghĩa: Quá trình biến đổi chất này thành chất khác.\n• Bản chất: Liên kết giữa các nguyên tử thay đổi, nhưng số lượng nguyên tử mỗi loại giữ nguyên."
+      },
+      {
+        "name": "Bài 3. Mol và tỉ khối chất khí",
+        "content": "• Số mol (n): n = m / M (mol).\n• Thể tích khí (25°C, 1 bar): V = n * 24,79 (lít).\n• Tỉ khối: dA/B = MA / MB; dA/kk = MA / 29."
+      },
+      {
+        "name": "Bài 4 & 5. Dung dịch và Bảo toàn khối lượng",
+        "content": "• C%: (mct / mdd) * 100%.\n• CM: n / V (mol/L).\n• Bảo toàn khối lượng: Tổng khối lượng chất tham gia = Tổng khối lượng sản phẩm (mA + mB = mC + mD)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II. MỘT SỐ HỢP CHẤT THÔNG DỤNG",
+    "lessons": [
+      {
+        "name": "Bài 8 & 9. Acid, Base và pH",
+        "content": "• Acid: Quỳ tím hóa đỏ. Base: Quỳ tím hóa xanh, Phenolphthalein hóa hồng.\n• Thang pH: pH < 7 (Acid); pH = 7 (Trung tính); pH > 7 (Base)."
+      },
+      {
+        "name": "Bài 10 & 11. Oxide và Muối",
+        "content": "• Oxide: Hợp chất của Oxygen với nguyên tố khác.\n• Muối: Kim loại + Gốc acid. Phản ứng trao đổi: AB + CD -> AD + CB."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III. KHỐI LƯỢNG RIÊNG VÀ ÁP SUẤT",
+    "lessons": [
+      {
+        "name": "Bài 13 & 15. Khối lượng riêng và Áp suất",
+        "content": "• Khối lượng riêng: D = m / V (kg/m³).\n• Áp suất: P = F / S (Pa hoặc N/m²)."
+      },
+      {
+        "name": "Bài 16 & 17. Áp suất chất lỏng và Lực đẩy Archimedes",
+        "content": "• Áp suất chất lỏng: p = d * h.\n• Lực đẩy Archimedes: FA = d * V (V là thể tích phần chất lỏng bị chiếm chỗ)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV & V. LỰC QUAY VÀ ĐIỆN",
+    "lessons": [
+      {
+        "name": "Tác dụng làm quay và Đòn bẩy",
+        "content": "• Moment lực: M = F * d (d là cánh tay đòn).\n• Đòn bẩy: Giúp thay đổi hướng hoặc độ lớn của lực."
+      },
+      {
+        "name": "Dòng điện và Mạch điện",
+        "content": "• Dòng điện: Dòng các điện tích dịch chuyển có hướng.\n• Đo cường độ (I): Dùng Ampe kế (nối tiếp).\n• Đo hiệu điện thế (U): Dùng Vôn kế (song song)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII. SINH HỌC CƠ THỂ NGƯỜI",
+    "lessons": [
+      {
+        "name": "Hệ vận động, Tiêu hóa và Tuần hoàn",
+        "content": "• Hệ vận động: Xương và cơ giúp di chuyển.\n• Hệ tiêu hóa: Biến đổi thức ăn thành chất dinh dưỡng.\n• Hệ tuần hoàn: Tim và mạch máu vận chuyển chất đi khắp cơ thể."
+      },
+      {
+        "name": "Hệ hô hấp và Thần kinh",
+        "content": "• Hệ hô hấp: Trao đổi khí O2 và CO2.\n• Hệ thần kinh: Gồm não, tủy sống, dây thần kinh. Điều khiển mọi hoạt động cơ thể."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII. SINH VẬT VÀ MÔI TRƯỜNG",
+    "lessons": [
+      {
+        "name": "Nhân tố sinh thái và Hệ sinh thái",
+        "content": "• Nhân tố: Vô sinh (ánh sáng, nước...) và Hữu sinh (sinh vật, con người).\n• Quần xã: Tập hợp các quần thể khác loài.\n• Hệ sinh thái: Gồm quần xã và sinh cảnh, có chuỗi thức ăn và dòng năng lượng."
+      }
+    ]
+  }
+]

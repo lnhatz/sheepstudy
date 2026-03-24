@@ -1,0 +1,153 @@
+[
+  {
+    "title": "CHƯƠNG I: PHƯƠNG TRÌNH VÀ HỆ PHƯƠNG TRÌNH",
+    "lessons": [
+      {
+        "name": "Khái niệm phương trình & hệ bậc nhất 2 ẩn",
+        "content": "Dạng phương trình: ax + by = c (a² + b² ≠ 0)\nNghiệm phương trình: Cặp số (x₀; y₀) thỏa mãn đẳng thức\nHệ phương trình: Gồm hai phương trình bậc nhất hai ẩn\nNghiệm của hệ: Cặp số (x; y) là nghiệm chung của cả hai phương trình"
+      },
+      {
+        "name": "Giải hệ phương trình bậc nhất 2 ẩn",
+        "content": "Phương pháp thế: Rút một ẩn rồi thế vào phương trình kia\nPhương pháp cộng đại số: Biến đổi hệ số ẩn đối/bằng nhau rồi cộng/trừ\nGiải bài toán bằng cách lập hệ: Chọn ẩn -> Lập hệ -> Giải -> Kết luận"
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II: PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH BẬC NHẤT 1 ẨN",
+    "lessons": [
+      {
+        "name": "Phương trình quy về bậc nhất một ẩn",
+        "content": "Phương trình tích: A(x).B(x) = 0 ⇔ A(x)=0 hoặc B(x)=0\nPhương trình chứa ẩn ở mẫu: ĐKXĐ mẫu ≠ 0 -> Quy đồng -> Khử mẫu\nBất đẳng thức: a < b ⇒ a + c < b + c\nNhân số dương: c > 0, a < b ⇒ ac < bc\nNhân số âm: c < 0, a < b ⇒ ac > bc (Đổi chiều)"
+      },
+      {
+        "name": "Bất phương trình bậc nhất một ẩn",
+        "content": "Dạng: ax + b < 0 (hoặc >, ≤, ≥)\nCách giải: Chuyển vế và nhân/chia để cô lập x\nLưu ý: Đổi chiều bất phương trình khi nhân/chia với số âm"
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III: CĂN BẬC HAI VÀ CĂN BẬC BA",
+    "lessons": [
+      {
+        "name": "Căn bậc hai và tính chất",
+        "content": "Căn bậc hai số học: √a = x (x ≥ 0 và x² = a)\nHằng đẳng thức: √A² = |A|\nKhai phương tích: √A.B = √A.√B (A, B ≥ 0)\nKhai phương thương: √(A/B) = √A/√B (A ≥ 0, B > 0)"
+      },
+      {
+        "name": "Biến đổi biểu thức chứa căn thức",
+        "content": "Đưa thừa số ra ngoài: √A²B = |A|√B\nĐưa thừa số vào trong: A√B = √A²B (A ≥ 0)\nTrục căn thức: M/√A = (M√A)/A\nCăn bậc ba: ³√a = x ⇔ x³ = a"
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV: HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG",
+    "lessons": [
+      {
+        "name": "Tỉ số lượng giác góc nhọn",
+        "content": "sin α = Đối / Huyền\ncos α = Kề / Huyền\ntan α = Đối / Kề\ncot α = Kề / Đối\nGóc phụ nhau: sin α = cos β; tan α = cot β (α+β=90°)"
+      },
+      {
+        "name": "Hệ thức về cạnh và góc",
+        "content": "Cạnh góc vuông = Cạnh huyền × sin góc đối\nCạnh góc vuông = Cạnh huyền × cos góc kề\nCạnh góc vuông = Cạnh góc vuông kia × tan góc đối\nCạnh góc vuông = Cạnh góc vuông kia × cot góc kề"
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG V: ĐƯỜNG TRÒN",
+    "lessons": [
+      {
+        "name": "Mở đầu về đường tròn và Dây cung",
+        "content": "Định nghĩa: Tập hợp điểm cách tâm O một khoảng R\nĐường kính & Dây: Đường kính ⊥ dây thì qua trung điểm dây\nLiên hệ cung & dây: Hai dây bằng nhau căng hai cung bằng nhau\nĐộ dài cung n°: l = (πRn)/180"
+      },
+      {
+        "name": "Vị trí tương đối & Diện tích",
+        "content": "Đường thẳng & Đường tròn: Cắt nhau (d<R), Tiếp xúc (d=R), Không giao (d>R)\nDiện tích quạt tròn: S = (πR²n)/360\nDiện tích vành khuyên: S = π(R² - r²)\nHai đường tròn: Ngoài nhau, Tiếp xúc, Cắt nhau, Đựng nhau"
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI: HÀM SỐ y = ax² VÀ PHƯƠNG TRÌNH BẬC HAI",
+    "lessons": [
+      {
+        "name": "Hàm số y = ax² (a ≠ 0)",
+        "content": "Tính chất: \n- a > 0: Nghịch biến (x < 0), đồng biến (x > 0). Min y=0 tại x=0.\n- a < 0: Đồng biến (x < 0), nghịch biến (x > 0). Max y=0 tại x=0.\nĐồ thị: Parabol đi qua O(0;0), đối xứng qua Oy."
+      },
+      {
+        "name": "Phương trình bậc hai một ẩn",
+        "content": "Dạng: ax² + bx + c = 0 (a ≠ 0).\nCông thức nghiệm (Δ = b² - 4ac):\n- Δ > 0: 2 nghiệm x = (-b ± √Δ) / 2a\n- Δ = 0: Nghiệm kép x = -b / 2a\n- Δ < 0: Vô nghiệm.\nCông thức nghiệm thu gọn (Δ' = b'² - ac): x = (-b' ± √Δ') / a."
+      },
+      {
+        "name": "Định lí Viète và ứng dụng",
+        "content": "Hệ thức Viète: x₁ + x₂ = -b/a; x₁.x₂ = c/a.\nNhẩm nghiệm:\n- a+b+c=0 => x₁=1; x₂=c/a\n- a-b+c=0 => x₁=-1; x₂=-c/a\nTìm 2 số biết tổng S và tích P: X² - SX + P = 0 (S² ≥ 4P)."
+      },
+      {
+        "name": "Giải bài toán bằng cách lập phương trình",
+        "content": "B1: Chọn ẩn, đặt ĐK.\nB2: Biểu diễn đại lượng chưa biết qua ẩn. Lập phương trình.\nB3: Giải phương trình, đối chiếu ĐK và kết luận."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII: TẦN SỐ VÀ TẦN SỐ TƯƠNG ĐỐI",
+    "lessons": [
+      {
+        "name": "Bảng tần số và biểu đồ tần số",
+        "content": "Tần số (nᵢ): Số lần xuất hiện của một giá trị.\nBiểu diễn: Biểu đồ cột hoặc biểu đồ đoạn thẳng."
+      },
+      {
+        "name": "Bảng tần số tương đối và biểu đồ",
+        "content": "Công thức: fᵢ = (nᵢ / N) * 100% (N: tổng số liệu).\nBiểu diễn: Biểu đồ cột chồng hoặc hình quạt tròn."
+      },
+      {
+        "name": "Ghép nhóm và biểu đồ ghép nhóm",
+        "content": "Ghép nhóm: Gom giá trị vào khoảng [a; b).\nGiá trị đại diện: x = (a + b) / 2."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII: XÁC SUẤT CỦA BIẾN CỐ",
+    "lessons": [
+      {
+        "name": "Phép thử ngẫu nhiên và không gian mẫu",
+        "content": "Phép thử: Hành động không biết trước kết quả.\nKhông gian mẫu (Ω): Tập hợp tất cả các kết quả có thể xảy ra."
+      },
+      {
+        "name": "Xác suất của biến cố",
+        "content": "Công thức: P(A) = n(A) / n(Ω).\nn(A): Số kết quả thuận lợi cho A.\nn(Ω): Tổng số kết quả có thể xảy ra."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX: ĐƯỜNG TRÒN NGOẠI TIẾP VÀ NỘI TIẾP",
+    "lessons": [
+      {
+        "name": "Góc nội tiếp",
+        "content": "Định nghĩa: Đỉnh trên đường tròn, cạnh chứa dây cung.\nTính chất: Số đo = 1/2 số đo cung bị chắn. Góc nội tiếp chắn nửa đường tròn = 90°."
+      },
+      {
+        "name": "Đường tròn ngoại tiếp và nội tiếp tam giác",
+        "content": "Ngoại tiếp: Tâm là giao điểm 3 đường trung trực.\nNội tiếp: Tâm là giao điểm 3 đường phân giác trong."
+      },
+      {
+        "name": "Tứ giác nội tiếp",
+        "content": "Định nghĩa: 4 đỉnh nằm trên đường tròn.\nTính chất: Tổng hai góc đối diện = 180°."
+      },
+      {
+        "name": "Đa giác đều",
+        "content": "Định nghĩa: Cạnh bằng nhau, góc bằng nhau.\nGóc đa giác n cạnh: [(n-2) * 180°] / n."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG X: MỘT SỐ HÌNH KHỐI THỰC TIỄN",
+    "lessons": [
+      {
+        "name": "Hình trụ và Hình nón",
+        "content": "Hình trụ: V = πr²h; Sxq = 2πrh.\nHình nón: V = 1/3πr²h; Sxq = πrl (l: đường sinh)."
+      },
+      {
+        "name": "Hình cầu",
+        "content": "Diện tích mặt cầu: S = 4πr².\nThể tích hình cầu: V = 4/3πr³."
+      }
+    ]
+  }
+]
+

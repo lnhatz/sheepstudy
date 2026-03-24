@@ -1,0 +1,14 @@
+[
+  { "chapter": "PHẦN VẬT LÝ", "question": "Công thức tính điện năng tiêu thụ A là?", "options": ["A = P/t", "A = P.t", "A = U.R", "A = I.R"], "answer": 1 },
+  { "chapter": "PHẦN VẬT LÝ", "question": "Đặt hiệu điện thế 12V vào điện trở 4Ω thì cường độ dòng điện là?", "options": ["3A", "48A", "0,33A", "16A"], "answer": 0 },
+  { "chapter": "PHẦN VẬT LÝ", "question": "Một thấu kính hội tụ có tiêu cự f=10cm. Khoảng cách d=20cm thì cho ảnh?", "options": ["Ảo, lớn hơn vật", "Thật, bằng vật", "Thật, nhỏ hơn vật", "Ảo, nhỏ hơn vật"], "answer": 1 },
+  { "chapter": "PHẦN HÓA HỌC", "question": "Hợp chất hữu cơ nào là thành phần chính của khí thiên nhiên?", "options": ["Ethylene", "Methane (CH4)", "Acetylene", "Benzene"], "answer": 1 },
+  { "chapter": "PHẦN HÓA HỌC", "question": "Để nhận biết khí Ethylene làm mất màu dung dịch nào?", "options": ["Nước vôi trong", "Dung dịch Bromine", "Nước cất", "Acid HCl"], "answer": 1 },
+  { "chapter": "PHẦN HÓA HỌC", "question": "Độ rượu được định nghĩa là?", "options": ["Số gam rượu trong 100g nước", "Số ml rượu nguyên chất trong 100ml hỗn hợp", "Khối lượng rượu trong 1 lít", "Nồng độ phần trăm rượu"], "answer": 1 },
+  { "chapter": "PHẦN HÓA HỌC", "question": "Chất nào sau đây là Polymer thiên nhiên?", "options": ["Nhựa PE", "Cao su buna", "Tinh bột", "Tơ nilon"], "answer": 2 },
+  { "chapter": "PHẦN HÓA HỌC", "question": "Sản phẩm của phản ứng giữa Acetic acid và Ethylic alcohol là?", "options": ["Muối", "Este", "Đường", "Xà phòng"], "answer": 1 },
+  { "chapter": "PHẦN SINH HỌC", "question": "Mỗi gen quy định một tính trạng thông qua trung gian là?", "options": ["DNA", "RNA", "Protein", "Lipid"], "answer": 2 },
+  { "chapter": "PHẦN SINH HỌC", "question": "Nguyên nhân gây ra đột biến gen thường là do?", "options": ["Môi trường sạch", "Tác nhân vật lý, hóa học", "Ăn uống điều độ", "Tập thể dục"], "answer": 1 },
+  { "chapter": "PHẦN SINH HỌC", "question": "Cặp nhiễm sắc thể giới tính ở nữ giới là?", "options": ["XY", "XX", "XO", "YY"], "answer": 1 },
+  { "chapter": "PHẦN SINH HỌC", "question": "Ứng dụng nào sau đây thuộc công nghệ tế bào?", "options": ["Tạo giống bằng tia phóng xạ", "Nhân bản vô tính", "Sản xuất kháng sinh", "Chế biến thực phẩm"], "answer": 1 }
+]

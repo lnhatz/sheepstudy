@@ -1,0 +1,168 @@
+[
+  {
+    "title": "CHƯƠNG I: NGUYÊN TỬ - BẢNG TUẦN HOÀN",
+    "lessons": [
+      {
+        "name": "Bài 1: Phương pháp và kĩ năng học tập môn KHTN",
+        "content": "• Kĩ năng: Quan sát, Phân loại, Liên kết, Đo lường, Dự báo, Viết báo cáo.\n• Phương pháp tìm hiểu tự nhiên (5 bước): 1. Quan sát & đặt câu hỏi -> 2. Giả thuyết -> 3. Lập kế hoạch -> 4. Thực hiện -> 5. Thảo luận & Kết luận."
+      },
+      {
+        "name": "Bài 2: Nguyên tử",
+        "content": "• Định nghĩa: Hạt cực kì nhỏ bé, trung hòa về điện.\n• Cấu tạo: Vỏ (electron -) và Hạt nhân (proton +, neutron 0).\n• Công thức: Số p = Số e; Khối lượng nguyên tử ≈ khối lượng hạt nhân = mp + mn (amu)."
+      },
+      {
+        "name": "Bài 3: Nguyên tố hóa học",
+        "content": "• Định nghĩa: Tập hợp những nguyên tử cùng loại, có cùng số proton trong hạt nhân.\n• Mỗi nguyên tố có kí hiệu hóa học riêng."
+      },
+      {
+        "name": "Bài 4: Sơ lược về bảng tuần hoàn",
+        "content": "• Nguyên tắc: Sắp xếp theo chiều tăng dần điện tích hạt nhân.\n• Cấu tạo: Ô nguyên tố, Chu kì (hàng ngang), Nhóm (cột dọc)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II: PHÂN TỬ - LIÊN KẾT HÓA HỌC",
+    "lessons": [
+      {
+        "name": "Bài 5: Phân tử - Đơn chất - Hợp chất",
+        "content": "• Đơn chất: Tạo từ 1 nguyên tố.\n• Hợp chất: Tạo từ 2 hay nhiều nguyên tố.\n• Phân tử: Hạt đại diện cho chất.\n• Khối lượng phân tử = Tổng khối lượng các nguyên tử trong phân tử."
+      },
+      {
+        "name": "Bài 6: Giới thiệu về liên kết hóa học",
+        "content": "• Liên kết ion: Lực hút tĩnh điện giữa các ion trái dấu (Kim loại điển hình + Phi kim điển hình).\n• Liên kết cộng hóa trị: Hình thành bằng các cặp electron dùng chung (thường giữa các phi kim)."
+      },
+      {
+        "name": "Bài 7: Hóa trị và công thức hóa học",
+        "content": "• Hóa trị: Con số biểu thị khả năng liên kết.\n• Quy tắc hóa trị (AxBy): x . a = y . b (với a, b là hóa trị của A, B)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III: TỐC ĐỘ",
+    "lessons": [
+      {
+        "name": "Bài 8, 9: Tốc độ chuyển động và Đo tốc độ",
+        "content": "• Tốc độ (v): v = s / t.\n• Ý nghĩa: Cho biết mức độ nhanh hay chậm của chuyển động."
+      },
+      {
+        "name": "Bài 10: Đồ thị quãng đường - thời gian",
+        "content": "• Đồ thị biểu diễn sự thay đổi quãng đường theo thời gian.\n• Đường thẳng đi lên qua gốc tọa độ: Chuyển động với tốc độ không đổi."
+      },
+      {
+        "name": "Bài 11: Tốc độ trong an toàn giao thông",
+        "content": "• Khoảng cách an toàn: Phụ thuộc tốc độ, thời tiết, mặt đường.\n• Quy tắc '3 giây': s = v . 3 (v tính bằng m/s).\n• Biển báo tốc độ: Giúp giảm thiểu tai nạn, tăng khả năng kiểm soát."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV: ÂM THANH",
+    "lessons": [
+      {
+        "name": "Bài 12: Sóng âm",
+        "content": "• Nguồn âm: Do vật dao động phát ra.\n• Môi trường truyền: Rắn, Lỏng, Khí. (Không truyền trong chân không)."
+      },
+      {
+        "name": "Bài 13: Độ cao và độ to của âm",
+        "content": "• Độ cao: Phụ thuộc tần số (Hz). Tần số lớn -> Âm cao.\n• Độ to: Phụ thuộc biên độ dao động (dB)."
+      },
+      {
+        "name": "Bài 14: Phản xạ âm - Chống ô nhiễm tiếng ồn",
+        "content": "• Phản xạ âm: Vật cứng, phẳng phản xạ tốt. Vật mềm, xốp hấp thụ âm tốt.\n• Ô nhiễm tiếng ồn: Âm to và kéo dài gây ảnh hưởng sức khỏe."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG V: ÁNH SÁNG",
+    "lessons": [
+      {
+        "name": "Bài 15: Năng lượng ánh sáng - Tia sáng",
+        "content": "• Ánh sáng là một dạng năng lượng.\n• Tia sáng: Đường thẳng có mũi tên chỉ hướng."
+      },
+      {
+        "name": "Bài 16: Sự phản xạ ánh sáng",
+        "content": "• Hiện tượng: Ánh sáng hắt lại môi trường cũ.\n• Định luật phản xạ: Góc tới (i) = Góc phản xạ (i')."
+      },
+      {
+        "name": "Bài 17: Ảnh của vật qua gương phẳng",
+        "content": "• Đặc điểm ảnh: Ảnh ảo, bằng vật, đối xứng với vật qua gương."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI: TỪ",
+    "lessons": [
+      {
+        "name": "Bài 18: Nam châm",
+        "content": "• Đặc tính: Hút sắt thép, chỉ hướng Bắc (N) - Nam (S).\n• Tương tác: Cùng cực đẩy, khác cực hút."
+      },
+      {
+        "name": "Bài 19: Từ trường",
+        "content": "• Khái niệm: Không gian quanh nam châm/dòng điện có lực từ.\n• Đường sức từ: Ra Bắc (N), Vào Nam (S). Nơi dày là từ trường mạnh."
+      },
+      {
+        "name": "Bài 20: Chế tạo nam châm điện đơn giản",
+        "content": "• Cấu tạo: Cuộn dây dẫn + lõi sắt non.\n• Đặc điểm: Chỉ có từ tính khi có dòng điện.\n• Cách tăng lực từ: Tăng cường độ dòng điện hoặc tăng số vòng dây."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII – TRAO ĐỔI CHẤT VÀ CHUYỂN HÓA NĂNG LƯỢNG",
+    "lessons": [
+      {
+        "name": "Bài 21: Khái quát trao đổi chất & chuyển hóa năng lượng",
+        "content": "• Trao đổi chất: Lấy chất từ môi trường, thải chất thừa.\n• Chuyển hóa năng lượng: Biến đổi năng lượng (Quang năng -> Hóa năng)."
+      },
+      {
+        "name": "Bài 22 & 23: Quang hợp ở thực vật",
+        "content": "• PT: Nước + CO2 --(Ánh sáng/Diệp lục)--> Chất hữu cơ (Glucose) + Oxygen."
+      },
+      {
+        "name": "Bài 25 & 26: Hô hấp tế bào",
+        "content": "• PT: Glucose + Oxygen -> CO2 + Nước + Năng lượng (ATP + Nhiệt)."
+      },
+      {
+        "name": "Bài 28: Trao đổi khí ở sinh vật",
+        "content": "• Cơ chế: Khuếch tán O2 và CO2 qua bề mặt trao đổi khí (Khí khổng, da, mang, phổi...)."
+      },
+      {
+        "name": "Bài 29, 30 & 31: Trao đổi nước và dinh dưỡng",
+        "content": "• Thực vật: Nước/muối khoáng đi lên (mạch gỗ), chất hữu cơ đi xuống (mạch rây).\n• Động vật: Hệ tiêu hóa hấp thụ, hệ tuần hoàn vận chuyển."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII – CẢM ỨNG Ở SINH VẬT",
+    "lessons": [
+      {
+        "name": "Bài 33 & 34: Cảm ứng và Tập tính",
+        "content": "• Cảm ứng: Tiếp nhận và phản ứng kích thích (Cây hướng sáng).\n• Tập tính: Hệ thống phản ứng đảm bảo tồn tại (Bẩm sinh & Học được)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX – SINH TRƯỞNG VÀ PHÁT TRIỂN",
+    "lessons": [
+      {
+        "name": "Bài 36 & 37: Khái quát sinh trưởng & phát triển",
+        "content": "• Sinh trưởng: Tăng kích thước, khối lượng cơ thể.\n• Phát triển: Biến đổi bao gồm sinh trưởng, phân hóa tế bào và phát sinh hình thái cơ quan.\n• Nhân tố: Nhiệt độ, ánh sáng, nước, dinh dưỡng, hormone."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG X – SINH SẢN Ở SINH VẬT",
+    "lessons": [
+      {
+        "name": "Bài 39: Sinh sản vô tính",
+        "content": "• Đặc điểm: Không có sự kết hợp giao tử. Con giống hệt mẹ (Giâm cành, nảy chồi...)."
+      },
+      {
+        "name": "Bài 40: Sinh sản hữu tính",
+        "content": "• Đặc điểm: Kết hợp giao tử đực (n) + giao tử cái (n) -> Hợp tử (2n)."
+      },
+      {
+        "name": "Bài 41 & 42: Điều khiển sinh sản & Cơ thể thống nhất",
+        "content": "• Điều khiển: Dùng hormone, nhiệt độ, ánh sáng để tăng năng suất.\n• Thống nhất: Các hoạt động sống quan hệ mật thiết, hỗ trợ nhau duy trì sự sống."
+      }
+    ]
+  }
+]

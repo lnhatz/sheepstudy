@@ -1,0 +1,147 @@
+[
+  {
+    "title": "CHƯƠNG I. SỐ HỮU TỈ",
+    "lessons": [
+      {
+        "name": "Bài 1. Tập hợp các số hữu tỉ",
+        "content": "• Định nghĩa: Số hữu tỉ là số viết được dưới dạng phân số a/b (a, b thuộc Z, b != 0).\n• Kí hiệu tập hợp: Q.\n• Số đối: Hai số hữu tỉ có điểm biểu diễn cách đều điểm gốc O là hai số đối nhau. Số đối của x là -x."
+      },
+      {
+        "name": "Bài 2. Cộng, trừ, nhân, chia số hữu tỉ",
+        "content": "• Cộng, trừ: Đưa về cùng mẫu dương rồi áp dụng quy tắc cộng trừ phân số.\n• Nhân: Tử nhân tử, mẫu nhân mẫu.\n• Chia: Nhân với số nghịch đảo của số chia."
+      },
+      {
+        "name": "Bài 3. Lũy thừa của một số hữu tỉ",
+        "content": "• Tích hai lũy thừa cùng cơ số: x^m . x^n = x^(m+n).\n• Thương hai lũy thừa cùng cơ số: x^m : x^n = x^(m-n).\n• Lũy thừa của lũy thừa: (x^m)^n = x^(m.n)."
+      },
+      {
+        "name": "Bài 4. Quy tắc chuyển vế",
+        "content": "• Thứ tự: Lũy thừa -> Nhân, chia -> Cộng, trừ. Ưu tiên trong ngoặc trước.\n• Quy tắc: Khi chuyển một số hạng từ vế này sang vế kia, ta phải đổi dấu số hạng đó."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG II. SỐ THỰC",
+    "lessons": [
+      {
+        "name": "Bài 5. Số thập phân hữu hạn và vô hạn tuần hoàn",
+        "content": "• Số thập phân hữu hạn: Phân số tối giản có mẫu không có ước nguyên tố khác 2 và 5.\n• Số thập phân vô hạn tuần hoàn: Phân số tối giản có mẫu chứa ước nguyên tố khác 2 và 5."
+      },
+      {
+        "name": "Bài 6. Số vô tỉ. Căn bậc hai số học",
+        "content": "• Số vô tỉ (I): Số thập phân vô hạn không tuần hoàn.\n• Căn bậc hai số học: Căn bậc hai số học của số a >= 0 là số x >= 0 sao cho x^2 = a."
+      },
+      {
+        "name": "Bài 7. Tập hợp các số thực",
+        "content": "• Số thực (R): Gồm số hữu tỉ và số vô tỉ.\n• Trục số: Mỗi số thực được biểu diễn bởi một điểm trên trục số.\n• Giá trị tuyệt đối: Khoảng cách từ điểm x đến gốc O trên trục số."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG III. GÓC VÀ ĐƯỜNG THẲNG SONG SONG",
+    "lessons": [
+      {
+        "name": "Bài 8. Góc ở vị trí đặc biệt. Tia phân giác",
+        "content": "• Hai góc kề bù: Tổng số đo bằng 180 độ.\n• Hai góc đối đỉnh: Bằng nhau.\n• Tia phân giác: Chia góc thành hai góc bằng nhau."
+      },
+      {
+        "name": "Bài 9. Hai đường thẳng song song",
+        "content": "• Dấu hiệu: Nếu ĐT c cắt a và b tạo ra một cặp góc so le trong bằng nhau (hoặc đồng vị bằng nhau) thì a // b."
+      },
+      {
+        "name": "Bài 10. Tiên đề Euclid và tính chất ĐT song song",
+        "content": "• Tiên đề: Qua 1 điểm ngoài ĐT chỉ có duy nhất 1 ĐT song song với nó.\n• Tính chất: Nếu 1 ĐT cắt 2 ĐT song song thì cặp góc so le trong bằng nhau, đồng vị bằng nhau."
+      },
+      {
+        "name": "Bài 11. Định lí và chứng minh định lí",
+        "content": "• Cấu trúc: Giả thiết (GT) là điều cho biết, Kết luận (KL) là điều cần chứng minh."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV. TAM GIÁC BẰNG NHAU",
+    "lessons": [
+      {
+        "name": "Bài 12. Tổng các góc trong một tam giác",
+        "content": "• Định lí: Tổng ba góc của một tam giác bằng 180 độ.\n• Áp dụng: Trong tam giác vuông, hai góc nhọn phụ nhau."
+      },
+      {
+        "name": "Bài 13. Hai tam giác bằng nhau",
+        "content": "• Định nghĩa: Các cạnh tương ứng bằng nhau và các góc tương ứng bằng nhau."
+      },
+      {
+        "name": "Bài 14. Các trường hợp bằng nhau của tam giác",
+        "content": "• TH1: Cạnh - cạnh - cạnh (c.c.c).\n• TH2: Cạnh - góc - cạnh (c.g.c).\n• TH3: Góc - cạnh - góc (g.c.g)."
+      },
+      {
+        "name": "Bài 15. TH bằng nhau của tam giác vuông",
+        "content": "• Các trường hợp: Hai cạnh góc vuông; Cạnh góc vuông - góc nhọn kề; Cạnh huyền - góc nhọn; Cạnh huyền - cạnh góc vuông."
+      },
+      {
+        "name": "Bài 16. Tam giác cân. Đường trung trực",
+        "content": "• Tam giác cân: Có hai cạnh bằng nhau, hai góc ở đáy bằng nhau.\n• Đường trung trực: Vuông góc tại trung điểm. Điểm trên trung trực cách đều hai đầu mút."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG V. THU THẬP VÀ BIỂU DIỄN DỮ LIỆU",
+    "lessons": [
+      {
+        "name": "Bài 17. Thu thập và phân loại dữ liệu",
+        "content": "• Phân loại: Dữ liệu là số (định lượng) và dữ liệu không là số (định tính)."
+      },
+      {
+        "name": "Bài 18. Biểu đồ hình quạt tròn",
+        "content": "• Ý nghĩa: Dùng để biểu diễn tỉ lệ phần trăm của từng loại số liệu so với toàn thể."
+      },
+      {
+        "name": "Bài 19. Biểu đồ đoạn thẳng",
+        "content": "• Ý nghĩa: Dùng để biểu diễn sự thay đổi của một đại lượng theo thời gian."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI. TỈ LỆ THỨC VÀ ĐẠI LƯỢNG TỈ LỆ",
+    "lessons": [
+      { "name": "Bài 20. Tỉ lệ thức", "content": "• Định nghĩa: a/b = c/d (viết gọn a:b = c:d).\n• Tính chất: Nếu a/b = c/d thì ad = bc.\n• Hoán vị: Từ ad = bc suy ra a/b=c/d; a/c=b/d; d/b=c/a; d/c=b/a." },
+      { "name": "Bài 21. Tính chất dãy tỉ số bằng nhau", "content": "• Công thức: a/b = c/d = (a+c)/(b+d) = (a-c)/(b-d).\n• Tỉ lệ 3 số: x/a = y/b = z/c." },
+      { "name": "Bài 22. Đại lượng tỉ lệ thuận", "content": "• Định nghĩa: y = kx (k là hằng số khác 0).\n• Tính chất: y1/x1 = y2/x2 = k; x1/x2 = y1/y2." },
+      { "name": "Bài 23. Đại lượng tỉ lệ nghịch", "content": "• Định nghĩa: y = a/x hay xy = a.\n• Tính chất: x1.y1 = x2.y2 = a; x1/x2 = y2/y1." }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VII. BIỂU THỨC ĐẠI SỐ VÀ ĐA THỨC MỘT BIẾN",
+    "lessons": [
+      { "name": "Bài 24. Biểu thức đại số", "content": "• Khái niệm: Gồm số, chữ và phép toán.\n• Giá trị: Thay giá trị biến vào biểu thức rồi tính." },
+      { "name": "Bài 25. Đa thức một biến", "content": "• Định nghĩa: Tổng các đơn thức cùng biến.\n• Bậc: Số mũ lớn nhất của biến (hệ số khác 0)." },
+      { "name": "Bài 26. Cộng trừ đa thức một biến", "content": "• Hàng ngang: Nhóm hạng tử cùng bậc.\n• Cột dọc: Đặt tính thẳng cột các hạng tử cùng bậc." },
+      { "name": "Bài 27. Phép nhân đa thức một biến", "content": "• Nhân đơn thức: A(B + C) = AB + AC.\n• Nhân đa thức: (A + B)(C + D) = AC + AD + BC + BD." },
+      { "name": "Bài 28. Phép chia đa thức một biến", "content": "• Chia hết: A = B . Q.\n• Chia có dư: A = B . Q + R (Bậc R < Bậc B)." }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII. BIẾN CỐ VÀ XÁC SUẤT",
+    "lessons": [
+      { "name": "Bài 29. Làm quen với biến cố", "content": "• Chắc chắn: Luôn xảy ra.\n• Không thể: Không bao giờ xảy ra.\n• Ngẫu nhiên: Có thể xảy ra hoặc không." },
+      { "name": "Bài 30. Xác suất của biến cố", "content": "• P(E) = (Số kết quả thuận lợi) / (Tổng số kết quả có thể xảy ra).\n• Giá trị từ 0 đến 1." }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX. QUAN HỆ CÁC YẾU TỐ TRONG TAM GIÁC",
+    "lessons": [
+      { "name": "Bài 31. Góc và cạnh đối diện", "content": "• Góc đối diện cạnh lớn hơn là góc lớn hơn.\n• Cạnh đối diện góc lớn hơn là cạnh lớn hơn." },
+      { "name": "Bài 32. Đường vuông góc và đường xiên", "content": "• Đường vuông góc là đường ngắn nhất kẻ từ một điểm đến một đường thẳng." },
+      { "name": "Bài 33. Bất đẳng thức tam giác", "content": "• Tổng 2 cạnh bất kỳ lớn hơn cạnh còn lại: b + c > a.\n• Hệ quả: |b - c| < a < b + c." },
+      { "name": "Bài 34. Ba đường trung tuyến và phân giác", "content": "• Trọng tâm G: Giao 3 trung tuyến (cách đỉnh 2/3 đường trung tuyến).\n• Tâm nội tiếp: Giao 3 phân giác (cách đều 3 cạnh)." },
+      { "name": "Bài 35. Ba đường trung trực và đường cao", "content": "• Tâm ngoại tiếp: Giao 3 trung trực (cách đều 3 đỉnh).\n• Trực tâm H: Giao 3 đường cao." }
+    ]
+  },
+  {
+    "title": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI THỰC TIỄN",
+    "lessons": [
+      { "name": "Bài 36. Hình hộp chữ nhật và hình lập phương", "content": "• HHCN: Sxq = 2(a+b)c; V = abc.\n• Lập phương: Sxq = 4a²; V = a³." },
+      { "name": "Bài 37. Hình lăng trụ đứng", "content": "• Sxq = Chu vi đáy . Chiều cao.\n• V = Diện tích đáy . Chiều cao." }
+    ]
+  }
+]
+
