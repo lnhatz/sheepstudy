@@ -85,24 +85,49 @@ elif st.session_state.page == 'doing':
 
     data = st.session_state.data
     
-    # --- PHẦN LÝ THUYẾT (MINDMAP WEB STYLE) ---
-    if st.session_state.mode == 'theory':
-        for chapter in data:
-            st.markdown(f"<div class='chapter-title'>📂 {chapter.get('title')}</div>", unsafe_allow_html=True)
+    # --- TRANG HIỂN THỊ LÝ THUYẾT DẠNG SƠ ĐỒ ---
+elif st.session_state.page == 'doing' and st.session_state.mode == 'theory':
+    st.markdown(f"<h2 style='text-align: center; color: {CORAL_PINK};'>🌿 SƠ ĐỒ TƯ DUY KIẾN THỨC</h2>", unsafe_allow_html=True)
+    
+    if st.button("← QUAY LẠI CHỌN MÔN"):
+        st.session_state.page = 'select'
+        st.rerun()
+
+    for idx_ch, chapter in enumerate(st.session_state.data):
+        # Tạo ID an toàn cho Mermaid (không dùng tiếng Việt làm ID)
+        root_id = f"root_{idx_ch}"
+        mermaid_code = f"graph LR\n"
+        mermaid_code += f"  {root_id}((\" {chapter.get('title')} \"))\n"
+        mermaid_code += f"  style {root_id} fill:{CORAL_PINK},color:#fff,stroke-width:4px\n"
+
+        for i, lesson in enumerate(chapter.get('lessons', [])):
+            l_id = f"ch{idx_ch}_l{i}"
+            # Dùng ngoặc kép " " quanh tên bài để tránh lỗi ký tự đặc biệt
+            mermaid_code += f"  {root_id} --> {l_id}[\" {lesson['name']} \"]\n"
             
-            for lesson in chapter.get('lessons', []):
-                with st.expander(f"🌿 {lesson['name']}", expanded=False):
-                    # Tách các ý chính
-                    points = [p.strip() for p in lesson['content'].split('.') if len(p.strip()) > 5]
-                    
-                    # Hiển thị trung tâm
-                    st.markdown(f"<div class='mindmap-node' style='background-color: {SOFT_BLUE}; font-weight: bold;'>{lesson['name']}</div>", unsafe_allow_html=True)
-                    
-                    # Tỏa ra các nhánh (chia cột)
-                    cols = st.columns(2)
-                    for i, point in enumerate(points):
-                        with cols[i % 2]:
-                            st.markdown(f"<div class='mindmap-node'>📍 {point}</div>", unsafe_allow_html=True)
+            # Tách nội dung (lấy các ý ngắn)
+            points = [p.strip() for p in lesson['content'].split('.') if len(p.strip()) > 5]
+            for j, pt in enumerate(points[:3]): 
+                p_id = f"ch{idx_ch}_l{i}_p{j}"
+                # Cắt bớt text nếu quá dài để sơ đồ không bị vỡ
+                short_text = (pt[:30] + '...') if len(pt) > 30 else pt
+                mermaid_code += f"  {l_id} -.-> {p_id}(\" {short_text} \")\n"
+        
+        st.markdown(f"### 📘 {chapter.get('title')}")
+        # Tăng height lên một chút để không bị mất hình
+        st.components.v1.html(
+            f"""
+            <div class="mermaid" style="display: flex; justify-content: center;">
+                {mermaid_code}
+            </div>
+            <script type="module">
+                import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                mermaid.initialize({{ startOnLoad: true, theme: 'base', themeVariables: {{ 'primaryColor': '#ff6b86' }} }});
+            </script>
+            """,
+            height=600,
+            scrolling=True
+        )
 
     # --- PHẦN TRẮC NGHIỆM ---
     else:
