@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import random
 import os
+import time
 
 # --- 1. CẤU HÌNH ---
 st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
@@ -54,6 +55,16 @@ st.markdown(f"""
     .main-title {{
         text-align: center; color: {CORAL_PINK}; font-size: 45px; font-weight: bold;
     }}
+
+    .timer-box {{
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #f0f2f6;
+        margin-bottom: 20px;
+    }}
     </style>
     """, unsafe_allow_html=True)
 
@@ -62,9 +73,9 @@ if 'page' not in st.session_state: st.session_state.page = 'welcome'
 if 'score' not in st.session_state: st.session_state.score = 0
 if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
 if 'temp_choice' not in st.session_state: st.session_state.temp_choice = None
+if 'start_time' not in st.session_state: st.session_state.start_time = None
 
 def load_data(grade, subject, mode):
-    # GIỮ ĐÚNG ĐƯỜNG DẪN CỦA BRO
     fname = f"data/{subject}/{grade}_{mode}.json"
     if os.path.exists(fname):
         with open(fname, 'r', encoding='utf-8') as f:
@@ -94,7 +105,6 @@ elif st.session_state.page == 'select':
     mode_name = st.radio("Chế độ", ["Lý thuyết", "Trắc nghiệm", "Kiểm tra"], horizontal=True)
     mode = "theory" if "Lý thuyết" in mode_name else "quiz" if "Trắc nghiệm" in mode_name else "test"
     
-    # --- CHỌN CHƯƠNG ---
     res = load_data(grade, subject, mode)
     selected_chapter = "Tất cả"
     if res and mode != 'theory':
@@ -113,14 +123,16 @@ elif st.session_state.page == 'select':
                 random.shuffle(st.session_state.data)
             else:
                 st.session_state.data = res
+            
             st.session_state.mode = mode
             st.session_state.page = 'doing'
             st.session_state.current_idx = 0
             st.session_state.score = 0
             st.session_state.temp_choice = None
+            st.session_state.start_time = time.time() # Lưu thời điểm bắt đầu
             st.rerun()
         else:
-            st.error("⚠️ Chưa có dữ liệu!")
+            st.error(f"⚠️ Không tìm thấy dữ liệu!")
 
 elif st.session_state.page == 'doing':
     if st.button("← QUAY LẠI"):
@@ -128,8 +140,29 @@ elif st.session_state.page == 'doing':
         st.rerun()
         
     data = st.session_state.data
+    mode = st.session_state.mode
     
-    if st.session_state.mode == 'theory':
+    # --- LOGIC ĐỒNG HỒ ĐẾM NGƯỢC (Chỉ hiện khi làm Kiểm tra) ---
+    if mode == 'test':
+        elapsed_time = time.time() - st.session_state.start_time
+        remaining_time = max(0, 600 - int(elapsed_time)) # 600 giây = 10 phút
+        
+        mins, secs = divmod(remaining_time, 60)
+        timer_color = "red" if remaining_time < 120 else "black"
+        st.markdown(f"""
+            <div class="timer-box">
+                ⏱️ Thời gian còn lại: <span style="color: {timer_color};">{mins:02d}:{secs:02d}</span>
+            </div>
+        """, unsafe_allow_html=True)
+        
+        if remaining_time <= 0:
+            st.session_state.current_idx = 999 # Nhảy tới trang kết quả
+            st.rerun()
+        
+        # Tự động refresh mỗi giây để cập nhật đồng hồ (dùng cho Streamlit cũ)
+        # st.empty() 
+
+    if mode == 'theory':
         for chapter in data:
             st.markdown(f"### 📂 {chapter.get('title')}")
             for lesson in chapter.get('lessons', []):
@@ -144,14 +177,12 @@ elif st.session_state.page == 'doing':
         total_q = min(len(data), 20)
         
         if idx < total_q:
-            # TIẾN ĐỘ
             st.write(f"📝 **Tiến độ: {idx + 1} / {total_q}**")
             st.progress((idx + 1) / total_q)
             
             q = data[idx]
             st.info(f"Câu {idx + 1}: {q.get('question')}")
             
-            # CHỌN ĐÁP ÁN (Dùng type="primary" để highlight cái đang chọn)
             cols = st.columns(2)
             for i, opt in enumerate(q.get('options', [])):
                 with cols[i % 2]:
@@ -160,7 +191,6 @@ elif st.session_state.page == 'doing':
                         st.session_state.temp_choice = i
                         st.rerun()
 
-            # NÚT TRẢ LỜI
             st.markdown("---")
             if st.session_state.temp_choice is not None:
                 if st.button("✅ XÁC NHẬN TRẢ LỜI", use_container_width=True):
@@ -176,7 +206,7 @@ elif st.session_state.page == 'doing':
                 st.warning("Vui lòng chọn 1 đáp án.")
         else:
             st.balloons()
-            st.success(f"🏆 Hoàn thành! Điểm: {st.session_state.score}/{total_q}")
+            st.success(f"🏆 Hoàn thành bài làm! Điểm: {st.session_state.score}/{total_q}")
             if st.button("HỌC TIẾP"):
                 st.session_state.page = 'select'
                 st.rerun()
