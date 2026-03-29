@@ -96,12 +96,32 @@ elif st.session_state.page == 'select':
     mode_name = st.radio("Chế độ", ["Lý thuyết", "Trắc nghiệm", "Kiểm tra"], horizontal=True)
     mode = "theory" if "Lý thuyết" in mode_name else "quiz" if "Trắc nghiệm" in mode_name else "test"
     
+    # --- ĐOẠN MỚI THÊM: CHỌN THEO CHƯƠNG ---
+    res = load_data(grade, subject, mode)
+    selected_chapter = "Tất cả"
+    
+    if res and mode != 'theory':
+        # Tự động lấy danh sách chương từ file JSON của bro
+        chapters = list(set([q.get('chapter', 'Chưa phân loại') for q in res]))
+        chapters.sort()
+        chapters.insert(0, "Tất cả")
+        selected_chapter = st.selectbox("Chọn Chương muốn ôn tập:", chapters)
+    # ---------------------------------------
+
     if st.button("VÀO HỌC"):
-        res = load_data(grade, subject, mode)
         if res:
-            st.session_state.data = res
+            if mode != 'theory':
+                # Lọc đúng chương mà bro đã chọn
+                if selected_chapter != "Tất cả":
+                    st.session_state.data = [q for q in res if q.get('chapter') == selected_chapter]
+                else:
+                    st.session_state.data = res
+                
+                random.shuffle(st.session_state.data)
+            else:
+                st.session_state.data = res
+                
             st.session_state.mode = mode
-            if mode != 'theory': random.shuffle(st.session_state.data)
             st.session_state.page = 'doing'
             st.session_state.current_idx = 0
             st.session_state.score = 0
