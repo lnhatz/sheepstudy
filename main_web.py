@@ -177,7 +177,7 @@ elif st.session_state.page == 'doing':
         total_q = min(len(data), 20)
         
         if idx < total_q:
-            st.write(f"📝 **Tiến độ: {idx + 1} / {total_q}**")
+            st.write(f" **Tiến độ: {idx + 1} / {total_q}**")
             st.progress((idx + 1) / total_q)
             
             q = data[idx]
@@ -193,7 +193,7 @@ elif st.session_state.page == 'doing':
 
             st.markdown("---")
             if st.session_state.temp_choice is not None:
-                if st.button("✅ XÁC NHẬN TRẢ LỜI", use_container_width=True):
+                if st.button("XÁC NHẬN TRẢ LỜI", use_container_width=True):
                     if st.session_state.temp_choice == q.get('answer'):
                         st.success("Đúng rồi!")
                         st.session_state.score += 1
@@ -206,7 +206,7 @@ elif st.session_state.page == 'doing':
                 st.warning("Vui lòng chọn 1 đáp án.")
         else:
             st.balloons()
-            st.success(f"🏆 Hoàn thành bài làm! Điểm: {st.session_state.score}/{total_q}")
+            st.success(f"Hoàn thành bài làm! Điểm: {st.session_state.score}/{total_q}")
             if st.button("HỌC TIẾP"):
                 st.session_state.page = 'select'
                 st.rerun()
