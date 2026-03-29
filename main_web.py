@@ -9,18 +9,25 @@ st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 CORAL_PINK = "#ff6b86"
 SOFT_BLUE = "#e1f5fe"
 
-# --- 2. CSS GIẤU MENU & FIX NÚT (BẢN PUBLIC) ---
+# --- 2. CSS GIẤU MENU ---
 st.markdown(f"""
     <style>
-    /* Giấu sạch Menu 3 gạch, Footer và Header để bạn bè không bấm xem code được */
+    /* Giấu sạch dấu vết hệ thống */
     #MainMenu {{visibility: hidden;}}
     header {{visibility: hidden;}}
     footer {{visibility: hidden;}}
     [data-testid="stHeader"] {{display: none;}}
 
-    /* Ép các nút bấm cân đối 100% */
+    /* Căn giữa cụm chứa nút bấm */
+    div.stButton {{
+        display: flex;
+        justify-content: center;
+    }}
+
+    /* Thiết kế nút bấm chuyên nghiệp */
     .stButton>button {{
-        width: 100% !important;
+        width: 100% !important; /* Đảm bảo đáp án trắc nghiệm luôn đều nhau */
+        max-width: 400px; /* Khống chế không cho nút quá dài trên máy tính */
         min-height: 70px !important;
         white-space: normal !important;
         word-wrap: break-word !important;
@@ -30,6 +37,12 @@ st.markdown(f"""
         font-weight: bold !important;
         font-size: 16px !important;
         border: none !important;
+        transition: 0.3s;
+    }}
+
+    .stButton>button:hover {{
+        transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi di chuột vào */
+        box-shadow: 0px 4px 15px rgba(255, 107, 134, 0.4);
     }}
     
     .theory-node {{
@@ -60,12 +73,11 @@ def load_data(grade, subject, mode):
     return []
 
 # --- 4. CÁC TRANG ---
-# --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
     st.write("<p style='text-align: center; font-size: 20px;'>Chào mừng bạn đến với Sheep Study!</p>", unsafe_allow_html=True)
     
-    # Tạo 3 cột để ép cái nút vào giữa
+    # 3 cột để ép cái nút vào giữa
     col1, col2, col3 = st.columns([1, 2, 1]) 
     with col2:
         if st.button("BẮT ĐẦU HỌC"):
@@ -124,7 +136,7 @@ elif st.session_state.page == 'doing':
                 with cols[i % 2]:
                     if st.button(opt, key=f"q_{idx}_{i}"):
                         if i == q.get('answer'):
-                            st.success("Đúng rồi! ✨")
+                            st.success("Đúng rồi!")
                             st.session_state.score += 1
                         else:
                             st.error(f"Sai rồi! Đáp án: {q['options'][q['answer']]}")
