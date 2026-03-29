@@ -12,19 +12,16 @@ SOFT_BLUE = "#e1f5fe"
 # --- 2. CSS TRANG TRÍ ---
 st.markdown(f"""
     <style>
-    /* Giấu sạch dấu vết hệ thống */
     #MainMenu {{visibility: hidden;}}
     header {{visibility: hidden;}}
     footer {{visibility: hidden;}}
     [data-testid="stHeader"] {{display: none;}}
 
-    /* Căn giữa cụm chứa nút bấm */
     div.stButton {{
         display: flex;
         justify-content: center;
     }}
 
-    /* Thiết kế nút bấm chuyên nghiệp */
     .stButton>button {{
         width: 100% !important;
         max-width: 400px;
@@ -37,14 +34,8 @@ st.markdown(f"""
         font-weight: bold !important;
         font-size: 16px !important;
         border: none !important;
-        transition: 0.3s;
     }}
     
-    .stButton>button:hover {{
-        transform: scale(1.05);
-        box-shadow: 0px 4px 15px rgba(255, 107, 134, 0.4);
-    }}
-
     .theory-node {{
         background-color: white;
         border: 2px solid {CORAL_PINK};
@@ -60,35 +51,32 @@ st.markdown(f"""
     </style>
     """, unsafe_allow_html=True)
 
-# --- 3. KHỞI TẠO BIẾN TẠM (SESSION STATE) ---
+# --- 3. KHỞI TẠO BIẾN TẠM ---
 if 'page' not in st.session_state: st.session_state.page = 'welcome'
 if 'data' not in st.session_state: st.session_state.data = []
 if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
 if 'score' not in st.session_state: st.session_state.score = 0
 if 'mode' not in st.session_state: st.session_state.mode = ''
 
-# --- 4. HÀM LOAD DỮ LIỆU ---
+# --- 4. HÀM LOAD DỮ LIỆU (GIỮ NGUYÊN GỐC) ---
 def load_data(grade, subject, mode):
-    path = f"data/{grade}_{mode}.json"
+    # Giữ nguyên logic: grade_mode.json (Ví dụ: 6_quiz.json)
+    path = f"{grade}_{mode}.json" 
     if os.path.exists(path):
         with open(path, 'r', encoding='utf-8') as f:
             return json.load(f)
     return None
 
 # --- 5. ĐIỀU HƯỚNG TRANG ---
-# A. TRANG CHÀO MỪNG
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
-    st.write("<p style='text-align: center; font-size: 20px;'>Học tập thông minh cùng Cừu nhỏ!</p>", unsafe_allow_html=True)
-    
+    st.write("<p style='text-align: center; font-size: 20px;'>Chào mừng bạn đến với Sheep Study!</p>", unsafe_allow_html=True)
     if st.button("BẮT ĐẦU HỌC"):
         st.session_state.page = 'select'
         st.rerun()
 
-# B. TRANG CHỌN MÔN & CHƯƠNG
 elif st.session_state.page == 'select':
     st.markdown(f"<h2 style='color: {CORAL_PINK}; text-align: center;'>LỰA CHỌN MÔN HỌC</h2>", unsafe_allow_html=True)
-    
     c1, c2 = st.columns(2)
     with c1:
         sb_name = st.selectbox("Môn học", ["Toán", "KHTN"])
@@ -99,20 +87,18 @@ elif st.session_state.page == 'select':
     mode_name = st.radio("Chế độ", ["Lý thuyết", "Trắc nghiệm", "Kiểm tra"], horizontal=True)
     mode = "theory" if "Lý thuyết" in mode_name else "quiz" if "Trắc nghiệm" in mode_name else "test"
     
-    # Logic quét chương
+    # --- THÊM CHỌN CHƯƠNG ---
     res = load_data(grade, subject, mode)
     selected_chapter = "Tất cả"
-    
     if res and mode != 'theory':
-        chapters = list(set([q.get('chapter', 'Chưa phân loại') for q in res]))
+        chapters = list(set([q.get('chapter', 'Khác') for q in res]))
         chapters.sort()
         chapters.insert(0, "Tất cả")
-        selected_chapter = st.selectbox("Chọn Chương muốn ôn tập:", chapters)
-    
+        selected_chapter = st.selectbox("Chọn Chương:", chapters)
+
     if st.button("VÀO HỌC"):
         if res:
             if mode != 'theory':
-                # Lọc theo chương
                 if selected_chapter != "Tất cả":
                     st.session_state.data = [q for q in res if q.get('chapter') == selected_chapter]
                 else:
@@ -120,20 +106,17 @@ elif st.session_state.page == 'select':
                 random.shuffle(st.session_state.data)
             else:
                 st.session_state.data = res
-                
             st.session_state.mode = mode
             st.session_state.page = 'doing'
             st.session_state.current_idx = 0
             st.session_state.score = 0
             st.rerun()
         else:
-            st.error("⚠️ Chưa có dữ liệu cho phần này!")
+            st.error("⚠️ Không tìm thấy file dữ liệu!")
 
-# C. TRANG NỘI DUNG (HỌC/THI)
 elif st.session_state.page == 'doing':
     data = st.session_state.data
     mode = st.session_state.mode
-    
     if st.button("⬅ Quay lại"):
         st.session_state.page = 'select'
         st.rerun()
@@ -150,17 +133,15 @@ elif st.session_state.page == 'doing':
                             st.markdown(f"<div class='theory-node'>📍 {pt}</div>", unsafe_allow_html=True)
     else:
         idx = st.session_state.current_idx
-        # Giới hạn 20 câu hoặc ít hơn nếu bộ đề ngắn
         total_q = min(len(data), 20)
         
         if idx < total_q:
-            # Hiển thị số câu và thanh tiến trình
+            # --- THÊM TIẾN ĐỘ X/Y ---
             st.write(f"📝 **Tiến độ: {idx + 1} / {total_q}**")
             st.progress((idx + 1) / total_q)
             
             q = data[idx]
             st.info(f"Câu {idx + 1}: {q.get('question')}")
-            
             cols = st.columns(2)
             for i, opt in enumerate(q.get('options', [])):
                 with cols[i % 2]:
@@ -174,7 +155,7 @@ elif st.session_state.page == 'doing':
                         st.rerun()
         else:
             st.balloons()
-            st.success(f"🏆 Hoàn thành! Điểm của bạn: {st.session_state.score}/{total_q}")
-            if st.button("Làm lại từ đầu"):
+            st.success(f"🏆 Hoàn thành! Điểm: {st.session_state.score}/{total_q}")
+            if st.button("Làm lại"):
                 st.session_state.page = 'select'
                 st.rerun()
