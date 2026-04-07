@@ -210,22 +210,17 @@ elif st.session_state.page == 'doing':
 
             st.markdown("---")
             if st.session_state.temp_choice is not None:
-                if st.button("XÁC NHẬN TRẢ LỜI", use_container_width=True):
-                    if st.session_state.temp_choice == q.get('answer'):
-                        st.success("Đúng rồi!")
-                        st.session_state.score += 1
-                    else:
-                        st.error(f"Tiếc quá! Đáp án đúng: {q['options'][q['answer']]}")
-                    st.session_state.current_idx += 1
-                    st.session_state.temp_choice = None
-                    st.rerun()
-            else:
-                st.warning("Vui lòng chọn 1 đáp án.")
+    if st.button("XÁC NHẬN TRẢ LỜI", use_container_width=True):
+        if st.session_state.temp_choice == q.get('answer'):
+            st.success("Đúng rồi!")
+            st.session_state.score += 1
         else:
-            st.balloons()
-            st.success(f"🏆 Hoàn thành! Điểm: {st.session_state.score}/{total_q}")
-            if st.button("VỀ MENU"):
-                st.session_state.page = 'select'
-                st.rerun()
+            st.error(f"Tiếc quá! Đáp án đúng: {q['options'][q['answer']]}")
+
+        time.sleep(0.8)  # ⬅️ CHÈN DÒNG NÀY
+
+        st.session_state.current_idx += 1
+        st.session_state.temp_choice = None
+        st.rerun()
 
 
