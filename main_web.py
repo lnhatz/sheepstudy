@@ -8,7 +8,7 @@ import time
 st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS CĂN GIỮA & FIX GIAO DIỆN ---
+# --- 2. CSS CĂN GIỮA NÚT CHỐT & NÚT BẮT ĐẦU ---
 st.markdown(f"""
     <style>
     #MainMenu {{visibility: hidden;}}
@@ -26,34 +26,29 @@ st.markdown(f"""
     .block-container {{
         background: rgba(255, 255, 255, 0.92); 
         border-radius: 25px;
-        padding: 2rem !important;
+        padding: 2rem 3rem !important;
         margin-top: 1rem !important;
-        max-width: 850px !important;
+        max-width: 900px !important;
         box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Căn giữa nội dung bên trong */
     }}
 
     .main-title {{
         text-align: center;
         color: {CORAL_PINK};
-        font-size: clamp(35px, 7vw, 60px) !important;
+        font-size: clamp(35px, 7vw, 65px) !important;
         font-weight: 900;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }}
 
-    /* Căn giữa nút bấm */
-    div.stButton {{
+    /* CSS ĐỂ CĂN GIỮA NÚT BẤM (KHI DÙNG TRONG DIV) */
+    .stButton {{
         display: flex;
         justify-content: center;
-        width: 100%;
     }}
 
     .stButton > button {{
         width: 100% !important;
-        max-width: 500px;
         min-height: 60px !important;
         border-radius: 15px !important;
         background-color: {CORAL_PINK} !important;
@@ -61,18 +56,24 @@ st.markdown(f"""
         font-weight: bold !important;
         font-size: 18px !important;
         border: none !important;
-        margin: 5px 0;
+        transition: 0.3s;
+    }}
+
+    /* Hiệu ứng hover cho nút */
+    .stButton > button:hover {{
+        transform: translateY(-2px);
+        box-shadow: 0px 5px 15px rgba(255, 107, 134, 0.3);
     }}
 
     .timer-box {{
-        padding: 10px 30px;
+        padding: 10px;
         border-radius: 15px;
         text-align: center;
         font-size: 24px;
         font-weight: bold;
         background: white;
         border: 2px solid {CORAL_PINK};
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }}
     </style>
 """, unsafe_allow_html=True)
@@ -94,9 +95,11 @@ def load_data(grade, subject, mode):
 # --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
-    st.write("<p style='text-align: center; font-size: 20px;'>Học tập thông minh cùng Cừu nhỏ!</p>", unsafe_allow_html=True)
-    col1, col2, col3 = st.columns([1, 2, 1]) 
-    with col2:
+    st.write("<p style='text-align: center; font-size: 20px; font-weight: 500;'>Học tập thông minh cùng Cừu nhỏ!</p>", unsafe_allow_html=True)
+    
+    # CĂN GIỮA NÚT BẮT ĐẦU BẰNG COLUMNS
+    c1, c2, c3 = st.columns([1, 1.5, 1])
+    with c2:
         if st.button("BẮT ĐẦU HỌC"):
             st.session_state.page = 'select'
             st.rerun()
@@ -120,58 +123,70 @@ elif st.session_state.page == 'select':
         chapters.insert(0, "Tất cả")
         selected_chapter = st.selectbox("Chọn Chương:", chapters)
 
-    if st.button("VÀO HỌC"):
-        if res:
-            st.session_state.data = [q for q in res if q.get('chapter') == selected_chapter] if selected_chapter != "Tất cả" and mode != 'theory' else res
-            if mode != 'theory': random.shuffle(st.session_state.data)
-            st.session_state.mode, st.session_state.page = mode, 'doing'
-            st.session_state.current_idx, st.session_state.score = 0, 0
-            st.session_state.temp_choice = None
-            st.session_state.start_time = time.time()
-            st.rerun()
-        else: st.error("⚠️ Không có dữ liệu!")
+    c1, c2, c3 = st.columns([1, 1.5, 1])
+    with c2:
+        if st.button("VÀO HỌC"):
+            if res:
+                st.session_state.data = [q for q in res if q.get('chapter') == selected_chapter] if selected_chapter != "Tất cả" and mode != 'theory' else res
+                if mode != 'theory': random.shuffle(st.session_state.data)
+                st.session_state.mode, st.session_state.page = mode, 'doing'
+                st.session_state.current_idx, st.session_state.score = 0, 0
+                st.session_state.temp_choice = None
+                st.session_state.start_time = time.time()
+                st.rerun()
+            else: st.error("⚠️ Không có dữ liệu!")
 
 elif st.session_state.page == 'doing':
+    if st.button("⬅ QUAY LẠI"):
+        st.session_state.page = 'select'
+        st.rerun()
+        
     data = st.session_state.data
     if st.session_state.mode == 'test':
         rem = max(0, 600 - int(time.time() - st.session_state.start_time))
         m, s = divmod(rem, 60)
-        st.markdown(f'<center><div class="timer-box">⏱️ {m:02d}:{s:02d}</div></center>', unsafe_allow_html=True)
+        st.markdown(f'<div class="timer-box">⏱️ {m:02d}:{s:02d}</div>', unsafe_allow_html=True)
         if rem <= 0: st.session_state.current_idx = 999; st.rerun()
 
     idx = st.session_state.current_idx
     total_q = min(len(data), 20)
     
     if idx < total_q:
-        st.write(f"<center>📝 <b>Câu {idx + 1} / {total_q}</b></center>", unsafe_allow_html=True)
+        st.write(f"📝 **Câu {idx + 1} / {total_q}**")
         st.progress((idx + 1) / total_q)
         q = data[idx]
         st.info(q.get('question'))
         
-        # Căn giữa các nút đáp án
+        # TRẢ LẠI 2 CỘT ĐÁP ÁN CHO BRO
+        cols = st.columns(2)
         for i, opt in enumerate(q.get('options', [])):
-            if st.button(opt, key=f"o_{idx}_{i}", type="primary" if st.session_state.temp_choice == i else "secondary"):
-                st.session_state.temp_choice = i
-                st.rerun()
+            with cols[i % 2]:
+                if st.button(opt, key=f"o_{idx}_{i}", type="primary" if st.session_state.temp_choice == i else "secondary"):
+                    st.session_state.temp_choice = i
+                    st.rerun()
 
         st.markdown("---")
         if st.session_state.temp_choice is not None:
-            if st.button("✅ XÁC NHẬN"):
-                if st.session_state.temp_choice == q.get('answer'):
-                    st.success("Chính xác! ✨")
-                    st.session_state.score += 1
-                else:
-                    st.error(f"Sai rồi! Đáp án: {q['options'][q['answer']]}")
-                
-                # DELAY 0.8 GIÂY NHƯ BRO YÊU CẦU
-                time.sleep(0.8)
-                
-                st.session_state.current_idx += 1
-                st.session_state.temp_choice = None
-                st.rerun()
+            # CĂN GIỮA NÚT XÁC NHẬN
+            cx1, cx2, cx3 = st.columns([1, 1.5, 1])
+            with cx2:
+                if st.button("✅ XÁC NHẬN"):
+                    if st.session_state.temp_choice == q.get('answer'):
+                        st.success("Chính xác! ✨")
+                        st.session_state.score += 1
+                    else:
+                        st.error(f"Sai rồi! Đáp án: {q['options'][q['answer']]}")
+                    
+                    time.sleep(0.8) # 0.8 GIÂY THẦN THÁNH
+                    
+                    st.session_state.current_idx += 1
+                    st.session_state.temp_choice = None
+                    st.rerun()
     else:
         st.balloons()
         st.success(f"🏆 Kết quả: {st.session_state.score}/{total_q}")
-        if st.button("LÀM LẠI"):
-            st.session_state.page = 'select'
-            st.rerun()
+        c1, c2, c3 = st.columns([1, 1.5, 1])
+        with c2:
+            if st.button("LÀM LẠI"):
+                st.session_state.page = 'select'
+                st.rerun()
