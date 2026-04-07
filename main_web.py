@@ -8,13 +8,13 @@ import time
 st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS CĂN GIỮA NÚT CHỐT & NÚT BẮT ĐẦU ---
+# --- 2. CSS CHUẨN (DÙNG NGOẶC KÉP ĐỂ TRÁNH LỖI F-STRING) ---
 st.markdown(f"""
     <style>
-    #MainMenu {{visibility: hidden;}}
-    header {{visibility: hidden;}}
-    footer {{visibility: hidden;}}
-    [data-testid="stHeader"] {{display: none;}}
+    #MainMenu {{ {{visibility: hidden;}} }}
+    header {{ {{visibility: hidden;}} }}
+    footer {{ {{visibility: hidden;}} }}
+    [data-testid="stHeader"] {{ {{display: none;}} }}
 
     .stApp {{
         background-image: url("https://png.pngtree.com/background/20250606/original/pngtree-back-to-school-artistic-background-picture-image_16624609.jpg");
@@ -41,7 +41,6 @@ st.markdown(f"""
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }}
 
-    /* CSS ĐỂ CĂN GIỮA NÚT BẤM (KHI DÙNG TRONG DIV) */
     .stButton {{
         display: flex;
         justify-content: center;
@@ -56,13 +55,6 @@ st.markdown(f"""
         font-weight: bold !important;
         font-size: 18px !important;
         border: none !important;
-        transition: 0.3s;
-    }}
-
-    /* Hiệu ứng hover cho nút */
-    .stButton > button:hover {{
-        transform: translateY(-2px);
-        box-shadow: 0px 5px 15px rgba(255, 107, 134, 0.3);
     }}
 
     .timer-box {{
@@ -86,7 +78,7 @@ if 'temp_choice' not in st.session_state: st.session_state.temp_choice = None
 if 'start_time' not in st.session_state: st.session_state.start_time = None
 
 def load_data(grade, subject, mode):
-    fname = f"data/{subject}/{grade}_{mode}.json"
+    fname = f"data/{{subject}}/{{grade}}_{{mode}}.json".format(subject=subject, grade=grade, mode=mode)
     if os.path.exists(fname):
         with open(fname, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -95,9 +87,8 @@ def load_data(grade, subject, mode):
 # --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
-    st.write("<p style='text-align: center; font-size: 20px; font-weight: 500;'>Học tập thông minh cùng Cừu nhỏ!</p>", unsafe_allow_html=True)
+    st.write("<p style='text-align: center; font-size: 20px;'>Học tập thông minh cùng Cừu nhỏ!</p>", unsafe_allow_html=True)
     
-    # CĂN GIỮA NÚT BẮT ĐẦU BẰNG COLUMNS
     c1, c2, c3 = st.columns([1, 1.5, 1])
     with c2:
         if st.button("BẮT ĐẦU HỌC"):
@@ -145,29 +136,27 @@ elif st.session_state.page == 'doing':
     if st.session_state.mode == 'test':
         rem = max(0, 600 - int(time.time() - st.session_state.start_time))
         m, s = divmod(rem, 60)
-        st.markdown(f'<div class="timer-box">⏱️ {m:02d}:{s:02d}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="timer-box">⏱️ {{m:02d}}:{{s:02d}}</div>'.format(m=m, s=s), unsafe_allow_html=True)
         if rem <= 0: st.session_state.current_idx = 999; st.rerun()
 
     idx = st.session_state.current_idx
     total_q = min(len(data), 20)
     
     if idx < total_q:
-        st.write(f"📝 **Câu {idx + 1} / {total_q}**")
+        st.write(f"📝 **Câu {{idx + 1}} / {{total_q}}**".format(idx=idx, total_q=total_q))
         st.progress((idx + 1) / total_q)
         q = data[idx]
         st.info(q.get('question'))
         
-        # TRẢ LẠI 2 CỘT ĐÁP ÁN CHO BRO
         cols = st.columns(2)
         for i, opt in enumerate(q.get('options', [])):
             with cols[i % 2]:
-                if st.button(opt, key=f"o_{idx}_{i}", type="primary" if st.session_state.temp_choice == i else "secondary"):
+                if st.button(opt, key=f"o_{{idx}}_{{i}}".format(idx=idx, i=i), type="primary" if st.session_state.temp_choice == i else "secondary"):
                     st.session_state.temp_choice = i
                     st.rerun()
 
         st.markdown("---")
         if st.session_state.temp_choice is not None:
-            # CĂN GIỮA NÚT XÁC NHẬN
             cx1, cx2, cx3 = st.columns([1, 1.5, 1])
             with cx2:
                 if st.button("✅ XÁC NHẬN"):
@@ -175,16 +164,15 @@ elif st.session_state.page == 'doing':
                         st.success("Chính xác! ✨")
                         st.session_state.score += 1
                     else:
-                        st.error(f"Sai rồi! Đáp án: {q['options'][q['answer']]}")
+                        st.error(f"Sai rồi! Đáp án: {{ans}}".format(ans=q['options'][q['answer']]))
                     
-                    time.sleep(0.8) # 0.8 GIÂY THẦN THÁNH
-                    
+                    time.sleep(0.8) # ĐỢI 0.8S ĐỂ NHÌN ĐÚNG/SAI
                     st.session_state.current_idx += 1
                     st.session_state.temp_choice = None
                     st.rerun()
     else:
         st.balloons()
-        st.success(f"🏆 Kết quả: {st.session_state.score}/{total_q}")
+        st.success(f"🏆 Kết quả: {{score}}/{{total}}".format(score=st.session_state.score, total=total_q))
         c1, c2, c3 = st.columns([1, 1.5, 1])
         with c2:
             if st.button("LÀM LẠI"):
