@@ -18,14 +18,39 @@ st.markdown(f"""
     footer {{visibility: hidden;}}
     [data-testid="stHeader"] {{display: none;}}
 
-    div.stButton {{
-        display: flex;
-        justify-content: center;
+    .stApp {{
+        background-image: url("https://png.pngtree.com/background/20250606/original/pngtree-back-to-school-artistic-background-picture-image_16624609.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }}
 
-    .stButton>button {{
-        width: 100% !important;
-        max-width: 400px;
+    .block-container {{
+        background: rgba(255, 255, 255, 0.78);
+        border-radius: 20px;
+        padding: 2rem;
+    }}
+
+    .main-title {{
+        text-align: center;
+        color: {CORAL_PINK};
+        font-size: clamp(28px, 6vw, 45px);
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }}
+
+    .theory-node {{
+        background-color: white;
+        border: 2px solid {CORAL_PINK};
+        border-radius: 12px;
+        padding: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        word-break: break-word;
+    }}
+
+    .stButton > button {{
         min-height: 70px !important;
         white-space: normal !important;
         word-wrap: break-word !important;
@@ -35,38 +60,9 @@ st.markdown(f"""
         font-weight: bold !important;
         font-size: 16px !important;
         border: none !important;
-        transition: 0.3s;
-    }}
-
-    .stButton>button:hover {{
-        transform: scale(1.05);
-        box-shadow: 0px 4px 15px rgba(255, 107, 134, 0.4);
-    }}
-    
-    .theory-node {{
-        background-color: white;
-        border: 2px solid {CORAL_PINK};
-        border-radius: 12px;
-        padding: 15px;
-        margin-bottom: 15px;
-        text-align: center;
-    }}
-
-    .main-title {{
-        text-align: center; color: {CORAL_PINK}; font-size: 45px; font-weight: bold;
-    }}
-
-    .timer-box {{
-        padding: 10px;
-        border-radius: 10px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        background-color: #f0f2f6;
-        margin-bottom: 20px;
     }}
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # --- 3. LOGIC HỆ THỐNG ---
 if 'page' not in st.session_state: st.session_state.page = 'welcome'
