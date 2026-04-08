@@ -9,14 +9,14 @@ st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS FIX LỖI HIỂN THỊ TIÊU ĐỀ ---
+# --- 2. CSS FIX LỖI (SỬ DỤNG NGOẶC KÉP {{ }} ĐỂ TRÁNH LỖI F-STRING) ---
 st.markdown(f"""
     <style>
     /* Giấu sạch dấu vết hệ thống */
-    #MainMenu {{visibility: hidden;}}
-    header {{visibility: hidden;}}
-    footer {{visibility: hidden;}}
-    [data-testid="stHeader"] {{display: none;}}
+    #MainMenu {{ {{visibility: hidden;}} }}
+    header {{ {{visibility: hidden;}} }}
+    footer {{ {{visibility: hidden;}} }}
+    [data-testid="stHeader"] {{ {{display: none;}} }}
 
     /* Hình nền */
     .stApp {{
@@ -27,29 +27,28 @@ st.markdown(f"""
         background-attachment: fixed;
     }}
 
-    /* Khung chứa nội dung - FIX LỖI Ở ĐÂY */
+    /* Khung chứa nội dung */
     .block-container {{
         background: rgba(255, 255, 255, 0.9); 
         border-radius: 25px;
-        padding: 2rem 3rem !important; /* Thu nhỏ padding trên dưới */
-        margin-top: 1rem !important;   /* Giảm margin-top để không bị đẩy quá sâu */
-        max-width: 950px !important;   /* Khống chế độ rộng để không bị loãng */
+        padding: 2rem 3rem !important;
+        margin-top: 1rem !important;
+        max-width: 950px !important;
         box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
     }}
 
-    /* Tiêu đề - FIX TRÀN KHUNG */
+    /* Tiêu đề */
     .main-title {{
         text-align: center;
         color: {CORAL_PINK};
-        font-size: clamp(35px, 7vw, 70px) !important; /* Chỉnh lại một chút cho vừa vặn */
+        font-size: clamp(35px, 7vw, 70px) !important;
         font-weight: 900;
         line-height: 1.2;
         margin-bottom: 1.5rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        word-wrap: break-word; /* Chống tràn chữ khi quá dài */
+        word-wrap: break-word;
     }}
 
-    /* Các thành phần khác giữ nguyên phong cách */
     .theory-node {{
         background-color: white;
         border: 2px solid {CORAL_PINK};
@@ -103,7 +102,7 @@ if 'temp_choice' not in st.session_state: st.session_state.temp_choice = None
 if 'start_time' not in st.session_state: st.session_state.start_time = None
 
 def load_data(grade, subject, mode):
-    fname = f"data/{subject}/{grade}_{mode}.json"
+    fname = f"data/{{subject}}/{{grade}}_{{mode}}.json".format(subject=subject, grade=grade, mode=mode)
     if os.path.exists(fname):
         with open(fname, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -135,26 +134,20 @@ elif st.session_state.page == 'select':
     res = load_data(grade, subject, mode)
     selected_chapter = "Tất cả"
     if res and mode != 'theory':
-        chapters = list(set([q.get('chapter', 'Khác') for q in res]))
-        chapters.sort()
+        chapters = sorted(list(set([q.get('chapter', 'Khác') for q in res])))
         chapters.insert(0, "Tất cả")
         selected_chapter = st.selectbox("Chọn Chương muốn ôn tập:", chapters)
 
     if st.button("VÀO HỌC"):
         if res:
             if mode != 'theory':
-                if selected_chapter != "Tất cả":
-                    st.session_state.data = [q for q in res if q.get('chapter') == selected_chapter]
-                else:
-                    st.session_state.data = res
+                st.session_state.data = [q for q in res if q.get('chapter') == selected_chapter] if selected_chapter != "Tất cả" else res
                 random.shuffle(st.session_state.data)
             else:
                 st.session_state.data = res
             
-            st.session_state.mode = mode
-            st.session_state.page = 'doing'
-            st.session_state.current_idx = 0
-            st.session_state.score = 0
+            st.session_state.mode, st.session_state.page = mode, 'doing'
+            st.session_state.current_idx, st.session_state.score = 0, 0
             st.session_state.temp_choice = None
             st.session_state.start_time = time.time()
             st.rerun()
@@ -162,24 +155,17 @@ elif st.session_state.page == 'select':
             st.error(f"⚠️ Không tìm thấy file dữ liệu.")
 
 elif st.session_state.page == 'doing':
-    if st.button("⬅ QUAY LẠI"):
-        st.session_state.page = 'select'
-        st.rerun()
-        
     data = st.session_state.data
     mode = st.session_state.mode
     
     if mode == 'test':
-        elapsed_time = time.time() - st.session_state.start_time
-        remaining_time = max(0, 600 - int(elapsed_time))
-        mins, secs = divmod(remaining_time, 60)
-        timer_color = "red" if remaining_time < 120 else CORAL_PINK
-        st.markdown(f'<div class="timer-box">⏱️ Thời gian: <span style="color: {timer_color};">{mins:02d}:{secs:02d}</span></div>', unsafe_allow_html=True)
-        if remaining_time <= 0:
-            st.session_state.current_idx = 999 
-            st.rerun()
+        rem = max(0, 600 - int(time.time() - st.session_state.start_time))
+        mins, secs = divmod(rem, 60)
+        st.markdown(f'<div class="timer-box">⏱️ Thời gian: {mins:02d}:{secs:02d}</div>', unsafe_allow_html=True)
+        if rem <= 0: st.session_state.current_idx = 999; st.rerun()
 
     if mode == 'theory':
+        if st.button("⬅ QUAY LẠI"): st.session_state.page = 'select'; st.rerun()
         for chapter in data:
             st.markdown(f"### 📂 {chapter.get('title')}")
             for lesson in chapter.get('lessons', []):
@@ -194,17 +180,16 @@ elif st.session_state.page == 'doing':
         total_q = min(len(data), 20)
         
         if idx < total_q:
+            if st.button("⬅ QUAY LẠI"): st.session_state.page = 'select'; st.rerun()
             st.write(f"📝 **Tiến độ: {idx + 1} / {total_q}**")
             st.progress((idx + 1) / total_q)
-            
             q = data[idx]
             st.info(f"Câu {idx + 1}: {q.get('question')}")
             
             cols = st.columns(2)
             for i, opt in enumerate(q.get('options', [])):
                 with cols[i % 2]:
-                    is_selected = (st.session_state.temp_choice == i)
-                    if st.button(opt, key=f"q_{idx}_{i}", type="primary" if is_selected else "secondary"):
+                    if st.button(opt, key=f"q_{idx}_{i}", type="primary" if st.session_state.temp_choice == i else "secondary"):
                         st.session_state.temp_choice = i
                         st.rerun()
 
@@ -215,14 +200,17 @@ elif st.session_state.page == 'doing':
                         st.success("Đúng rồi!")
                         st.session_state.score += 1
                     else:
-                        st.error(f"Tiếc quá! Đáp án đúng: {q['options'][q['answer']]}")
-
-                    time.sleep(0.8)  # ⬅️ CHÈN DÒNG NÀY
-
+                        st.error(f"Sai rồi! Đáp án đúng: {q['options'][q['answer']]}")
+                    time.sleep(0.8) # ĐỢI 0.8S ĐỂ XEM ĐÚNG/SAI
                     st.session_state.current_idx += 1
                     st.session_state.temp_choice = None
                     st.rerun()
             else:
                 st.warning("Vui lòng chọn 1 đáp án.")
-
-
+        else:
+            # --- MÀN HÌNH KẾT QUẢ ---
+            st.balloons()
+            st.markdown(f"<div style='text-align: center;'><h1>🏆 HOÀN THÀNH!</h1><h2>Điểm số: {st.session_state.score} / {total_q}</h2></div>", unsafe_allow_html=True)
+            if st.button("LÀM LẠI BÀI MỚI"):
+                st.session_state.page = 'select'
+                st.rerun()
