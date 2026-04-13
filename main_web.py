@@ -225,7 +225,7 @@ if "GEMINI_API" in st.secrets:
         import google.generativeai as genai
         genai.configure(api_key=st.secrets["GEMINI_API"])
         # THỬ DÙNG MODEL FLASH MỚI NHẤT
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
         st.subheader("🤖 Gia sư Sheep AI")
         user_ask = st.chat_input("Hỏi gia sư về bài học này...")
