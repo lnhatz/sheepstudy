@@ -13,10 +13,10 @@ CORAL_PINK = "#ff6b86"
 st.markdown(f"""
     <style>
     /* Giấu sạch dấu vết hệ thống */
-    #MainMenu {{ {{visibility: hidden;}} }}
-    header {{ {{visibility: hidden;}} }}
-    footer {{ {{visibility: hidden;}} }}
-    [data-testid="stHeader"] {{ {{display: none;}} }}
+    #MainMenu {{ visibility: hidden; }}
+    header {{ visibility: hidden; }}
+    footer {{ visibility: hidden; }}
+    [data-testid="stHeader"] {{ display: none; }}
 
     /* Hình nền */
     .stApp {{
@@ -204,7 +204,7 @@ elif st.session_state.page == 'doing':
                         st.session_state.score += 1
                     else:
                         st.error(f"Sai rồi! Đáp án đúng: {q['options'][q['answer']]}")
-                    time.sleep(0.8) # ĐỢI 0.8S ĐỂ XEM ĐÚNG/SAI
+                    time.sleep(0.8) 
                     st.session_state.current_idx += 1
                     st.session_state.temp_choice = None
                     st.rerun()
@@ -217,3 +217,24 @@ elif st.session_state.page == 'doing':
             if st.button("Quay lại"):
                 st.session_state.page = 'select'
                 st.rerun()
+
+# --- 5. GIA SƯ AI THÔNG MINH ---
+st.markdown("---")
+if "GEMINI_API" in st.secrets:
+    import google.generativeai as genai
+    genai.configure(api_key=st.secrets["GEMINI_API"])
+    model = genai.GenerativeModel('gemini-1.5-flash')
+
+    st.subheader("Gia sư Sheep AI")
+    user_ask = st.chat_input("Bạn chưa hiểu chỗ nào về bài học này? Hỏi tui đi...")
+    
+    if user_ask:
+        with st.chat_message("assistant"):
+            # Lấy 2000 ký tự đầu của dữ liệu làm ngữ cảnh để AI trả lời đúng trọng tâm
+            context = str(st.session_state.get('data', ''))[:2000] 
+            prompt = f"Dựa trên kiến thức học tập: {context}. Hãy giải thích ngắn gọn cho học sinh: {user_ask}"
+            
+            response = model.generate_content(prompt)
+            st.write(response.text)
+else:
+    st.info("💡 Mẹo: Nhớ dán API Key vào Streamlit Secrets để kích hoạt gia sư AI nhé!")
