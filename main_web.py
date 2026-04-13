@@ -80,6 +80,13 @@ st.markdown(f"""
         box-shadow: 0px 5px 15px rgba(255, 107, 134, 0.4);
     }}
 
+    /* CSS riêng cho nút Trắng khi không được chọn */
+    .stButton > button[kind="secondary"] {{
+        background-color: white !important;
+        color: {CORAL_PINK} !important;
+        border: 2px solid {CORAL_PINK} !important;
+    }}
+
     .timer-box {{
         padding: 10px;
         border-radius: 15px;
@@ -168,14 +175,11 @@ elif st.session_state.page == 'doing':
             st.session_state.page = 'select'
             st.rerun()
             
-        # --- THANH TÌM KIẾM MỚI ---
         search_query = st.text_input("🔍 Tìm kiếm từ khóa trong bài học").lower()
-        
         st.markdown("---")
         
         found_any = False
         for chapter in data:
-            # Lọc các bài học có chứa từ khóa tìm kiếm
             filtered_lessons = [
                 ls for ls in chapter.get('lessons', []) 
                 if search_query in ls['name'].lower() or search_query in ls['content'].lower()
@@ -190,7 +194,6 @@ elif st.session_state.page == 'doing':
                         cols = st.columns(2)
                         for i, pt in enumerate(points):
                             with cols[i % 2]:
-                                # Highlight từ khóa nếu muốn (optional)
                                 st.markdown(f"<div class='theory-node'>📍 {pt}</div>", unsafe_allow_html=True)
         
         if not found_any:
@@ -209,7 +212,13 @@ elif st.session_state.page == 'doing':
             cols = st.columns(2)
             for i, opt in enumerate(q.get('options', [])):
                 with cols[i % 2]:
-                    if st.button(opt, key=f"q_{idx}_{i}", type="primary" if st.session_state.temp_choice == i else "secondary"):
+                    # Nút sẽ đổi sang type "primary" (Hồng) nếu được chọn, ngược lại là "secondary" (Trắng)
+                    if st.button(
+                        opt, 
+                        key=f"q_{idx}_{i}", 
+                        type="primary" if st.session_state.temp_choice == i else "secondary",
+                        use_container_width=True
+                    ):
                         st.session_state.temp_choice = i
                         st.rerun()
 
