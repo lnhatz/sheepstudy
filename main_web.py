@@ -104,7 +104,6 @@ if 'page' not in st.session_state: st.session_state.page = 'welcome'
 if 'score' not in st.session_state: st.session_state.score = 0
 if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
 if 'temp_choice' not in st.session_state: st.session_state.temp_choice = None
-if 'start_time' not in st.session_state: st.session_state.start_time = None
 if 'end_time' not in st.session_state: st.session_state.end_time = None
 
 def load_data(grade, subject, mode):
@@ -155,9 +154,8 @@ elif st.session_state.page == 'select':
             st.session_state.mode, st.session_state.page = mode, 'doing'
             st.session_state.current_idx, st.session_state.score = 0, 0
             st.session_state.temp_choice = None
-            # FIX BUG ĐỒNG HỒ: Khóa thời gian kết thúc ngay khi bấm nút
-            st.session_state.start_time = time.time()
-            st.session_state.end_time = st.session_state.start_time + 600 # 10 phút
+            # Đặt thời gian kết thúc: 10 phút từ lúc bấm nút
+            st.session_state.end_time = time.time() + 600 
             st.rerun()
         else:
             st.error(f"⚠️ Không tìm thấy file dữ liệu.")
@@ -166,21 +164,16 @@ elif st.session_state.page == 'doing':
     data = st.session_state.data
     mode = st.session_state.mode
     
+    # CHỈ HIỆN ĐỒNG HỒ VÀ RERUN KHI ĐANG LÀM TEST
     if mode == 'test':
-        # Tính toán thời gian còn lại liên tục
         remaining = max(0, int(st.session_state.end_time - time.time()))
         mins, secs = divmod(remaining, 60)
         st.markdown(f'<div class="timer-box">⏱️ Thời gian còn lại: {mins:02d}:{secs:02d}</div>', unsafe_allow_html=True)
         
         if remaining <= 0:
-            st.error("⌛ Hết giờ làm bài!")
-            time.sleep(1)
+            st.error("⌛ Hết giờ!")
             st.session_state.current_idx = 999 
             st.rerun()
-        
-        # Tự động load lại trang mỗi giây để đồng hồ chạy mượt
-        time.sleep(0.1)
-        st.rerun()
 
     if mode == 'theory':
         if st.button("⬅ QUAY LẠI"): 
@@ -251,3 +244,8 @@ elif st.session_state.page == 'doing':
             if st.button("Quay lại"):
                 st.session_state.page = 'select'
                 st.rerun()
+    
+    # CHỈ TỰ ĐỘNG CẬP NHẬT ĐỒNG HỒ KHI Ở TRANG ĐANG LÀM TEST
+    if mode == 'test' and st.session_state.current_idx < total_q:
+        time.sleep(1)
+        st.rerun()
