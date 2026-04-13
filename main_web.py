@@ -169,7 +169,7 @@ elif st.session_state.page == 'doing':
             st.rerun()
             
         # --- THANH TÌM KIẾM MỚI ---
-        search_query = st.text_input("🔍 Tìm kiếm từ khóa (ví dụ: Tế bào, Lực,...)").lower()
+        search_query = st.text_input("🔍 Tìm kiếm từ khóa trong bài học").lower()
         
         st.markdown("---")
         
@@ -194,7 +194,7 @@ elif st.session_state.page == 'doing':
                                 st.markdown(f"<div class='theory-node'>📍 {pt}</div>", unsafe_allow_html=True)
         
         if not found_any:
-            st.warning("Chưa tìm thấy bài học nào khớp với từ khóa của bà.")
+            st.warning("Chưa tìm thấy bài học nào khớp với từ khóa của bạn.")
     else:
         idx = st.session_state.current_idx
         total_q = min(len(data), 20)
@@ -220,7 +220,7 @@ elif st.session_state.page == 'doing':
                         st.success("Đúng rồi!")
                         st.session_state.score += 1
                     else:
-                        st.error(f"Sai rồi! Đáp án đúng: {q['options'][q['answer']]}")
+                        st.error(f"Tiếc quá! Đáp án đúng: {q['options'][q['answer']]}")
                     time.sleep(0.8) 
                     st.session_state.current_idx += 1
                     st.session_state.temp_choice = None
