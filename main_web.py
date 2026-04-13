@@ -12,13 +12,11 @@ CORAL_PINK = "#ff6b86"
 # --- 2. CSS FIX LỖI MẤT MẢNH TRÊN & HIỆU ỨNG KÍNH MỜ ---
 st.markdown(f"""
     <style>
-    /* Giấu sạch dấu vết hệ thống */
     #MainMenu {{ visibility: hidden; }}
     header {{ visibility: hidden; }}
     footer {{ visibility: hidden; }}
     [data-testid="stHeader"] {{ display: none; }}
 
-    /* Hình nền */
     .stApp {{
         background-image: url("https://png.pngtree.com/background/20250606/original/pngtree-back-to-school-artistic-background-picture-image_16624609.jpg");
         background-size: cover;
@@ -27,20 +25,18 @@ st.markdown(f"""
         background-attachment: fixed;
     }}
 
-    /* KHUNG NỘI DUNG: ĐÃ FIX LỖI MẤT MẢNH TRÊN */
     .block-container {{
-        background: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
-        backdrop-filter: blur(10px); /* HIỆU ỨNG KÍNH MỜ NỔI CHỮ */
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
         border-radius: 25px;
         padding: 3rem !important;
-        margin-top: 5vh !important; /* ĐẨY XUỐNG ĐỂ KHÔNG MẤT MẢNH */
+        margin-top: 5vh !important;
         margin-bottom: 5vh !important;
         max-width: 950px !important;
         box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.3);
     }}
 
-    /* Tiêu đề */
     .main-title {{
         text-align: center;
         color: {CORAL_PINK};
@@ -211,32 +207,8 @@ elif st.session_state.page == 'doing':
             else:
                 st.warning("Vui lòng chọn 1 đáp án.")
         else:
-            # --- MÀN HÌNH KẾT QUẢ ---
             st.balloons()
             st.markdown(f"<div style='text-align: center;'><h1>🏆 HOÀN THÀNH!</h1><h2>Điểm số: {st.session_state.score} / {total_q}</h2></div>", unsafe_allow_html=True)
             if st.button("Quay lại"):
                 st.session_state.page = 'select'
                 st.rerun()
-
-# --- 5. GIA SƯ AI THÔNG MINH ---
-st.markdown("---")
-if "GEMINI_API" in st.secrets:
-    try:
-        import google.generativeai as genai
-        genai.configure(api_key=st.secrets["GEMINI_API"])
-        # THỬ DÙNG MODEL FLASH MỚI NHẤT
-        model = genai.GenerativeModel('gemini-1.5-flash-latest')
-
-        st.subheader("🤖 Gia sư Sheep AI")
-        user_ask = st.chat_input("Hỏi gia sư về bài học này...")
-        
-        if user_ask:
-            with st.chat_message("assistant"):
-                context = str(st.session_state.get('data', ''))[:2000] 
-                prompt = f"Dựa trên kiến thức: {context}. Trả lời ngắn: {user_ask}"
-                response = model.generate_content(prompt)
-                st.write(response.text)
-    except Exception as e:
-        st.error(f"Lỗi AI rồi bà ơi: {e}") # NÓ SẼ HIỆN LỖI THẬT Ở ĐÂY
-else:
-    st.info("Chưa có API Key trong Secrets!")
