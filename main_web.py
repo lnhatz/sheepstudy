@@ -223,7 +223,7 @@ st.markdown("---")
 if "GEMINI_API" in st.secrets:
     import google.generativeai as genai
     genai.configure(api_key=st.secrets["GEMINI_API"])
-    model = genai.GenerativeModel('gemini-1.0-pro')
+    model = genai.GenerativeModel('gemini-pro')
 
     st.subheader("Gia sư Sheep AI")
     user_ask = st.chat_input("Bạn chưa hiểu chỗ nào về bài học này? Hỏi tui đi...")
