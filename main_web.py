@@ -9,7 +9,7 @@ st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS FIX LỖI (SỬ DỤNG NGOẶC KÉP {{ }} ĐỂ TRÁNH LỖI F-STRING) ---
+# --- 2. CSS FIX LỖI MẤT MẢNH TRÊN & HIỆU ỨNG KÍNH MỜ ---
 st.markdown(f"""
     <style>
     /* Giấu sạch dấu vết hệ thống */
@@ -27,14 +27,17 @@ st.markdown(f"""
         background-attachment: fixed;
     }}
 
-    /* Khung chứa nội dung */
+    /* KHUNG NỘI DUNG: ĐÃ FIX LỖI MẤT MẢNH TRÊN */
     .block-container {{
-        background: rgba(255, 255, 255, 0.9); 
+        background: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
+        backdrop-filter: blur(10px); /* HIỆU ỨNG KÍNH MỜ NỔI CHỮ */
         border-radius: 25px;
-        padding: 2rem 3rem !important;
-        margin-top: 1rem !important;
+        padding: 3rem !important;
+        margin-top: 5vh !important; /* ĐẨY XUỐNG ĐỂ KHÔNG MẤT MẢNH */
+        margin-bottom: 5vh !important;
         max-width: 950px !important;
         box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }}
 
     /* Tiêu đề */
