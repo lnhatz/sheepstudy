@@ -164,16 +164,37 @@ elif st.session_state.page == 'doing':
         if rem <= 0: st.session_state.current_idx = 999; st.rerun()
 
     if mode == 'theory':
-        if st.button("⬅ QUAY LẠI"): st.session_state.page = 'select'; st.rerun()
+        if st.button("⬅ QUAY LẠI"): 
+            st.session_state.page = 'select'
+            st.rerun()
+            
+        # --- THANH TÌM KIẾM MỚI ---
+        search_query = st.text_input("🔍 Tìm kiếm từ khóa (ví dụ: Tế bào, Lực,...)").lower()
+        
+        st.markdown("---")
+        
+        found_any = False
         for chapter in data:
-            st.markdown(f"### 📂 {chapter.get('title')}")
-            for lesson in chapter.get('lessons', []):
-                with st.expander(f"🌿 {lesson['name']}"):
-                    points = [p.strip() for p in lesson['content'].split('.') if len(p.strip()) > 5]
-                    cols = st.columns(2)
-                    for i, pt in enumerate(points):
-                        with cols[i % 2]:
-                            st.markdown(f"<div class='theory-node'>📍 {pt}</div>", unsafe_allow_html=True)
+            # Lọc các bài học có chứa từ khóa tìm kiếm
+            filtered_lessons = [
+                ls for ls in chapter.get('lessons', []) 
+                if search_query in ls['name'].lower() or search_query in ls['content'].lower()
+            ]
+            
+            if filtered_lessons:
+                found_any = True
+                st.markdown(f"### 📂 {chapter.get('title')}")
+                for lesson in filtered_lessons:
+                    with st.expander(f"🌿 {lesson['name']}"):
+                        points = [p.strip() for p in lesson['content'].split('.') if len(p.strip()) > 5]
+                        cols = st.columns(2)
+                        for i, pt in enumerate(points):
+                            with cols[i % 2]:
+                                # Highlight từ khóa nếu muốn (optional)
+                                st.markdown(f"<div class='theory-node'>📍 {pt}</div>", unsafe_allow_html=True)
+        
+        if not found_any:
+            st.warning("Chưa tìm thấy bài học nào khớp với từ khóa của bà.")
     else:
         idx = st.session_state.current_idx
         total_q = min(len(data), 20)
