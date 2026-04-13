@@ -111,7 +111,7 @@ def load_data(grade, subject, mode):
 # --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
-    st.write("<p style='text-align: center; font-size: 20px; color: #444;'>Học tập thông minh cùng Cừu nhỏ!</p>", unsafe_allow_html=True)
+    st.write("<p style='text-align: center; font-size: 20px; color: #444;'>Học không khó, đã có sheep lo!</p>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 2, 1]) 
     with col2:
@@ -211,6 +211,6 @@ elif st.session_state.page == 'doing':
             # --- MÀN HÌNH KẾT QUẢ ---
             st.balloons()
             st.markdown(f"<div style='text-align: center;'><h1>🏆 HOÀN THÀNH!</h1><h2>Điểm số: {st.session_state.score} / {total_q}</h2></div>", unsafe_allow_html=True)
-            if st.button("LÀM LẠI BÀI MỚI"):
+            if st.button("Quay lại"):
                 st.session_state.page = 'select'
                 st.rerun()
