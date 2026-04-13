@@ -9,7 +9,7 @@ st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS FIX LỖI MẤT MẢNH TRÊN & HIỆU ỨNG KÍNH MỜ ---
+# --- 2. CSS ---
 st.markdown(f"""
     <style>
     #MainMenu {{ visibility: hidden; }}
@@ -80,7 +80,6 @@ st.markdown(f"""
         box-shadow: 0px 5px 15px rgba(255, 107, 134, 0.4);
     }}
 
-    /* CSS riêng cho nút Trắng khi không được chọn */
     .stButton > button[kind="secondary"] {{
         background-color: white !important;
         color: {CORAL_PINK} !important;
@@ -106,6 +105,7 @@ if 'score' not in st.session_state: st.session_state.score = 0
 if 'current_idx' not in st.session_state: st.session_state.current_idx = 0
 if 'temp_choice' not in st.session_state: st.session_state.temp_choice = None
 if 'start_time' not in st.session_state: st.session_state.start_time = None
+if 'end_time' not in st.session_state: st.session_state.end_time = None
 
 def load_data(grade, subject, mode):
     fname = f"data/{{subject}}/{{grade}}_{{mode}}.json".format(subject=subject, grade=grade, mode=mode)
@@ -155,7 +155,9 @@ elif st.session_state.page == 'select':
             st.session_state.mode, st.session_state.page = mode, 'doing'
             st.session_state.current_idx, st.session_state.score = 0, 0
             st.session_state.temp_choice = None
+            # FIX BUG ĐỒNG HỒ: Khóa thời gian kết thúc ngay khi bấm nút
             st.session_state.start_time = time.time()
+            st.session_state.end_time = st.session_state.start_time + 600 # 10 phút
             st.rerun()
         else:
             st.error(f"⚠️ Không tìm thấy file dữ liệu.")
@@ -165,17 +167,27 @@ elif st.session_state.page == 'doing':
     mode = st.session_state.mode
     
     if mode == 'test':
-        rem = max(0, 600 - int(time.time() - st.session_state.start_time))
-        mins, secs = divmod(rem, 60)
-        st.markdown(f'<div class="timer-box">⏱️ Thời gian: {mins:02d}:{secs:02d}</div>', unsafe_allow_html=True)
-        if rem <= 0: st.session_state.current_idx = 999; st.rerun()
+        # Tính toán thời gian còn lại liên tục
+        remaining = max(0, int(st.session_state.end_time - time.time()))
+        mins, secs = divmod(remaining, 60)
+        st.markdown(f'<div class="timer-box">⏱️ Thời gian còn lại: {mins:02d}:{secs:02d}</div>', unsafe_allow_html=True)
+        
+        if remaining <= 0:
+            st.error("⌛ Hết giờ làm bài!")
+            time.sleep(1)
+            st.session_state.current_idx = 999 
+            st.rerun()
+        
+        # Tự động load lại trang mỗi giây để đồng hồ chạy mượt
+        time.sleep(0.1)
+        st.rerun()
 
     if mode == 'theory':
         if st.button("⬅ QUAY LẠI"): 
             st.session_state.page = 'select'
             st.rerun()
             
-        search_query = st.text_input("🔍 Tìm kiếm từ khóa trong bài học").lower()
+        search_query = st.text_input("🔍 Tìm kiếm từ khóa").lower()
         st.markdown("---")
         
         found_any = False
@@ -184,7 +196,6 @@ elif st.session_state.page == 'doing':
                 ls for ls in chapter.get('lessons', []) 
                 if search_query in ls['name'].lower() or search_query in ls['content'].lower()
             ]
-            
             if filtered_lessons:
                 found_any = True
                 st.markdown(f"### 📂 {chapter.get('title')}")
@@ -195,9 +206,8 @@ elif st.session_state.page == 'doing':
                         for i, pt in enumerate(points):
                             with cols[i % 2]:
                                 st.markdown(f"<div class='theory-node'>📍 {pt}</div>", unsafe_allow_html=True)
-        
-        if not found_any:
-            st.warning("Chưa tìm thấy bài học nào khớp với từ khóa của bạn.")
+        if not found_any: st.warning("Không tìm thấy kết quả.")
+
     else:
         idx = st.session_state.current_idx
         total_q = min(len(data), 20)
@@ -212,7 +222,6 @@ elif st.session_state.page == 'doing':
             cols = st.columns(2)
             for i, opt in enumerate(q.get('options', [])):
                 with cols[i % 2]:
-                    # Nút sẽ đổi sang type "primary" (Hồng) nếu được chọn, ngược lại là "secondary" (Trắng)
                     if st.button(
                         opt, 
                         key=f"q_{idx}_{i}", 
@@ -229,7 +238,7 @@ elif st.session_state.page == 'doing':
                         st.success("Đúng rồi!")
                         st.session_state.score += 1
                     else:
-                        st.error(f"Tiếc quá! Đáp án đúng: {q['options'][q['answer']]}")
+                        st.error(f"Sai rồi! Đáp án đúng: {q['options'][q['answer']]}")
                     time.sleep(0.8) 
                     st.session_state.current_idx += 1
                     st.session_state.temp_choice = None
