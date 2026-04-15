@@ -110,31 +110,44 @@
     "lessons": [
       {
         "name": "Bài 21: Khái quát về trao đổi chất và chuyển hóa năng lượng",
-        "content": "• Trao đổi chất: Quá trình cơ thể lấy các chất từ môi trường, biến đổi chúng thành các chất cần thiết và tạo năng lượng, đồng thời thải chất bã ra ngoài.\n• Chuyển hóa năng lượng: Sự biến đổi năng lượng từ dạng này sang dạng khác (Ví dụ: quang năng sang hóa năng).\n• Vai trò: Đảm bảo sinh vật tồn tại; cung cấp nguyên liệu xây dựng tế bào; tạo năng lượng cho sinh trưởng, phát triển, cảm ứng và sinh sản."
+        "content": "• Trao đổi chất là quá trình cơ thể lấy chất từ môi trường, biến đổi chúng thành chất cần thiết và tạo năng lượng, đồng thời thải chất bã ra ngoài.\n• Chuyển hóa năng lượng là sự biến đổi năng lượng từ dạng này sang dạng khác (ví dụ: hóa năng trong thức ăn thành nhiệt năng).\n• Vai trò: Đảm bảo sinh vật tồn tại, giúp cơ thể sinh trưởng, phát triển, cảm ứng, vận động và sinh sản.\n• Cung cấp nguyên liệu xây dựng tế bào và tạo năng lượng ATP cho mọi hoạt động sống."
       },
       {
         "name": "Bài 22: Quang hợp ở thực vật",
-        "content": "• Khái niệm: Lá cây có diệp lục thu nhận ánh sáng để tổng hợp chất hữu cơ (đường glucose) và giải phóng oxygen từ nước và carbon dioxide.\n• Phương trình: Nước + Carbon dioxide → Chất hữu cơ + Oxygen (Điều kiện: Ánh sáng, Diệp lục).\n• Bào quan thực hiện: Lục lạp (chứa chất diệp lục hấp thụ năng lượng ánh sáng)."
+        "content": "• Quang hợp là quá trình lá cây có diệp lục thu nhận ánh sáng để tổng hợp chất hữu cơ và giải phóng oxygen từ nước và carbon dioxide.\n• Phương trình: Nước + Carbon dioxide → Chất hữu cơ + Oxygen (Điều kiện: Ánh sáng, diệp lục).\n• Lá là cơ quan quang hợp chính; lục lạp là bào quan thực hiện quang hợp chứa sắc tố diệp lục.\n• Sản phẩm của quang hợp (chất hữu cơ) là nguồn thức ăn cho mọi sinh vật và cung cấp nguyên liệu cho công nghiệp, dược liệu."
       },
       {
         "name": "Bài 23: Một số yếu tố ảnh hưởng đến quang hợp",
-        "content": "• Ánh sáng: Cường độ ánh sáng tăng thì hiệu suất quang hợp tăng đến ngưỡng nhất định.\n• Carbon dioxide: Nồng độ CO2 quá thấp sẽ ngừng quang hợp; quá cao sẽ gây độc cho cây.\n• Nhiệt độ: Quang hợp diễn ra tốt nhất ở 25 - 35°C.\n• Nước: Là nguyên liệu trực tiếp; điều tiết độ mở khí khổng để trao đổi khí."
+        "content": "• Ánh sáng: Cường độ ánh sáng tăng thì hiệu suất quang hợp tăng đến một mức nhất định (điểm bão hòa).\n• Carbon dioxide: Nồng độ CO2 ngoài môi trường quyết định tốc độ quang hợp; nồng độ quá cao sẽ gây độc cho cây.\n• Nhiệt độ: Quang hợp diễn ra tốt nhất từ 25-35°C; nhiệt độ quá thấp hoặc quá cao sẽ làm giảm hoặc ngừng quá trình.\n• Nước: Vừa là nguyên liệu trực tiếp, vừa tham gia điều tiết độ mở khí khổng để trao đổi khí và làm mát lá."
       },
       {
         "name": "Bài 24: Hô hấp tế bào",
-        "content": "• Khái niệm: Quá trình phân giải chất hữu cơ (glucose) giải phóng năng lượng ATP phục vụ hoạt động sống.\n• Phương trình: Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + nhiệt).\n• Vị trí: Diễn ra chủ yếu trong ty thể.\n• Ý nghĩa: Cung cấp năng lượng cho mọi hoạt động sống của cơ thể."
+        "content": "• Hô hấp tế bào là quá trình phân giải chất hữu cơ (glucose) giải phóng năng lượng ATP phục vụ hoạt động sống.\n• Phương trình: Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + nhiệt).\n• Quá trình này diễn ra chủ yếu trong ty thể của tất cả các tế bào sống.\n• Mối quan hệ: Quang hợp tổng hợp chất hữu cơ và tích lũy năng lượng; hô hấp phân giải chất hữu cơ và giải phóng năng lượng."
       },
       {
-        "name": "Bài 25: Tập tính ở động vật (Gộp nội dung cảm ứng)",
-        "content": "• Cảm ứng: Khả năng tiếp nhận và phản ứng lại kích thích từ môi trường giúp sinh vật thích nghi.\n• Tập tính: Hệ thống các phản ứng của động vật trả lời kích thích.\n• Phân loại: Tập tính bẩm sinh (ví dụ: nhện chăng lưới) và tập tính học được (ví dụ: khỉ làm xiếc)."
+        "name": "Bài 25: Một số yếu tố ảnh hưởng đến hô hấp tế bào",
+        "content": "• Hàm lượng nước: Tỉ lệ thuận với cường độ hô hấp; hạt khô có cường độ hô hấp rất thấp.\n• Nhiệt độ: Ảnh hưởng đến hoạt tính enzyme; nhiệt độ tối ưu cho hô hấp thường từ 30-35°C.\n• Nồng độ Oxy: Là nguyên liệu trực tiếp của hô hấp tế bào.\n• Nồng độ CO2: Khi nồng độ CO2 cao (khoảng 40%) sẽ gây ức chế và làm ngừng quá trình hô hấp.\n• Ứng dụng: Khống chế các yếu tố trên để bảo quản nông sản (bảo quản lạnh, khô, nồng độ CO2 cao)."
       },
       {
         "name": "Bài 26: Trao đổi nước và chất dinh dưỡng ở thực vật",
-        "content": "• Hấp thụ: Nước và muối khoáng hòa tan được lông hút rễ hấp thụ theo cơ chế thẩm thấu.\n• Vận chuyển: Mạch gỗ đưa nước/muối khoáng lên lá; Mạch rây đưa chất hữu cơ từ lá đi khắp cơ thể.\n• Thoát hơi nước: 98% nước hấp thụ bị thoát qua khí khổng, tạo lực kéo dòng nước đi lên và giúp làm mát lá."
+        "content": "• Hấp thụ nước và muối khoáng: Nhờ lông hút của rễ theo cơ chế thẩm thấu.\n• Vận chuyển: Mạch gỗ vận chuyển nước và muối khoáng từ rễ lên lá; Mạch rây vận chuyển chất hữu cơ từ lá đến các cơ quan.\n• Thoát hơi nước: Diễn ra chủ yếu qua khí khổng, tạo lực kéo dòng nước từ dưới lên và giúp hạ nhiệt độ bề mặt lá.\n• Vai trò của nước: Là thành phần cấu tạo tế bào, dung môi hòa tan các chất và tham gia các quá trình sinh lý."
       },
       {
         "name": "Bài 27: Trao đổi nước và chất dinh dưỡng ở động vật",
-        "content": "• Nhu cầu: Phụ thuộc vào loài, tuổi, trạng thái sinh lý và môi trường sống.\n• Con đường: Thức ăn → Tiêu hóa → Hấp thụ → Hệ tuần hoàn vận chuyển đến tế bào → Thải chất bã.\n• Vệ sinh ăn uống: Cần ăn đủ chất, uống đủ nước, đảm bảo an toàn thực phẩm để bảo vệ cơ thể."
+        "content": "• Nhu cầu nước: Thay đổi tùy theo loài, độ tuổi, nhiệt độ môi trường và cường độ hoạt động.\n• Con đường trao đổi: Lấy vào qua thức ăn, nước uống; thải ra qua nước tiểu, mồ hôi, hơi thở và phân.\n• Quá trình dinh dưỡng: Gồm ăn, uống -> Tiêu hóa thức ăn -> Hấp thụ dinh dưỡng -> Đồng hóa và thải bã.\n• Vệ sinh ăn uống: Ăn đủ chất, uống đủ nước, đảm bảo an toàn thực phẩm để phòng tránh bệnh tật."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII: CẢM ỨNG Ở SINH VẬT",
+    "lessons": [
+      {
+        "name": "Bài 33: Cảm ứng ở sinh vật",
+        "content": "• Cảm ứng là khả năng tiếp nhận và phản ứng lại các kích thích từ môi trường giúp sinh vật thích nghi để tồn tại.\n• Thực vật: Phản ứng chậm, khó nhận thấy, biểu hiện qua tính hướng sáng, hướng nước, hướng trọng lực và hướng tiếp xúc.\n• Động vật: Phản ứng nhanh, dễ nhận thấy, nhờ sự điều khiển của hệ thần kinh và hệ nội tiết."
+      },
+      {
+        "name": "Bài 34: Tập tính ở động vật",
+        "content": "• Tập tính là hệ thống các phản ứng của động vật trả lời các kích thích từ môi trường.\n• Tập tính bẩm sinh: Sinh ra đã có, mang tính bản năng và rất bền vững (ví dụ: nhện chăng lưới).\n• Tập tính học được: Hình thành trong quá trình sống qua học tập và trải nghiệm (ví dụ: khỉ làm xiếc).\n• Vai trò: Giúp động vật thích nghi, săn mồi, tự vệ và duy trì nòi giống."
       }
     ]
   },
@@ -143,11 +156,11 @@
     "lessons": [
       {
         "name": "Bài 36: Khái quát về sinh trưởng và phát triển",
-        "content": "• Sinh trưởng: Sự tăng kích thước và khối lượng cơ thể do tăng số lượng/kích thước tế bào.\n• Phát triển: Biến đổi bao gồm sinh trưởng, phân hóa tế bào và phát sinh cơ quan mới.\n• Mối quan hệ: Hai quá trình liên quan mật thiết; sinh trưởng là cơ sở cho phát triển."
+        "content": "• Sinh trưởng là quá trình tăng về kích thước và khối lượng của cơ thể do sự tăng lên về số lượng và kích thước tế bào.\n• Phát triển là quá trình biến đổi bao gồm sinh trưởng, phân hóa tế bào và phát sinh các cơ quan, hình thái mới.\n• Vòng đời là khoảng thời gian tính từ khi sinh vật được sinh ra, lớn lên, già yếu và chết đi.\n• Mối quan hệ: Sinh trưởng và phát triển luôn đi hành cùng nhau, sinh trưởng là tiền đề cho phát triển."
       },
       {
         "name": "Bài 37: Các nhân tố ảnh hưởng đến sinh trưởng và phát triển",
-        "content": "• Nhân tố bên trong: Đặc điểm di truyền, các loại hormone sinh trưởng.\n• Nhân tố bên ngoài: Nhiệt độ, ánh sáng, nước và chất dinh dưỡng.\n• Ứng dụng: Điều khiển yếu tố môi trường để tăng năng suất vật nuôi, cây trồng."
+        "content": "• Nhân tố bên trong: Đặc điểm di truyền của loài và các loại hormone điều tiết.\n• Nhân tố bên ngoài: Thức ăn (dinh dưỡng), nước, nhiệt độ và ánh sáng.\n• Ứng dụng: Cải tạo giống, điều khiển các yếu tố môi trường hoặc dùng hormone để tăng năng suất vật nuôi, cây trồng."
       }
     ]
   },
@@ -156,15 +169,15 @@
     "lessons": [
       {
         "name": "Bài 39: Sinh sản vô tính ở sinh vật",
-        "content": "• Khái niệm: Hình thức sinh sản không có sự kết hợp giao tử đực và cái; con cái giống hệt mẹ.\n• Hình thức ở thực vật: Sinh sản sinh dưỡng (Rễ củ, thân bò, lá, thân rễ).\n• Hình thức ở động vật: Nảy chồi (Thủy tức), phân mảnh (Sao biển), trinh sản (Ong).\n• Ứng dụng: Giâm, chiết, ghép cành và nuôi cấy mô tế bào."
+        "content": "• Khái niệm: Hình thức sinh sản không có sự kết hợp giữa giao tử đực và giao tử cái; con cái giống hệt mẹ.\n• Ở thực vật: Sinh sản sinh dưỡng từ rễ củ, thân bò, lá, thân rễ. Ứng dụng: Giâm, chiết, ghép cành.\n• Ở động vật: Các hình thức như nảy chồi (thủy tức), phân mảnh (sao biển), trinh sản (ong, kiến).\n• Ưu điểm: Tạo ra số lượng lớn cá thể nhanh chóng và giữ nguyên được các đặc tính tốt của cơ thể mẹ."
       },
       {
         "name": "Bài 40: Sinh sản hữu tính ở sinh vật",
-        "content": "• Khái niệm: Có sự kết hợp giao tử đực (tinh trùng) và cái (trứng) tạo thành hợp tử.\n• Ở thực vật: Hoa là cơ quan sinh sản (Thụ phấn → Thụ tinh → Tạo hạt và quả).\n• Ở động vật: Thụ tinh ngoài (trong môi trường nước) và thụ tinh trong (trong cơ thể con cái)."
+        "content": "• Khái niệm: Có sự kết hợp giữa giao tử đực (tinh trùng) và giao tử cái (trứng) tạo thành hợp tử.\n• Ở thực vật: Hoa là cơ quan sinh sản hữu tính. Quá trình gồm: Thụ phấn -> Thụ tinh -> Kết hạt và tạo quả.\n• Ở động vật: Thụ tinh ngoài (trong môi trường nước) và thụ tinh trong (trong cơ thể con cái).\n• Ưu điểm: Làm tăng biến dị di truyền ở thế hệ con, giúp sinh vật thích nghi tốt hơn với môi trường thay đổi."
       },
       {
         "name": "Bài 42: Cơ thể sinh vật là một thể thống nhất",
-        "content": "• Mối quan hệ: Trao đổi chất & chuyển hóa năng lượng cung cấp vật chất cho sinh trưởng, phát triển, sinh sản và cảm ứng.\n• Ý nghĩa: Đảm bảo sự ổn định, giúp sinh vật tồn tại và thích nghi như một khối thống nhất."
+        "content": "• Mối liên quan giữa các hoạt động sống: Trao đổi chất và chuyển hóa năng lượng cung cấp vật chất, năng lượng cho sinh trưởng, phát triển, sinh sản và cảm ứng.\n• Mối quan hệ giữa các bộ phận: Mọi cơ quan trong cơ thể đều phối hợp nhịp nhàng dưới sự điều khiển chung để đảm bảo sự tồn tại.\n• Kết luận: Cơ thể là một khối thống nhất hoàn chỉnh, không thể tách rời các hoạt động sống."
       }
     ]
   }
