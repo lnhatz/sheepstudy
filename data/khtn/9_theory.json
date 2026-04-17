@@ -58,33 +58,116 @@
     "title": "CHƯƠNG VI. KIM LOẠI",
     "lessons": [
       {
-        "name": "Bài 18. Tính chất của kim loại",
-        "content": "Vật lý: Dẻo, dẫn điện, dẫn nhiệt, ánh kim.\nHóa học: Tác dụng phi kim, axit, muối."
+        "name": "BÀI 18. TÍNH CHẤT CHUNG CỦA KIM LOẠI",
+        "content": "Kim loại là các nguyên tố có xu hướng nhường electron để tạo thành ion dương.\nTính chất vật lí đặc trưng gồm: dẫn điện, dẫn nhiệt tốt, có ánh kim và tính dẻo.\nTính chất hóa học chính là tính khử.\nKim loại tác dụng được với phi kim, nước (với kim loại mạnh), axit và dung dịch muối."
       },
       {
-        "name": "Bài 19. Dãy hoạt động hóa học",
-        "content": "Dãy: K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au.\nÝ nghĩa: Kim loại đứng trước đẩy kim loại đứng sau ra khỏi muối."
+        "name": "BÀI 19. DÃY HOẠT ĐỘNG HÓA HỌC",
+        "content": "Dãy hoạt động hóa học sắp xếp các kim loại theo mức độ hoạt động giảm dần: K, Na, Ca, Mg, Al, Zn, Fe, Ni, Sn, Pb, Cu, Ag, Au.\nÝ nghĩa: Kim loại đứng trước hoạt động mạnh hơn, có thể đẩy kim loại đứng sau ra khỏi dung dịch muối.\nKim loại đứng trước cũng phản ứng với axit mạnh hơn và dễ dàng hơn."
+      },
+      {
+        "name": "BÀI 20. TÁCH KIM LOẠI – HỢP KIM",
+        "content": "Tách kim loại là quá trình điều chế kim loại nguyên chất từ các hợp chất của chúng trong tự nhiên.\nCác phương pháp phổ biến gồm: điện phân, nhiệt luyện và thủy luyện.\nHợp kim là hỗn hợp của kim loại với các kim loại khác hoặc phi kim, thường có ưu điểm bền và cứng hơn kim loại nguyên chất.\nVí dụ: Thép (Fe và C), Đồng thau (Cu và Zn)."
+      },
+      {
+        "name": "BÀI 21. SO SÁNH KIM LOẠI VÀ PHI KIM",
+        "content": "Kim loại thường nhường electron và có tính khử, trong khi phi kim có xu hướng nhận electron và thể hiện tính oxi hóa.\nKim loại dẫn điện và nhiệt rất tốt, ngược lại phi kim thường dẫn điện và nhiệt kém."
       }
     ]
   },
   {
-    "title": "CHƯƠNG VII & VIII. HYDROCARBON - ALCOHOL - ACID",
+    "title": "CHƯƠNG VII. GIỚI THIỆU VỀ CHẤT HỮU CƠ, HYDROCARBON VÀ NGUỒN NHIÊN LIỆU",
     "lessons": [
       {
-        "name": "Bài 23. Alkane",
-        "content": "CTTQ: CnH2n+2 (n≥1). Chỉ có liên kết đơn.\nPhản ứng đặc trưng: Thế."
+        "name": "BÀI 22. GIỚI THIỆU VỀ HỢP CHẤT HỮU CƠ",
+        "content": "Hợp chất hữu cơ là hợp chất của cacbon, ngoại trừ một số chất vô cơ như CO, CO2, muối cacbonat.\nPhân loại chính gồm Hydrocarbon (chỉ chứa C và H) và dẫn xuất Hydrocarbon (có thêm các nguyên tố O, N...).\nĐặc điểm chung: chứa liên kết cộng hóa trị, nhiệt độ nóng chảy thấp và rất dễ cháy."
       },
       {
-        "name": "Bài 24. Alkene",
-        "content": "CTTQ: CnH2n (n≥2). Có 1 liên kết đôi C=C.\nPhản ứng đặc trưng: Cộng."
+        "name": "BÀI 23. CÔNG THỨC PHÂN TỬ VÀ CÔNG THỨC CẤU TẠO",
+        "content": "Công thức phân tử cho biết số lượng nguyên tử của mỗi nguyên tố có trong phân tử.\nCông thức cấu tạo biểu diễn cách thức liên kết giữa các nguyên tử trong phân tử.\nHiểu công thức cấu tạo giúp dự đoán được tính chất hóa học và nhận biết các đồng phân."
       },
       {
-        "name": "Bài 26. Ethylic alcohol",
-        "content": "CTCT: C2H5OH. Có nhóm -OH.\nĐộ rượu = (Vr / Vhh) * 100."
+        "name": "BÀI 24. METHANE (CH4)",
+        "content": "Methane là hydrocarbon đơn giản nhất, là chất khí không màu và nhẹ hơn không khí.\nTính chất hóa học: tham gia phản ứng cháy tỏa nhiều nhiệt và phản ứng thế với clo dưới ánh sáng.\nỨng dụng chủ yếu làm nhiên liệu (khí gas)."
       },
       {
-        "name": "Bài 27. Acetic acid",
-        "content": "CTCT: CH3COOH. Có nhóm -COOH (tính axit).\nTham gia phản ứng este hóa với rượu etylic."
+        "name": "BÀI 25. ETHYLENE (C2H4)",
+        "content": "Ethylene là hydrocarbon không no, trong phân tử có một liên kết đôi.\nTính chất đặc trưng là phản ứng cộng, làm mất màu dung dịch nước Brom (dùng để nhận biết).\nỨng dụng: dùng làm chín trái cây và là nguyên liệu sản xuất nhựa PE."
+      },
+      {
+        "name": "BÀI 26. ACETYLENE (C2H2)",
+        "content": "Acetylene là hydrocarbon không no, phân tử có chứa một liên kết ba.\nTính chất hóa học: tham gia phản ứng cháy và phản ứng cộng với dung dịch Brom.\nỨng dụng quan trọng nhất là dùng trong đèn xì để hàn cắt kim loại."
+      },
+      {
+        "name": "BÀI 27. NHIÊN LIỆU VÀ NĂNG LƯỢNG",
+        "content": "Nhiên liệu là những chất khi cháy sẽ giải phóng năng lượng dưới dạng nhiệt.\nPhân loại theo trạng thái gồm: nhiên liệu rắn (than), lỏng (xăng, dầu) và khí (gas).\nCần sử dụng nhiên liệu hiệu quả để tiết kiệm tài nguyên và giảm thiểu ô nhiễm môi trường."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII. RƯỢU ETYLIC – AXIT AXETIC – CHẤT BÉO",
+    "lessons": [
+      {
+        "name": "BÀI 28. RƯỢU ETYLIC (C2H5OH)",
+        "content": "Rượu etylic là hợp chất hữu cơ có nhóm chức –OH, tan vô hạn trong nước.\nTính chất hóa học: phản ứng cháy và phản ứng với kim loại mạnh như Natri giải phóng khí Hidro.\nỨng dụng: làm nhiên liệu, dung môi và chất sát trùng."
+      },
+      {
+        "name": "BÀI 29. AXIT AXETIC (CH3COOH)",
+        "content": "Axit axetic là axit hữu cơ có nhóm chức –COOH, có vị chua đặc trưng trong giấm ăn.\nThể hiện đầy đủ tính chất của một axit: làm quỳ tím hóa đỏ, tác dụng với kim loại, bazơ và muối.\nPhản ứng đặc trưng là phản ứng este hóa khi tác dụng với rượu etylic."
+      },
+      {
+        "name": "BÀI 30. MỐI LIÊN HỆ GIỮA RƯỢU – AXIT – ESTE",
+        "content": "Rượu có thể được oxi hóa thành axit, và axit tác dụng với rượu tạo thành este.\nQuá trình lên men từ đường (glucose) cũng tạo ra rượu etylic.\nSơ đồ chuyển hóa cơ bản: Rượu -> Axit -> Este."
+      },
+      {
+        "name": "BÀI 31. CHẤT BÉO",
+        "content": "Chất béo là hỗn hợp các este của glixerol và các axit béo.\nTính chất vật lí: nhẹ hơn nước và không tan trong nước.\nTính chất hóa học quan trọng là phản ứng thủy phân trong môi trường kiềm (phản ứng xà phòng hóa) tạo ra xà phòng và glixerol."
+      },
+      {
+        "name": "BÀI 32. VAI TRÒ CỦA CHẤT BÉO VÀ DINH DƯỠNG",
+        "content": "Chất béo là nguồn cung cấp năng lượng quan trọng cho cơ thể và giúp hòa tan các vitamin (A, D, E, K).\nCần có chế độ ăn hợp lý vì thừa chất béo gây béo phì, nhưng thiếu sẽ dẫn đến suy nhược năng lượng."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX. LIPID – CARBOHYDRATE – PROTEIN – POLYMER",
+    "lessons": [
+      {
+        "name": "BÀI 33. LIPID",
+        "content": "Lipid là nhóm hợp chất hữu cơ không tan trong nước nhưng tan trong dung môi hữu cơ, bao gồm chất béo, sáp...\nThành phần chủ yếu là C, H, O. Vai trò chính là dự trữ năng lượng và bảo vệ cơ thể."
+      },
+      {
+        "name": "BÀI 34. CARBOHYDRATE",
+        "content": "Carbohydrate là hợp chất hữu cơ chứa C, H, O, là nguồn năng lượng chính cho sinh vật.\nPhân loại: Đường đơn (glucozơ), đường đôi (saccarozơ) và đa đường (tinh bột, xenlulozơ).\nPhản ứng lên men glucozơ tạo ra rượu etylic và khí CO2."
+      },
+      {
+        "name": "BÀI 35. PROTEIN",
+        "content": "Protein là những polymer được tạo thành từ các đơn vị nhỏ là amino axit.\nThành phần luôn có Nitơ (N). Vai trò là cấu tạo nên tế bào, enzyme và hormone trong cơ thể.\nTính chất hóa học đặc trưng là phản ứng thủy phân tạo lại các amino axit."
+      },
+      {
+        "name": "BÀI 36. POLYMER",
+        "content": "Polymer là những chất có phân tử khối rất lớn, cấu tạo từ nhiều monomer liên kết với nhau.\nPhân loại thành polymer thiên nhiên (tinh bột, cao su) và polymer tổng hợp (nhựa PE, PVC, nilon).\nPhản ứng trùng hợp là phương pháp phổ biến để tạo ra các loại nhựa tổng hợp."
+      },
+      {
+        "name": "BÀI 37. VẬT LIỆU POLYMER VÀ MÔI TRƯỜNG",
+        "content": "Vật liệu polymer (nhựa) rất bền nhưng khó phân hủy, gây ô nhiễm môi trường nghiêm trọng.\nGiải pháp: tăng cường tái chế, hạn chế đồ nhựa một lần và phát triển nhựa sinh học thân thiện với môi trường."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG X. KHAI THÁC TÀI NGUYÊN TỪ VỎ TRÁI ĐẤT",
+    "lessons": [
+      {
+        "name": "BÀI 33. SƠ LƯỢC VỀ HOÁ HỌC CỦA VỎ TRÁI ĐẤT VÀ KHAI THÁC TÀI NGUYÊN",
+        "content": "Oxi và Silic là hai nguyên tố phổ biến nhất trong vỏ Trái Đất, tồn tại chủ yếu dưới dạng oxit và silicat.\nTài nguyên từ vỏ Trái Đất bao gồm khoáng sản kim loại, phi kim và nhiên liệu hóa thạch.\nCác phương pháp khai thác chủ yếu là khai thác lộ thiên và khai thác hầm lò."
+      },
+      {
+        "name": "BÀI 34. KHAI THÁC ĐÁ VÔI – CÔNG NGHỆ SILICAT",
+        "content": "Đá vôi (CaCO3) là nguyên liệu quan trọng để sản xuất vôi sống (CaO) qua phản ứng nung.\nCông nghệ silicat bao gồm sản xuất thủy tinh (từ cát SiO2), xi măng và gốm sứ.\nCác sản phẩm này đóng vai trò thiết yếu trong xây dựng và đời sống."
+      },
+      {
+        "name": "BÀI 35. KHAI THÁC NHIÊN LIỆU HÓA THẠCH – CHU TRÌNH CARBON",
+        "content": "Nhiên liệu hóa thạch gồm than đá, dầu mỏ và khí thiên nhiên, là nguồn cung cấp năng lượng chính nhưng không tái tạo.\nChu trình carbon mô tả sự luân chuyển của CO2 giữa sinh vật và môi trường qua quang hợp, hô hấp và đốt cháy.\nViệc đốt quá nhiều nhiên liệu hóa thạch làm tăng nồng độ CO2, gây hiệu ứng nhà kính và biến đổi khí hậu toàn cầu."
       }
     ]
   },
