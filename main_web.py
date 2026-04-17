@@ -9,7 +9,7 @@ st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS FIX LỖI MẤT MẢNH TRÊN & HIỆU ỨNG KÍNH MỜ ---
+# --- 2. CSS  ---
 st.markdown(f"""
     <style>
     #MainMenu {{ {{visibility: hidden;}} }}
@@ -116,7 +116,7 @@ def load_data(grade, subject, mode):
 # --- 4. CÁC TRANG ---
 if st.session_state.page == 'welcome':
     st.markdown('<p class="main-title">✿ SHEEP STUDY ✿</p>', unsafe_allow_html=True)
-    st.write("<p style='text-align: center; font-size: 20px; color: #444;'>Học không khó, đã có sheep lo!</p>", unsafe_allow_html=True)
+    st.write("<p style='text-align: center; font-size: 20px; color: #444;'>HỌC KHÔNG KHÓ, ĐÃ CÓ SHEEP LO!</p>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 2, 1]) 
     with col2:
@@ -183,7 +183,7 @@ elif st.session_state.page == 'doing':
         
         # Nếu hết thời gian
         if remaining <= 0:
-            st.warning("⏰ Đã hết thời gian làm bài! Đang tự động nộp bài...")
+            st.warning("⏰ Đã hết thời gian làm bài! Đang nộp bài...")
             time.sleep(1.5) # Cho user 1.5 giây để định thần
             st.session_state.current_idx = total_q # Ép chỉ số hiện tại bằng tổng câu để nhảy sang trang kết quả
             st.rerun()
@@ -231,7 +231,7 @@ elif st.session_state.page == 'doing':
                         st.success("Đúng rồi!")
                         st.session_state.score += 1
                     else:
-                        st.error(f"Sai rồi! Đáp án đúng: {q['options'][q['answer']]}")
+                        st.error(f"Tiếc quá! Đáp án đúng: {q['options'][q['answer']]}")
                     time.sleep(0.8) 
                     st.session_state.current_idx += 1
                     st.session_state.temp_choice = None
