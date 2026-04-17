@@ -1,89 +1,174 @@
 [
   {
-    "title": "CHƯƠNG I: ĐA THỨC",
+    "title": "CHƯƠNG I. ĐA THỨC",
     "lessons": [
       {
-        "name": "Đơn thức và Đơn thức thu gọn",
-        "content": "Đơn thức: Gồm số, biến hoặc tích số và biến. \nBậc của đơn thức: Tổng số mũ của các biến.\nĐơn thức thu gọn: Gồm hệ số và phần biến đã được gom lại."
+        "name": "BÀI 1. ĐƠN THỨC",
+        "content": "Đơn thức là biểu thức đại số chỉ gồm một số hoặc một biến, hoặc có dạng tích của những số và biến. Đơn thức thu gọn gồm hệ số và phần biến, mỗi biến chỉ xuất hiện một lần với số mũ nguyên dương. Bậc của đơn thức (hệ số khác 0) là tổng số mũ của các biến. Hai đơn thức đồng dạng có hệ số khác 0 và phần biến giống nhau[cite: 352, 355, 359, 365, 370]."
       },
       {
-        "name": "Đa thức và Phép toán",
-        "content": "Đa thức: Tổng của những đơn thức.\nCộng/Trừ: Nhóm hạng tử đồng dạng.\nNhân đơn thức với đa thức: A(B + C) = AB + AC.\nNhân đa thức: (A + B)(C + D) = AC + AD + BC + BD."
-      }
-    ]
-  },
-  {
-    "title": "CHƯƠNG II: HẰNG ĐẲNG THỨC ĐÁNG NHỚ",
-    "lessons": [
-      {
-        "name": "7 Hằng đẳng thức đáng nhớ",
-        "content": "1. (A+B)² = A²+2AB+B²\n2. (A-B)² = A²-2AB+B²\n3. A²-B² = (A-B)(A+B)\n4. (A+B)³ = A³+3A²B+3AB²+B³\n5. (A-B)³ = A³-3A²B+3AB²-B³\n6. A³+B³ = (A+B)(A²-AB+B²)\n7. A³-B³ = (A-B)(A²+AB+B²)"
+        "name": "BÀI 2. ĐA THỨC",
+        "content": "Đa thức là tổng của những đơn thức; mỗi đơn thức gọi là một hạng tử. Đa thức thu gọn không có hai hạng tử nào đồng dạng. Bậc của đa thức là bậc của hạng tử có bậc cao nhất trong dạng thu gọn của nó[cite: 373, 376, 380, 383]."
       },
       {
-        "name": "Phân tích đa thức thành nhân tử",
-        "content": "Phương pháp chính:\n- Đặt nhân tử chung.\n- Dùng hằng đẳng thức.\n- Nhóm hạng tử.\n- Phối hợp nhiều phương pháp."
-      }
-    ]
-  },
-  {
-    "title": "CHƯƠNG III: TỨ GIÁC",
-    "lessons": [
-      {
-        "name": "Các loại hình tứ giác đặc biệt",
-        "content": "Tứ giác: Tổng góc = 360°.\nHình thang cân: 2 góc kề 1 đáy bằng nhau hoặc 2 đường chéo bằng nhau.\nHình bình hành: Các cặp cạnh đối song song.\nHình chữ nhật: Tứ giác có 4 góc vuông.\nHình thoi: Tứ giác có 4 cạnh bằng nhau.\nHình vuông: Kết hợp tính chất hình chữ nhật và hình thoi."
-      }
-    ]
-  },
-  {
-    "title": "CHƯƠNG IV: ĐỊNH LÍ THALÈS",
-    "lessons": [
-      {
-        "name": "Định lí Thalès và Đường trung bình",
-        "content": "Thalès: AM/AB = AN/AC (nếu MN // BC).\nĐường trung bình: Nối trung điểm 2 cạnh, song song và bằng nửa cạnh thứ ba.\nĐường phân giác: DB/DC = AB/AC."
-      }
-    ]
-  },
-  {
-    "title": "CHƯƠNG VI: PHÂN THỨC ĐẠI SỐ",
-    "lessons": [
-      {
-        "name": "Khái niệm và Tính chất phân thức",
-        "content": "Dạng: A/B (B ≠ 0). \nTính chất: A/B = (A.M)/(B.M) hoặc (A:N)/(B:N).\nĐổi dấu: A/B = -A/-B."
+        "name": "BÀI 3. PHÉP CỘNG VÀ PHÉP TRỪ ĐA THỨC",
+        "content": "Cộng hay trừ hai đa thức là thu gọn đa thức nhận được sau khi nối chúng bởi dấu '+' hay '-'. Quy tắc: Viết đa thức trong ngoặc, bỏ ngoặc (đổi dấu nếu trước ngoặc là dấu '-'), sau đó nhóm các hạng tử đồng dạng để thu gọn[cite: 386, 389, 394, 396]."
       },
       {
-        "name": "Phép toán phân thức",
-        "content": "Cộng/Trừ: Quy đồng mẫu rồi cộng tử.\nNhân: (A/B) * (C/D) = (A.C)/(B.D).\nChia: (A/B) : (C/D) = (A/B) * (D/C)."
-      }
-    ]
-  },
-  {
-    "title": "CHƯƠNG VII: PHƯƠNG TRÌNH VÀ HÀM SỐ BẬC NHẤT",
-    "lessons": [
-      {
-        "name": "Phương trình bậc nhất một ẩn",
-        "content": "Dạng: ax + b = 0 (a ≠ 0).\nNghiệm: x = -b/a.\nGiải bài toán lập phương trình: Chọn ẩn -> Lập PT -> Giải -> Kết luận."
+        "name": "BÀI 4. PHÉP NHÂN ĐA THỨC",
+        "content": "Nhân đơn thức với đa thức: Nhân đơn thức với từng hạng tử của đa thức rồi cộng các tích. Nhân đa thức với đa thức: Nhân mỗi hạng tử của đa thức này với từng hạng tử của đa thức kia rồi cộng các tích[cite: 399, 403, 405]."
       },
       {
-        "name": "Hàm số bậc nhất y = ax + b",
-        "content": "Hệ số góc a: a > 0 (góc nhọn), a < 0 (góc tù).\nĐồ thị: Là đường thẳng cắt Oy tại (0;b), cắt Ox tại (-b/a; 0)."
+        "name": "BÀI 5. PHÉP CHIA ĐA THỨC CHO ĐƠN THỨC",
+        "content": "Chia đơn thức cho đơn thức: Chia hệ số cho hệ số, chia lũy thừa từng biến rồi nhân kết quả. Chia đa thức cho đơn thức: Chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả lại[cite: 410, 417, 423]."
       }
     ]
   },
   {
-    "title": "CHƯƠNG IX: TAM GIÁC ĐỒNG DẠNG",
+    "title": "CHƯƠNG II. HẰNG ĐẲNG THỨC ĐÁNG NHỚ VÀ ỨNG DỤNG",
     "lessons": [
       {
-        "name": "Các trường hợp đồng dạng",
-        "content": "Định nghĩa: Các góc bằng nhau, các cạnh tỉ lệ.\nTrường hợp: (ccc), (cgc), (gg).\nĐịnh lí Pythagore: c² = a² + b² (trong tam giác vuông)."
+        "name": "BÀI 6. HIỆU HAI BÌNH PHƯƠNG. BÌNH PHƯƠNG CỦA MỘT TỔNG HAY MỘT HIỆU",
+        "content": "1. Hiệu hai bình phương: A² - B² = (A - B)(A + B). 2. Bình phương của một tổng: (A + B)² = A² + 2AB + B². 3. Bình phương của một hiệu: (A - B)² = A² - 2AB + B²[cite: 462, 469, 470, 471]."
+      },
+      {
+        "name": "BÀI 7. LẬP PHƯƠNG CỦA MỘT TỔNG HAY MỘT HIỆU",
+        "content": "1. Lập phương của một tổng: (A + B)³ = A³ + 3A²B + 3AB² + B³. 2. Lập phương của một hiệu: (A - B)³ = A³ - 3A²B + 3AB² - B³[cite: 472, 474, 475]."
+      },
+      {
+        "name": "BÀI 8. TỔNG VÀ HIỆU HAI LẬP PHƯƠNG",
+        "content": "1. Tổng hai lập phương: A³ + B³ = (A + B)(A² - AB + B²). 2. Hiệu hai lập phương: A³ - B³ = (A - B)(A² + AB + B²)[cite: 476, 478, 479]."
+      },
+      {
+        "name": "BÀI 9. PHÂN TÍCH ĐA THỨC THÀNH NHÂN TỬ",
+        "content": "Là biến đổi đa thức thành tích của các đa thức khác. Các phương pháp chính: Đặt nhân tử chung, sử dụng hằng đẳng thức, nhóm hạng tử và các phương pháp phối hợp khác[cite: 480, 482, 483]."
       }
     ]
   },
   {
-    "title": "CHƯƠNG X: HÌNH KHỐI TRONG THỰC TIỄN",
+    "title": "CHƯƠNG III. TỨ GIÁC",
     "lessons": [
       {
-        "name": "Hình chóp tam giác đều và tứ giác đều",
-        "content": "Sxq = p.d (p: nửa chu vi đáy, d: trung đoạn).\nV = 1/3 * S_đáy * h (h: chiều cao)."
+        "name": "BÀI 10. TỨ GIÁC",
+        "content": "Tứ giác ABCD là hình gồm bốn đoạn thẳng AB, BC, CD, DA không có hai đoạn nào cùng nằm trên một đường thẳng. Tứ giác lồi luôn nằm về một phía của đường thẳng chứa bất kì cạnh nào. Tổng các góc của một tứ giác bằng 360°[cite: 521, 523, 525, 534]."
+      },
+      {
+        "name": "BÀI 11. HÌNH THANG CÂN",
+        "content": "Hình thang là tứ giác có hai cạnh đối song song. Hình thang cân là hình thang có hai góc kề một đáy bằng nhau. Tính chất: Hai cạnh bên bằng nhau, hai đường chéo bằng nhau. Dấu hiệu: Hình thang có hai đường chéo bằng nhau là hình thang cân[cite: 535, 537, 540, 78, 79, 80]."
+      },
+      {
+        "name": "BÀI 12. HÌNH BÌNH HÀNH",
+        "content": "Tứ giác có các cạnh đối song song. Tính chất: Cạnh đối bằng nhau, góc đối bằng nhau, hai đường chéo cắt nhau tại trung điểm mỗi đường. Dấu hiệu: Tứ giác có cạnh đối bằng nhau, hoặc góc đối bằng nhau, hoặc một cặp cạnh đối song song và bằng nhau, hoặc đường chéo cắt nhau tại trung điểm là hình bình hành[cite: 81, 82, 83, 84, 85, 87]."
+      },
+      {
+        "name": "BÀI 13. HÌNH CHỮ NHẬT",
+        "content": "Tứ giác có bốn góc vuông. Hai đường chéo bằng nhau và cắt nhau tại trung điểm mỗi đường. Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền. Hình bình hành có một góc vuông hoặc hai đường chéo bằng nhau là hình chữ nhật[cite: 88, 89, 90, 91, 92]."
+      },
+      {
+        "name": "BÀI 14. HÌNH THOI VÀ HÌNH VUÔNG",
+        "content": "Hình thoi: Tứ giác có bốn cạnh bằng nhau; hai đường chéo vuông góc và là phân giác các góc. Hình vuông: Tứ giác có bốn góc vuông và bốn cạnh bằng nhau; có tất cả tính chất của hình chữ nhật và hình thoi[cite: 94, 95]."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IV. ĐỊNH LÍ THALES",
+    "lessons": [
+      {
+        "name": "BÀI 15. ĐỊNH LÍ THALÈS TRONG TAM GIÁC",
+        "content": "Đoạn thẳng tỉ lệ: AB/CD = A'B'/C'D'. Định lí thuận: Đường thẳng song song một cạnh tam giác và cắt hai cạnh còn lại định ra các đoạn thẳng tương ứng tỉ lệ. Định lí đảo: Nếu một đường thẳng định ra các đoạn tỉ lệ thì nó song song với cạnh còn lại[cite: 127, 128, 129]."
+      },
+      {
+        "name": "BÀI 16. ĐƯỜNG TRUNG BÌNH CỦA TAM GIÁC",
+        "content": "Là đoạn thẳng nối trung điểm hai cạnh tam giác. Tính chất: Song song với cạnh thứ ba và bằng nửa cạnh đó[cite: 130, 131]."
+      },
+      {
+        "name": "BÀI 17. TÍNH CHẤT ĐƯỜNG PHÂN GIÁC CỦA TAM GIÁC",
+        "content": "Đường phân giác của một góc chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy. Tính chất này cũng áp dụng cho đường phân giác ngoài[cite: 133, 136]."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG V. DỮ LIỆU VÀ BIỂU ĐỒ",
+    "lessons": [
+      {
+        "name": "BÀI 18. THU THẬP VÀ PHÂN LOẠI DỮ LIỆU",
+        "content": "Thu thập: Trực tiếp (quan sát, phỏng vấn, khảo sát online...) hoặc gián tiếp. Phân loại: Dữ liệu là số (số liệu rời rạc/liên tục) và dữ liệu không là số (định danh/thứ bậc)[cite: 150, 156]."
+      },
+      {
+        "name": "BÀI 19. BIỂU DIỄN DỮ LIỆU BẰNG BẢNG, BIỂU ĐỒ",
+        "content": "Sử dụng biểu đồ tranh, biểu đồ cột (so sánh số lượng), biểu đồ đoạn thẳng (biểu diễn xu hướng theo thời gian), hoặc biểu đồ hình quạt tròn (tỉ lệ phần trăm)[cite: 19, 159]."
+      },
+      {
+        "name": "BÀI 20. PHÂN TÍCH SỐ LIỆU THỐNG KÊ DỰA VÀO BIỂU ĐỒ",
+        "content": "Phân tích các đặc điểm như giá trị lớn nhất, nhỏ nhất, xu hướng tăng/giảm và mối liên hệ giữa các đối tượng từ dữ liệu trực quan trên biểu đồ[cite: 20, 157]."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VI. PHÂN THỨC ĐẠI SỐ",
+    "lessons": [
+      {
+        "name": "BÀI 21. PHÂN THỨC ĐẠI SỐ",
+        "content": "Phân thức đại số có dạng A/B với A, B là đa thức và B khác 0. Hai phân thức bằng nhau khi tích chéo A.D = B.C. Để phân thức có nghĩa, biến số phải thỏa mãn điều kiện làm mẫu thức khác 0."
+      },
+      {
+        "name": "BÀI 22. TÍNH CHẤT CƠ BẢN CỦA PHÂN THỨC ĐẠI SỐ",
+        "content": "Giá trị phân thức không đổi khi nhân hoặc chia cả tử và mẫu với cùng một đa thức khác 0. Rút gọn phân thức bằng cách chia cả tử và mẫu cho nhân tử chung. Quy đồng mẫu thức là đưa các phân thức về cùng một mẫu chung thông qua nhân tử phụ."
+      },
+      {
+        "name": "BÀI 23. PHÉP CỘNG VÀ PHÉP TRỪ PHÂN THỨC ĐẠI SỐ",
+        "content": "Thực hiện cộng hoặc trừ các tử thức khi cùng mẫu, nếu khác mẫu phải quy đồng trước khi tính. Sử dụng quy tắc đổi dấu linh hoạt để tìm mẫu thức chung hoặc đơn giản hóa biểu thức."
+      },
+      {
+        "name": "BÀI 24. PHÉP NHÂN VÀ PHÉP CHIA PHÂN THỨC ĐẠI SỐ",
+        "content": "Nhân phân thức bằng cách nhân tử với tử và mẫu với mẫu. Chia phân thức bằng cách nhân với phân thức nghịch đảo của phân thức chia."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG VIII. MỞ ĐẦU VỀ TÍNH XÁC SUẤT CỦA BIẾN CỐ",
+    "lessons": [
+      {
+        "name": "BÀI 30. KẾT QUẢ CÓ THỂ VÀ KẾT QUẢ THUẬN LỢI",
+        "content": "Kết quả có thể bao gồm tất cả các tình huống có khả năng xảy ra trong một thí nghiệm ngẫu nhiên. Kết quả thuận lợi là những kết quả cụ thể làm cho một biến cố được xác định xảy ra."
+      },
+      {
+        "name": "BÀI 31. CÁCH TÍNH XÁC SUẤT CỦA BIẾN CỐ BẰNG TỈ SỐ",
+        "content": "Xác suất của một biến cố được đo bằng tỉ số giữa số kết quả thuận lợi và tổng số kết quả có thể xảy ra. Giá trị xác suất luôn nằm trong khoảng từ 0 đến 1."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG IX. TAM GIÁC ĐỒNG DẠNG",
+    "lessons": [
+      {
+        "name": "BÀI 33. HAI TAM GIÁC ĐỒNG DẠNG",
+        "content": "Hai tam giác đồng dạng khi có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ. Một đường thẳng song song với một cạnh của tam giác sẽ tạo ra tam giác mới đồng dạng với tam giác gốc."
+      },
+      {
+        "name": "BÀI 35. ĐỊNH LÝ PYTHAGORE VÀ ỨNG DỤNG",
+        "content": "Trong tam giác vuông, tổng bình phương hai cạnh góc vuông bằng bình phương cạnh huyền. Ngược lại, nếu một tam giác thỏa mãn hệ thức này thì đó chắc chắn là tam giác vuông."
+      },
+      {
+        "name": "BÀI 36. CÁC TRƯỜNG HỢP ĐỒNG DẠNG CỦA HAI TAM GIÁC VUÔNG",
+        "content": "Hai tam giác vuông đồng dạng nếu có một góc nhọn bằng nhau, hoặc có hai cặp cạnh góc vuông tỉ lệ, hoặc có cặp cạnh huyền và cạnh góc vuông tỉ lệ."
+      },
+      {
+        "name": "BÀI 37. HÌNH ĐỒNG DẠNG",
+        "content": "Các hình đồng dạng có hình dạng giống hệt nhau nhưng kích thước có thể khác nhau. Hình đồng dạng phối cảnh có các đường nối cặp điểm tương ứng cùng đi qua một tâm phối cảnh."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG X. MỘT SỐ HÌNH KHỐI TRONG THỰC TIỄN",
+    "lessons": [
+      {
+        "name": "BÀI 38. HÌNH CHÓP TAM GIÁC ĐỀU",
+        "content": "Cấu tạo gồm đáy là tam giác đều và các mặt bên là tam giác cân bằng nhau. Diện tích xung quanh bằng nửa chu vi đáy nhân với trung đoạn. Thể tích bằng một phần ba tích diện tích đáy và chiều cao."
+      },
+      {
+        "name": "BÀI 39. HÌNH CHÓP TỨ GIÁC ĐỀU",
+        "content": "Cấu tạo gồm đáy là hình vuông và bốn mặt bên là tam giác cân bằng nhau. Diện tích xung quanh tính bằng nửa chu vi đáy nhân trung đoạn. Thể tích được xác định bằng một phần ba diện tích mặt đáy nhân với chiều cao từ đỉnh xuống tâm đáy."
       }
     ]
   }
