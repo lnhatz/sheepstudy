@@ -173,12 +173,19 @@ elif st.session_state.page == 'doing':
     data = st.session_state.data
     mode = st.session_state.mode
     
+    # Xác định tổng số câu hỏi trước để dùng cho logic nộp bài
+    total_q = min(len(data), 20) if mode != 'theory' else 0
+
     if mode == 'test':
         remaining = max(0, int(st.session_state.end_time - time.time()))
         mins, secs = divmod(remaining, 60)
         st.markdown(f'<div class="timer-box">⏱️ Thời gian còn lại: {mins:02d}:{secs:02d}</div>', unsafe_allow_html=True)
+        
+        # Nếu hết thời gian
         if remaining <= 0:
-            st.session_state.current_idx = 999 
+            st.warning("⏰ Đã hết thời gian làm bài! Đang tự động nộp bài...")
+            time.sleep(1.5) # Cho user 1.5 giây để định thần
+            st.session_state.current_idx = total_q # Ép chỉ số hiện tại bằng tổng câu để nhảy sang trang kết quả
             st.rerun()
 
     if mode == 'theory':
