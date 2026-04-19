@@ -37,20 +37,25 @@
       }
     ]
   },
+  [
   {
-    "title": "CHƯƠNG III: TỐC ĐỘ",
+    "title": "CHƯƠNG III. TỐC ĐỘ",
     "lessons": [
       {
-        "name": "Bài 8, 9: Tốc độ chuyển động và Đo tốc độ",
-        "content": "• Tốc độ (v): v = s / t.\n• Ý nghĩa: Cho biết mức độ nhanh hay chậm của chuyển động."
+        "name": "BÀI 8 : TỐC ĐỘ CHUYỂN ĐỘNG",
+        "content": "• Khái niệm: Thương số s/t đặc trưng cho sự nhanh, chậm của chuyển động được gọi là tốc độ chuyển động (kí hiệu: v).\n• Hai cách xác định: So sánh quãng đường đi được trong cùng một khoảng thời gian hoặc so sánh thời gian để đi cùng một quãng đường.\n• Đơn vị: m/s và km/h (1 m/s = 3,6 km/h).\n• Công thức vận dụng: v = s/t."
       },
       {
-        "name": "Bài 10: Đồ thị quãng đường - thời gian",
-        "content": "• Đồ thị biểu diễn sự thay đổi quãng đường theo thời gian.\n• Đường thẳng đi lên qua gốc tọa độ: Chuyển động với tốc độ không đổi."
+        "name": "BÀI 9 : ĐO TÔC ĐỘ",
+        "content": "• Dùng đồng hồ bấm giây: Đo quãng đường bằng thước và đo thời gian bằng đồng hồ bấm giây. Tốc kế dùng để đo trực tiếp tốc độ phương tiện giao thông.\n• Dùng đồng hồ hiện số và cổng quang điện: Gồm đồng hồ hiện số, cổng quang điện và thước đo quãng đường (thường dùng trong phòng thí nghiệm).\n• Thiết bị bắn tốc độ: Camera ghi hình và tính thời gian ô tô chạy qua hai vạch mốc để xác định vi phạm tốc độ."
       },
       {
-        "name": "Bài 11: Tốc độ trong an toàn giao thông",
-        "content": "• Khoảng cách an toàn: Phụ thuộc tốc độ, thời tiết, mặt đường.\n• Quy tắc '3 giây': s = v . 3 (v tính bằng m/s).\n• Biển báo tốc độ: Giúp giảm thiểu tai nạn, tăng khả năng kiểm soát."
+        "name": "BÀI 10 : ĐỒ THỊ QUÃNG ĐƯỜNG - THỜI GIAN",
+        "content": "• Cách vẽ: Vẽ 2 trục Os (tung) và Ot (hoành) vuông góc. Xác định các điểm biểu diễn (s, t) rồi nối lại.\n• Đặc điểm đồ thị: Đường nằm nghiêng biểu diễn vật đang chuyển động; đường nằm ngang biểu diễn vật đang dừng nghỉ.\n• Ứng dụng: Tìm quãng đường đi được sau một khoảng thời gian hoặc tính tốc độ từ độ dốc của đồ thị."
+      },
+      {
+        "name": "BÀI 11 : THẢO LUẬN VỀ ẢNH HƯỞNG CỦA TỐC ĐỘ TRONG AN TOÀN GIAO THÔNG",
+        "content": "• Quy định: Phải tuân thủ tốc độ giới hạn (tối đa/tối thiểu) và khoảng cách an toàn tối thiểu giữa các xe.\n• Quy tắc 3 giây: Khoảng cách an toàn (m) = tốc độ (m/s) x 3 (s). Dùng để lái xe ước lượng khoảng cách trên cao tốc.\n• Ảnh hưởng thời tiết: Khi trời mưa, đường trơn ma sát giảm, tốc độ tối đa quy định thường thấp hơn so với khi trời nắng.\n• Ý nghĩa: Giảm thiểu tai nạn, bảo vệ sức khỏe và tính mạng con người."
       }
     ]
   },

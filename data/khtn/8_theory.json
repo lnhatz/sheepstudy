@@ -1,31 +1,59 @@
 [
   {
-    "title": "CHƯƠNG I. PHẢN ỨNG HÓA HỌC",
+    "title": "CHƯƠNG I: PHẢN ỨNG HÓA HỌC",
     "lessons": [
       {
-        "name": "Bài 2. Phản ứng hóa học",
-        "content": "• Định nghĩa: Quá trình biến đổi chất này thành chất khác.\n• Bản chất: Liên kết giữa các nguyên tử thay đổi, nhưng số lượng nguyên tử mỗi loại giữ nguyên."
+        "name": "Bài 1: Sử dụng một số hóa chất, thiết bị cơ bản trong phòng thí nghiệm",
+        "content": "• Nhận biết hóa chất: Hóa chất phải có nhãn ghi đầy đủ thông tin tên, công thức, nồng độ.\n• Quy tắc an toàn: Không dùng tay lấy hóa chất trực tiếp, không sử dụng hóa chất mất nhãn.\n• Dụng cụ thí nghiệm: Cách sử dụng ống nghiệm, đèn cồn và các thiết bị đo điện như Ampe kế, Vôn kế."
       },
       {
-        "name": "Bài 3. Mol và tỉ khối chất khí",
-        "content": "• Số mol (n): n = m / M (mol).\n• Thể tích khí (25°C, 1 bar): V = n * 24,79 (lít).\n• Tỉ khối: dA/B = MA / MB; dA/kk = MA / 29."
+        "name": "Bài 2: Phản ứng hóa học",
+        "content": "• Biến đổi vật lí: Không tạo ra chất mới.\n• Biến đổi hóa học: Có sự tạo thành chất mới.\n• Phản ứng hóa học: Quá trình biến đổi chất này thành chất khác, có sự thay đổi về liên kết giữa các nguyên tử."
       },
       {
-        "name": "Bài 4 & 5. Dung dịch và Bảo toàn khối lượng",
-        "content": "• C%: (mct / mdd) * 100%.\n• CM: n / V (mol/L).\n• Bảo toàn khối lượng: Tổng khối lượng chất tham gia = Tổng khối lượng sản phẩm (mA + mB = mC + mD)."
+        "name": "Bài 3: Mol và tỉ khối chất khí",
+        "content": "• Mol: Là lượng chất chứa 6,022 x 10^23 hạt vi ba.\n• Thể tích mol: Ở đkc (25°C, 1 bar), 1 mol khí chiếm 24,79 lít.\n• Tỉ khối: So sánh khối lượng giữa các chất khí với nhau hoặc với không khí."
+      },
+      {
+        "name": "Bài 4: Dung dịch và nồng độ",
+        "content": "• Độ tan (S): Khối lượng chất tan tối đa trong 100g nước.\n• Nồng độ phần trăm (C%): Tính theo khối lượng chất tan và dung dịch.\n• Nồng độ mol (CM): Tính theo số mol chất tan trong 1 lít dung dịch."
+      },
+      {
+        "name": "Bài 5: Định luật bảo toàn khối lượng và phương trình hóa học",
+        "content": "• Định luật: Tổng khối lượng các chất tham gia bằng tổng khối lượng các sản phẩm.\n• Phương trình hóa học: Biểu diễn ngắn gọn phản ứng hóa học bằng công thức và hệ số."
+      },
+      {
+        "name": "Bài 6: Tính theo phương trình hóa học",
+        "content": "• Các bước tính: Chuyển dữ kiện sang mol -> Dựa vào phương trình tìm mol chất cần biết -> Chuyển về khối lượng hoặc thể tích.\n• Hiệu suất (H): Tỉ lệ giữa lượng thực tế thu được và lượng lý thuyết."
+      },
+      {
+        "name": "Bài 7: Tốc độ phản ứng và chất xúc tác",
+        "content": "• Tốc độ phản ứng: Độ nhanh chậm của phản ứng.\n• Yếu tố ảnh hưởng: Nồng độ, nhiệt độ, diện tích tiếp xúc và chất xúc tác."
       }
     ]
   },
   {
-    "title": "CHƯƠNG II. MỘT SỐ HỢP CHẤT THÔNG DỤNG",
+    "title": "CHƯƠNG II: MỘT SỐ HỢP CHẤT THÔNG DỤNG",
     "lessons": [
       {
-        "name": "Bài 8 & 9. Acid, Base và pH",
-        "content": "• Acid: Quỳ tím hóa đỏ. Base: Quỳ tím hóa xanh, Phenolphthalein hóa hồng.\n• Thang pH: pH < 7 (Acid); pH = 7 (Trung tính); pH > 7 (Base)."
+        "name": "Bài 8: Acid",
+        "content": "• Định nghĩa: Phân tử có nguyên tử H liên kết với gốc acid.\n• Tính chất: Làm quỳ tím hóa đỏ, tác dụng với kim loại giải phóng khí Hydrogen."
       },
       {
-        "name": "Bài 10 & 11. Oxide và Muối",
-        "content": "• Oxide: Hợp chất của Oxygen với nguyên tố khác.\n• Muối: Kim loại + Gốc acid. Phản ứng trao đổi: AB + CD -> AD + CB."
+        "name": "Bài 9: Base, thang pH",
+        "content": "• Base: Có nhóm -OH liên kết với kim loại.\n• Thang pH: pH < 7 là acid, pH > 7 là base, pH = 7 là trung tính.\n• Phản ứng trung hòa: Acid + Base -> Muối + Nước."
+      },
+      {
+        "name": "Bài 10: Oxide",
+        "content": "• Phân loại: Oxide acid, oxide base, oxide lưỡng tính và oxide trung tính.\n• Tính chất: Oxide base tác dụng với acid, oxide acid tác dụng với dung dịch base."
+      },
+      {
+        "name": "Bài 11: Muối",
+        "content": "• Thành phần: Cation kim loại và anion gốc acid.\n• Tính chất: Tác dụng được với kim loại, acid, base và muối khác."
+      },
+      {
+        "name": "Bài 12: Phân bón hóa học",
+        "content": "• Các loại phân chính: Phân đạm (N), phân lân (P), phân kali (K) và phân hỗn hợp NPK.\n• Sử dụng: Cần bón đúng liều lượng, đúng loại để tránh ô nhiễm môi trường."
       }
     ]
   },
