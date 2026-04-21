@@ -3,25 +3,11 @@ import json
 import random
 import os
 import time
-import base64
-
-# 1. Hàm mã hóa ảnh sang Base64
-def get_base64(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-# 2. Lấy dữ liệu ảnh (Đảm bảo file back_ground.jpg nằm cùng thư mục với file code này)
-try:
-    bin_str = get_base64('back_ground.jpg')
-    back_ground = f'data:image/jpg;base64,{bin_str}'
-except FileNotFoundError:
-    back_ground = "" 
-    st.warning("⚠️ Không tìm thấy file 'back_ground.jpg'. Vui lòng kiểm tra lại thư mục!")
 
 # --- 1. CẤU HÌNH ---
 st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
 CORAL_PINK = "#ff6b86"
+back_ground = "https://png.pngtree.com/background/20250606/original/pngtree-back-to-school-artistic-background-picture-image_16624609.jpg"
 
 # --- 2. CSS CHUẨN (Đã sửa lỗi ngoặc nhọn và url ảnh) ---
 st.markdown(f"""
@@ -32,7 +18,7 @@ st.markdown(f"""
     [data-testid="stHeader"] {{ display: none; }}
 
     .stApp {{
-        background-image: url({back_ground});
+        background-image: url("{back_ground}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
