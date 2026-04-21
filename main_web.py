@@ -32,7 +32,7 @@ st.markdown(f"""
     [data-testid="stHeader"] {{ display: none; }}
 
     .stApp {{
-        background-image: url("{back_ground}");
+        background-image: url({back_ground});
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
