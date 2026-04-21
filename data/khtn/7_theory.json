@@ -59,53 +59,53 @@
     ]
   },
   {
-    "title": "CHƯƠNG IV: ÂM THANH",
+    "title": "CHƯƠNG IV. ÂM THANH",
     "lessons": [
       {
-        "name": "Bài 12: Sóng âm",
-        "content": "• Nguồn âm: Do vật dao động phát ra.\n• Môi trường truyền: Rắn, Lỏng, Khí. (Không truyền trong chân không)."
+        "name": "BÀI 12 : SÓNG ÂM",
+        "content": "• Dao động: Chuyển động qua lại quanh một vị trí cân bằng.\n• Sóng: Sự lan truyền dao động trong môi trường. Sóng âm là sự lan truyền dao động từ nguồn âm ra môi trường xung quanh.\n• Nguồn âm: Vật phát ra âm thanh. Đặc điểm chung là khi phát ra âm, các vật đều dao động.\n• Môi trường truyền âm: Âm truyền được qua các môi trường Rắn, Lỏng, Khí; không truyền được trong chân không."
       },
       {
-        "name": "Bài 13: Độ cao và độ to của âm",
-        "content": "• Độ cao: Phụ thuộc tần số (Hz). Tần số lớn -> Âm cao.\n• Độ to: Phụ thuộc biên độ dao động (dB)."
+        "name": "BÀI 13 : ĐỘ TO VÀ ĐỘ CAO CỦA ÂM",
+        "content": "• Độ cao (Tần số): Số dao động trong 1 giây gọi là tần số (Đơn vị: Hz). Tần số càng lớn, âm càng cao (bổng); tần số càng nhỏ, âm càng thấp (trầm).\n• Độ to (Biên độ): Khoảng cách lớn nhất vật lệch khỏi vị trí cân bằng gọi là biên độ dao động. Biên độ càng lớn, âm càng to; biên độ càng nhỏ, âm càng nhỏ (Đơn vị: dB)."
       },
       {
-        "name": "Bài 14: Phản xạ âm - Chống ô nhiễm tiếng ồn",
-        "content": "• Phản xạ âm: Vật cứng, phẳng phản xạ tốt. Vật mềm, xốp hấp thụ âm tốt.\n• Ô nhiễm tiếng ồn: Âm to và kéo dài gây ảnh hưởng sức khỏe."
+        "name": "BÀI 14 : PHẢN XẠ ÂM , CHỐNG Ô NHIỄM TIẾNG ỒN",
+        "content": "• Phản xạ âm: Âm gặp mặt chắn bị phản xạ ngược lại. Vật cứng, phẳng phản xạ âm tốt; vật mềm, xốp phản xạ âm kém (hấp thụ âm).\n• Tiếng vang: Xuất hiện khi âm phản xạ cách âm trực tiếp ít nhất 1/15 giây.\n• Ô nhiễm tiếng ồn: Xảy ra khi tiếng ồn to, kéo dài, gây ảnh hưởng xấu đến sức khỏe. Biện pháp: Treo biển báo 'Cấm bóp còi', trồng cây xanh, xây tường ngăn, dùng vật liệu cách âm."
       }
     ]
   },
   {
-    "title": "CHƯƠNG V: ÁNH SÁNG",
+    "title": "CHƯƠNG V. ÁNH SÁNG",
     "lessons": [
       {
-        "name": "Bài 15: Năng lượng ánh sáng - Tia sáng",
-        "content": "• Ánh sáng là một dạng năng lượng.\n• Tia sáng: Đường thẳng có mũi tên chỉ hướng."
+        "name": "BÀI 15 : NĂNG LƯỢNG ÁNH SÁNG. TIA SÁNG, VÙNG TỐI",
+        "content": "• Năng lượng ánh sáng: Ánh sáng là một dạng năng lượng. Vật hấp thụ ánh sáng sẽ nóng lên hoặc biến đổi thành các dạng năng lượng khác.\n• Tia sáng: Biểu diễn bằng một đường thẳng có mũi tên chỉ hướng lan truyền của ánh sáng.\n• Chùm sáng: Gồm nhiều tia sáng hợp thành (Song song, Hội tụ hoặc Phân kì).\n• Vùng tối: Vùng nằm phía sau vật cản, không nhận được ánh sáng từ nguồn sáng truyền tới. Vùng tối không hoàn toàn (vùng nửa tối) nhận được một phần ánh sáng."
       },
       {
-        "name": "Bài 16: Sự phản xạ ánh sáng",
-        "content": "• Hiện tượng: Ánh sáng hắt lại môi trường cũ.\n• Định luật phản xạ: Góc tới (i) = Góc phản xạ (i')."
+        "name": "BÀI 16 : SỰ PHẢN XẠ ÁNH SÁNG",
+        "content": "• Định luật phản xạ ánh sáng: Tia phản xạ nằm trong mặt phẳng chứa tia tới và pháp tuyến của gương tại điểm tới. Góc phản xạ (i') luôn bằng góc tới (i).\n• Phản xạ và phản xạ khuếch tán: Phản xạ xảy ra trên bề mặt nhẵn bóng (cho ảnh rõ nét); phản xạ khuếch tán xảy ra trên bề mặt gồ ghề (không cho ảnh)."
       },
       {
-        "name": "Bài 17: Ảnh của vật qua gương phẳng",
-        "content": "• Đặc điểm ảnh: Ảnh ảo, bằng vật, đối xứng với vật qua gương."
+        "name": "BÀI 17 : ẢNH CỦA VẬT QUA GƯƠNG PHẲNG",
+        "content": "• Tính chất ảnh: Là ảnh ảo (không hứng được trên màn chắn), có kích thước bằng vật.\n• Khoảng cách: Khoảng cách từ một điểm của vật đến gương phẳng bằng khoảng cách từ ảnh của điểm đó đến gương (đối xứng qua gương).\n• Ứng dụng: Gương phẳng dùng để soi, trang trí, hoặc trong các thiết bị quang học như kính tiềm vọng."
       }
     ]
   },
   {
-    "title": "CHƯƠNG VI: TỪ",
+    "title": "CHƯƠNG VI. TỪ TRƯỜNG",
     "lessons": [
       {
-        "name": "Bài 18: Nam châm",
-        "content": "• Đặc tính: Hút sắt thép, chỉ hướng Bắc (N) - Nam (S).\n• Tương tác: Cùng cực đẩy, khác cực hút."
+        "name": "BÀI 18 : NAM CHÂM",
+        "content": "• Đặc tính: Nam châm có đặc tính hút sắt và một số hợp chất của sắt. Mỗi nam châm có hai cực: cực Bắc (N) và cực Nam (S).\n• Tương tác: Hai cực cùng tên thì đẩy nhau, hai cực khác tên thì hút nhau.\n• Định hướng: Khi để tự do, nam châm luôn định hướng Bắc - Nam."
       },
       {
-        "name": "Bài 19: Từ trường",
-        "content": "• Khái niệm: Không gian quanh nam châm/dòng điện có lực từ.\n• Đường sức từ: Ra Bắc (N), Vào Nam (S). Nơi dày là từ trường mạnh."
+        "name": "BÀI 19 : TỪ TRƯỜNG",
+        "content": "• Khái niệm: Không gian xung quanh nam châm có từ trường. Từ trường tác dụng lực từ lên vật liệu từ đặt trong nó.\n• Từ phổ: Hình ảnh các đường sức từ cho biết hình dạng và độ mạnh yếu của từ trường.\n• Đường sức từ: Có chiều đi ra từ cực Bắc và đi vào cực Nam của nam châm."
       },
       {
-        "name": "Bài 20: Chế tạo nam châm điện đơn giản",
-        "content": "• Cấu tạo: Cuộn dây dẫn + lõi sắt non.\n• Đặc điểm: Chỉ có từ tính khi có dòng điện.\n• Cách tăng lực từ: Tăng cường độ dòng điện hoặc tăng số vòng dây."
+        "name": "BÀI 20 : CHẾ TẠO NAM CHÂM ĐIỆN ĐƠN GIẢN",
+        "content": "• Cấu tạo: Gồm một cuộn dây dẫn quấn quanh một lõi sắt non. Khi có dòng điện chạy qua cuộn dây, lõi sắt trở thành nam châm.\n• Đặc điểm: Từ tính của nam châm điện chỉ tồn tại khi có dòng điện. Có thể thay đổi độ mạnh của nam châm bằng cách thay đổi cường độ dòng điện hoặc số vòng dây."
       }
     ]
   },

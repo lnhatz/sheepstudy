@@ -3,22 +3,36 @@ import json
 import random
 import os
 import time
+import base64
+
+# 1. Hàm mã hóa ảnh sang Base64
+def get_base64(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# 2. Lấy dữ liệu ảnh (đảm bảo file back_ground.jpg nằm cùng thư mục)
+try:
+    bin_str = get_base64('back_ground.jpg')
+    back_ground = f'data:image/jpg;base64,{bin_str}'
+except FileNotFoundError:
+    back_ground = "" 
+    st.warning("⚠️ Lỗi tải ảnh")
 
 # --- 1. CẤU HÌNH ---
 st.set_page_config(page_title="Sheep Study", page_icon="✿", layout="wide")
-
 CORAL_PINK = "#ff6b86"
 
-# --- 2. CSS  ---
+# --- 2. CSS ---
 st.markdown(f"""
     <style>
-    #MainMenu {{ {{visibility: hidden;}} }}
-    header {{ {{visibility: hidden;}} }}
-    footer {{ {{visibility: hidden;}} }}
-    [data-testid="stHeader"] {{ {{display: none;}} }}
+    #MainMenu {{ visibility: hidden; }}
+    header {{ visibility: hidden; }}
+    footer {{ visibility: hidden; }}
+    [data-testid="stHeader"] {{ display: none; }}
 
     .stApp {{
-        background-image: url("https://png.pngtree.com/background/20250606/original/pngtree-back-to-school-artistic-background-picture-image_16624609.jpg");
+        background-image: url("{back_ground}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -33,68 +47,7 @@ st.markdown(f"""
         margin-top: 5vh !important;
         margin-bottom: 5vh !important;
         max-width: 950px !important;
-        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }}
-
-    .main-title {{
-        text-align: center;
-        color: {CORAL_PINK};
-        font-size: clamp(35px, 7vw, 70px) !important;
-        font-weight: 900;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        word-wrap: break-word;
-    }}
-
-    .theory-node {{
-        background-color: white;
-        border: 2px solid {CORAL_PINK};
-        border-radius: 12px;
-        padding: 15px;
-        margin-bottom: 15px;
-        text-align: center;
-    }}
-
-    div.stButton {{
-        display: flex;
-        justify-content: center;
-    }}
-
-    .stButton > button {{
-        width: 100% !important;
-        max-width: 450px;
-        min-height: 65px !important;
-        border-radius: 20px !important;
-        background-color: {CORAL_PINK} !important;
-        color: white !important;
-        font-weight: bold !important;
-        font-size: 18px !important;
-        border: none !important;
-        transition: 0.3s;
-    }}
-    
-    .stButton > button:hover {{
-        transform: translateY(-2px);
-        box-shadow: 0px 5px 15px rgba(255, 107, 134, 0.4);
-    }}
-
-    .stButton > button[kind="secondary"] {{
-        background-color: white !important;
-        color: {CORAL_PINK} !important;
-        border: 2px solid {CORAL_PINK} !important;
-    }}
-
-    .timer-box {{
-        padding: 10px;
-        border-radius: 15px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        background: white;
-        border: 2px solid {CORAL_PINK};
-        margin-bottom: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     }}
     </style>
 """, unsafe_allow_html=True)
