@@ -172,19 +172,86 @@
     ]
   },
   {
-    "title": "CHƯƠNG XI & XII. DI TRUYỀN HỌC",
+    "title": "CHƯƠNG 11: DI TRUYỀN HỌC MENDEL. CƠ SỞ PHÂN TỬ CỦA HIỆN TƯỢNG DI TRUYỀN",
     "lessons": [
       {
-        "name": "Bài 38. DNA và Gene",
-        "content": "DNA: Cấu trúc xoắn kép. Gene là đoạn DNA mang thông tin di truyền.\nNguyên tắc bổ sung: A-T, G-C."
+        "name": "BÀI 36. KHAI QUÁT VỀ DI TRUYỀN HỌC",
+        "content": "• Khái niệm: Di truyền học nghiên cứu về tính di truyền và biến dị.\n• Di truyền: Truyền đạt đặc điểm từ thế hệ này sang thế hệ khác.\n• Biến dị: Đặc điểm con cái không giống với bố, mẹ.\n• Gene: Là trung tâm của di truyền học, quy định các hiện tượng di truyền và biến dị."
       },
       {
-        "name": "Bài 40. Từ Gene đến Tính trạng",
-        "content": "Sơ đồ: Gene → mRNA → Protein → Tính trạng."
+        "name": "BÀI 37. CÁC QUY LUẬT DI TRUYỀN CỦA MENDEL",
+        "content": "• Lai một cặp tính trạng: F2 có tỉ lệ kiểu hình 3 trội : 1 lặn. Quy luật phân li: Allele trong cặp phân li đồng đều về các giao tử.\n• Lai hai cặp tính trạng: F2 có tỉ lệ 9:3:3:1. Quy luật phân li độc lập: Các cặp allele phân li độc lập trong quá trình hình thành giao tử."
       },
       {
-        "name": "Bài 43. Nguyên phân và Giảm phân",
-        "content": "Nguyên phân: Tạo 2 TB con (2n) giống mẹ.\nGiảm phân: Tạo 4 giao tử (n) giảm nửa NST."
+        "name": "BÀI 38. ACID NUCLEIC VÀ GENE",
+        "content": "• DNA: Cấu trúc xoắn kép, gồm 4 loại nucleotide (A, T, G, C) theo nguyên tắc bổ sung (A-T, G-C).\n• RNA: Cấu trúc mạch đơn, gồm 3 loại chính là mARN, tARN, rARN.\n• Gene: Một đoạn DNA mang thông tin mã hóa sản phẩm (chuỗi polypeptide hoặc RNA)."
+      },
+      {
+        "name": "BÀI 39. QUÁ TRÌNH TÁI BẢN DNA VÀ PHIÊN MÃ TẠO RNA",
+        "content": "• Tái bản DNA: Diễn ra theo nguyên tắc bổ sung và bán bảo toàn, giúp truyền đạt thông tin di truyền qua các thế hệ tế bào.\n• Phiên mã: Quá trình tổng hợp RNA từ mạch khuôn của gene trên DNA theo nguyên tắc bổ sung."
+      },
+      {
+        "name": "BÀI 40. DỊCH MÃ VÀ MỐI QUAN HỆ TỪ GENE ĐẾN TÍNH TRẠNG",
+        "content": "• Dịch mã: Quá trình tổng hợp protein dựa trên mã di truyền của mARN.\n• Sơ đồ mối quan hệ: Gene (DNA) → mARN → Protein → Tính trạng."
+      },
+      {
+        "name": "BÀI 41. ĐỘT BIẾN GENE",
+        "content": "• Định nghĩa: Những biến đổi trong cấu trúc của gene.\n• Các dạng: Mất, thêm hoặc thay thế cặp nucleotide.\n• Ý nghĩa: Tạo ra allele mới, cung cấp nguyên liệu cho tiến hóa và chọn giống."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG 12: DI TRUYỀN NHIỄM SẮC THỂ",
+    "lessons": [
+      {
+        "name": "BÀI 42. NHIỄM SẮC THỂ VÀ BỘ NHIỄM SẮC THỂ",
+        "content": "• Nhiễm sắc thể (NST): Là cấu trúc mang gene của tế bào, được cấu tạo từ DNA và protein (loại histone).\n• Bộ NST: Mỗi loài sinh vật có bộ NST đặc trưng về số lượng và hình dạng. \n• Phân loại: Bộ NST lưỡng bội (2n) tồn tại thành từng cặp tương đồng trong tế bào sinh dưỡng; Bộ NST đơn bội (n) có trong giao tử."
+      },
+      {
+        "name": "BÀI 43. NGUYÊN PHÂN VÀ GIẢM PHÂN",
+        "content": "• Nguyên phân: Quá trình phân bào từ 1 tế bào mẹ (2n) tạo ra 2 tế bào con có bộ NST giống hệt mẹ (2n). Giúp cơ thể lớn lên, tái tạo mô và thay thế tế bào già.\n• Giảm phân: Gồm 2 lần phân bào liên tiếp từ 1 tế bào mẹ (2n) tạo ra 4 tế bào con (giao tử) có bộ NST giảm đi một nửa (n). Là cơ sở của sinh sản hữu tính và tạo biến dị tổ hợp."
+      },
+      {
+        "name": "BÀI 44. CƠ CHẾ XÁC ĐỊNH GIỚI TÍNH",
+        "content": "• NST giới tính: Trong tế bào lưỡng bội, bên cạnh các NST thường (A) còn có cặp NST giới tính (ví dụ ở người: nữ là XX, nam là XY).\n• Cơ chế: Sự phân li của cặp NST giới tính trong giảm phân và sự tổ hợp lại trong thụ tinh (Giao tử X kết hợp với X tạo ra con cái, X kết hợp với Y tạo ra con đực).\n• Yếu tố ảnh hưởng: Ngoài di truyền, giới tính còn chịu ảnh hưởng của các yếu tố môi trường trong và ngoài (hormone, nhiệt độ...)."
+      },
+      {
+        "name": "BÀI 45. DI TRUYỀN LIÊN KẾT",
+        "content": "• Thí nghiệm của Morgan: Tiến hành trên ruồi giấm.\n• Khái niệm: Các gene nằm trên cùng một NST thì di truyền cùng nhau, tạo thành một nhóm gene liên kết.\n• Ý nghĩa: Hạn chế sự xuất hiện biến dị tổ hợp, giúp duy trì sự ổn định của các nhóm tính trạng tốt luôn đi kèm với nhau."
+      },
+      {
+        "name": "BÀI 46. ĐỘT BIẾN NHIỄM SẮC THỂ",
+        "content": "• Đột biến cấu trúc NST: Gồm các dạng như mất đoạn, lặp đoạn, đảo đoạn. Thường gây hại hoặc làm thay đổi kiểu hình sinh vật.\n• Đột biến số lượng NST: \n  + Thể dị bội: Thay đổi số lượng ở một hoặc một số cặp NST (ví dụ: hội chứng Down là có 3 NST số 21).\n  + Thể đa bội: Toàn bộ bộ NST tăng lên theo bội số của n (3n, 4n, 5n...)."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG XIII: DI TRUYỀN HỌC VỚI CON NGƯỜI VÀ ĐỜI SỐNG",
+    "lessons": [
+      {
+        "name": "BÀI 47. DI TRUYỀN HỌC VỚI CON NGƯỜI",
+        "content": "• Tính trạng ở người: Các đặc điểm hình thái, cấu tạo, sinh lí (màu da, màu tóc, chiều cao...) giúp phân biệt các cá thể.\n• Bệnh và tật di truyền: Những bất thường bẩm sinh do đột biến gene hoặc đột biến NST gây ra (Ví dụ: hội chứng Down, mù màu, máu khó đông...).\n• Nguyên nhân: Do tác nhân vật lí, hóa học, ô nhiễm môi trường hoặc rối loạn vật chất di truyền.\n• Di truyền y học: Nghiên cứu cơ chế gây bệnh để chẩn đoán, phòng ngừa và điều trị, giúp giảm gánh nặng cho gia đình và xã hội."
+      },
+      {
+        "name": "BÀI 48. ỨNG DỤNG CÔNG NGHỆ DI TRUYỀN VÀO ĐỜI SỐNG",
+        "content": "• Khái niệm: Là các kĩ thuật hiện đại trên nucleic acid nhằm điều chỉnh, biến đổi gene để tạo ra sinh vật mang đặc tính mới.\n• Lĩnh vực ứng dụng: \n  - Môi trường: Tạo vi khuẩn phân hủy dầu tràn, kim loại nặng.\n  - Nông nghiệp: Tạo giống cây trồng biến đổi gene (GMO) như ngô Bt kháng sâu, lúa vàng giàu vitamin A.\n  - Y học: Sản xuất insulin bằng vi khuẩn E. coli, liệu pháp gene, vaccine mRNA (COVID-19).\n  - Pháp y: Phân tích DNA để xác định quan hệ họ hàng hoặc danh tính.\n• An toàn sinh học: Ngăn chặn sử dụng sai mục đích các vật liệu sinh học độc hại.\n• Đạo đức sinh học: Các quy tắc ứng xử phù hợp đạo đức xã hội khi nghiên cứu và tác động vào hệ gene sinh vật/người."
+      }
+    ]
+  },
+  {
+    "title": "CHƯƠNG XIV: TIẾN HÓA",
+    "lessons": [
+      {
+        "name": "BÀI 49. KHÁI NIỆM TIẾN HÓA VÀ CÁC HÌNH THỨC CHỌN LỌC",
+        "content": "• Tiến hóa sinh học: Quá trình thay đổi đặc tính di truyền của quần thể qua các thế hệ (Ví dụ: sự tiến hóa xương chi ngựa).\n• Chọn lọc nhân tạo: Con người chủ động chọn giống vật nuôi, cây trồng có đặc tính mong muốn (Ví dụ: các giống gà siêu thịt, các loại rau họ Cải).\n• Chọn lọc tự nhiên: Quá trình phân hóa khả năng sống sót và sinh sản của các cá thể mang đặc điểm khác nhau. Kết quả là sự sống sót của những dạng thích nghi nhất (Ví dụ: quần thể bướm đêm Biston betularia)."
+      },
+      {
+        "name": "BÀI 50. CƠ CHẾ TIẾN HÓA",
+        "content": "• Quan điểm Lamarck: Sinh vật có xu hướng vươn tới sự hoàn thiện; những biến đổi do thích nghi ở đời cá thể đều di truyền được (VD: hươu cao cổ vươn cổ).\n• Quan điểm Darwin: Chọn lọc tự nhiên là nhân tố chính; tích lũy biến dị có lợi, đào thải biến dị có hại qua đấu tranh sinh tồn.\n• Thuyết tiến hóa tổng hợp: \n  - Nguồn biến dị: Đột biến (nguyên liệu sơ cấp) và biến dị tổ hợp (nguyên liệu thứ cấp).\n  - Nhân tố tiến hóa: Đột biến, di - nhập gene, yếu tố ngẫu nhiên, giao phối không ngẫu nhiên, chọn lọc tự nhiên.\n• Tiến hóa nhỏ: Biến đổi tần số allele trong quần thể dẫn đến hình thành loài mới. Tiến hóa lớn: Hình thành các nhóm trên loài (chi, họ, bộ...)."
+      },
+      {
+        "name": "BÀI 51. SỰ PHÁT SINH VÀ PHÁT TRIỂN SỰ SỐNG TRÊN TRÁI ĐẤT",
+        "content": "• Các giai đoạn: Tiến hóa hóa học (vô cơ -> hữu cơ) -> Tiến hóa tiền sinh học (tế bào nguyên thủy) -> Tiến hóa sinh học (nhân sơ -> nhân thực -> đa bào).\n• Nguồn gốc sinh vật nhân thực: Thuyết nội cộng sinh từ các tế bào nhân sơ.\n• Tiến hóa loài người: Xuất hiện từ tổ tiên Hominin (Châu Phi, 6-7 triệu năm trước). Các giai đoạn chính: Australopithecus -> Homo habilis -> Homo erectus -> Homo neanderthalensis -> Homo sapiens (Người hiện đại).\n• Nhân tố tác động: Gồm nhân tố sinh học và nhân tố xã hội (nhân tố xã hội đóng vai trò quyết định)."
       }
     ]
   }
